@@ -1,0 +1,86 @@
+.section {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 12px 0 12px 0;
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 24px;
+}
+
+.keyFeaturesBtn {
+  margin-bottom: 16px;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+
+
+.featureTabs {
+  margin-bottom: 0;
+}
+
+.tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+    padding: 18px 24px 10px 24px;
+    cursor: pointer;
+    min-width: 50px;
+    box-shadow: 0 2px 8px rgba(34, 139, 230, 0.08); /* subtle blue shadow */
+    background: #f3f8fd; /* light blue background */
+   
+    transition: background 0.2s, box-shadow 0.2s, color 0.2s;
+    border-bottom: 4px solid transparent;
+}
+
+.selected {
+    border-bottom: 3px solid #228be6;
+    color: #1560a8;
+}
+
+.iconWrap {
+  
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  padding: 0px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.divider {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.demoCard {
+  display: flex;
+  align-items: flex-start;
+  padding: 0;
+  
+  border-radius: 24px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+  max-width: 700px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.demoImage {
+  width: 320px;
+  height: auto;
+  border-radius: 24px 0 0 24px;
+  object-fit: cover;
+}
+
+.demoTextBox {
+  flex: 1;
+  padding: 32px 24px;
+  text-align: left;
+}

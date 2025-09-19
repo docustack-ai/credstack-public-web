@@ -1,0 +1,39 @@
+.root {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.image {
+  background-image: url('/assets/notfound.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 300px;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.description {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 600px) {
+  .image {
+    height: 180px;
+    margin-bottom: 24px;
+  }
+  .title {
+    font-size: 1.3rem;
+  }
+  .root {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}

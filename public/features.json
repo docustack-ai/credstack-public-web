@@ -1,0 +1,54 @@
+{
+  "products": [
+    {
+      "name": "CredLens.ai",
+      "features": [
+        { "title": "Classification", "description": "AI-powered document classification for fast sorting and organization." },
+        { "title": "Extraction", "description": "Extract key data points from documents with high accuracy." },
+        { "title": "Decisioning", "description": "Automate decision-making with custom rules and explainable AI." }
+      ],
+      "featuresCards": [
+        {
+          "title": "Extreme performance",
+          "description": "This dust is actually a powerful poison that will even make a pro wrestler sick, Regice cloaks itself with frigid air of -328 degrees Fahrenheit",
+          "icon": "IconGauge"
+        },
+        {
+          "title": "Privacy focused",
+          "description": "People say it can run at the same speed as lightning striking, Its icy body is so cold, it will not melt even if it is immersed in magma",
+          "icon": "IconUser"
+        },
+        {
+          "title": "No third parties",
+          "description": "They’re popular, but they’re rare. Trainers who show them off recklessly may be targeted by thieves",
+          "icon": "IconCookie"
+        }
+      ]
+    },
+    {
+      "name": "CredExperience.ai",
+      "features": [
+        { "title": "Agents.ai", "description": "Intelligent agents for workflow automation and support." },
+        { "title": "Assist.ai", "description": "AI-powered assistance for onboarding and due diligence." },
+        { "title": "Insights.ai", "description": "Actionable insights from your data and processes." }
+      ],
+      "featuresCards": [
+        {
+          "title": "Extreme performance",
+          "description": "This dust is actually a powerful poison that will even make a pro wrestler sick, Regice cloaks itself with frigid air of -328 degrees Fahrenheit",
+          "icon": "IconGauge"
+        },
+        {
+          "title": "Privacy focused",
+          "description": "People say it can run at the same speed as lightning striking, Its icy body is so cold, it will not melt even if it is immersed in magma",
+          "icon": "IconUser"
+        },
+        {
+          "title": "No third parties",
+          "description": "They’re popular, but they’re rare. Trainers who show them off recklessly may be targeted by thieves",
+          "icon": "IconCookie"
+        }
+      ]
+    }
+  ]
+}

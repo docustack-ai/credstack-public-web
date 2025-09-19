@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Resident Evil Village review",
+    "author": "Bill Wormeater",
+    "date": "2025-08-20",
+    "excerpt": "Resident Evil Village is a direct sequel to 2017’s Resident Evil 7, but takes a very different direction to its predecessor...",
+    "image": "https://i.imgur.com/Cij5vdL.png",
+    "slug": "resident-evil-village-review",
+    "markdown": "content/resident-evil-village-review.md"
+  }
+  ,{
+    "title": "The Art of Productivity",
+    "author": "Jane Focus",
+    "date": "2025-08-21",
+    "excerpt": "Discover how to maximize your productivity with proven techniques and tools...",
+    "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
+    "slug": "art-of-productivity",
+    "markdown": "content/art-of-productivity.md"
+  }
+  ,{
+    "title": "Exploring the Future of AI",
+    "author": "Alex Innovator",
+    "date": "2025-08-22",
+    "excerpt": "Artificial Intelligence is transforming industries and daily life. What does the future hold?...",
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
+    "slug": "exploring-the-future-of-ai",
+    "markdown": "content/exploring-the-future-of-ai.md"
+  }
+  ,{
+    "title": "Healthy Living in a Digital Age",
+    "author": "Sam Wellness",
+    "date": "2025-08-23",
+    "excerpt": "Tips and strategies for maintaining health and wellness while living in a tech-driven world...",
+    "image": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=80",
+    "slug": "healthy-living-in-a-digital-age",
+    "markdown": "content/healthy-living-in-a-digital-age.md"
+  }
+]

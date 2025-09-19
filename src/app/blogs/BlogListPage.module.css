@@ -1,0 +1,20 @@
+.listContainer {
+  padding: 1rem;
+}
+
+.title{
+  
+  color: #222;
+  font-family: Outfit, var(--mantine-font-family);
+  font-size: 44px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+.cardLink {
+  text-decoration: none;
+}

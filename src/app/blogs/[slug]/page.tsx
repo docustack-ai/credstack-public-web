@@ -1,0 +1,44 @@
+'use client';
+
+import { useParams } from 'next/navigation';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import ReactMarkdown from 'react-markdown';
+import classes from './BlogPage.module.css';
+
+export default function BlogPage() {
+  const params = useParams();
+  const slug = params.slug as string;
+  const [blog, setBlog] = useState<any>(null);
+  const [content, setContent] = useState('');
+
+  useEffect(() => {
+    fetch('/blogs.json')
+      .then((res) => res.json())
+      .then((blogs) => {
+        const found = blogs.find((b: any) => b.slug === slug);
+        setBlog(found);
+        if (found) {
+          fetch(`/${found.markdown}`)
+            .then((res) => res.text())
+            .then(setContent);
+        }
+      });
+  }, [slug]);
+
+  if (!blog) return <div>Blog not found</div>;
+
+  return (
+    <div className={classes.pageContainer}>
+      <div className={classes.topBar}>
+        <Link href="/blogs" className={classes.backButton}>&larr; Back to all blogs</Link>
+      </div>
+      <h1>{blog.title}</h1>
+      <div className={classes.meta}>
+        <span>{blog.author}</span> | <span>{blog.date}</span>
+      </div>
+      <img src={blog.image} alt={blog.title} className={classes.image} />
+      <ReactMarkdown>{content}</ReactMarkdown>
+    </div>
+  );
+}
