@@ -27,13 +27,14 @@ export default function RootLayout({ children }: { children: any }) {
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
         />
       </head>
-      <body>
+      <body style={{ marginLeft: 30, marginRight: 30 }}>
         <MantineProvider theme={theme}>
           <Box style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
             <HeaderMegaMenu />
             <Box style={{ flex: 1, width: '100%' }}>
               {children}
             </Box>
+
             <FooterLinks />
           </Box>
         </MantineProvider>
