@@ -34,6 +34,7 @@ import { useDisclosure } from '@mantine/hooks';
 import { useState } from 'react';
 // import blackLogo from '/assets/black.svg';
 import classes from './HeaderMegaMenu.module.css';
+import layoutStyles from '../app/layout.module.css';
 import Link from 'next/link';
 
 const mockdata = [
@@ -312,6 +313,7 @@ return (
       }
       hiddenFrom="sm"
       zIndex={1000000}
+  className={layoutStyles.fullWidthDrawer}
     >
       <ScrollArea h="calc(100vh - 80px" mx="-md">
         <Divider/>
