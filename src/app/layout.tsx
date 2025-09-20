@@ -1,4 +1,5 @@
 import "@mantine/core/styles.css";
+import styles from "./layout.module.css";
 import React from "react";
 import {
   MantineProvider,
@@ -27,14 +28,13 @@ export default function RootLayout({ children }: { children: any }) {
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
         />
       </head>
-      <body style={{ marginLeft: 30, marginRight: 30 }}>
+      <body className={styles["body-margin"]}>
         <MantineProvider theme={theme}>
-          <Box style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+          <Box className={styles["layout-root"]}>
             <HeaderMegaMenu />
-            <Box style={{ flex: 1, width: '100%' }}>
+            <Box className={styles["layout-content"]}>
               {children}
             </Box>
-
             <FooterLinks />
           </Box>
         </MantineProvider>
