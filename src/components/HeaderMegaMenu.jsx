@@ -253,61 +253,88 @@ return (
                   <Tabs.Panel key={tab.key} value={tab.key} style={{ flex: 1, paddingLeft: 24 }}>
                     <SimpleGrid cols={2} spacing={0}>
                     {solutionsData[tab.key].map(item => (
-                      <UnstyledButton className={classes.subLink} key={item.title}>
-                      <Group wrap="nowrap" align="flex-start">
-                        <ThemeIcon size={34} variant="default" radius="md">
-                        <item.icon size={22} color={theme.colors.blue[6]} />
-                        </ThemeIcon>
-                        <div>
-                        <Text size="sm" fw={500}>{item.title}</Text>
-                        <Text size="xs" c="dimmed">{item.description}</Text>
-                        </div>
-                      </Group>
-                      </UnstyledButton>
+                      item.title === 'Securitization' ? (
+                        <Link href="/use_cases/securitization" key={item.title} className={classes.subLink} style={{ textDecoration: 'none' }}>
+                          <Group wrap="nowrap" align="flex-start">
+                            <ThemeIcon size={34} variant="default" radius="md">
+                              <item.icon size={22} color={theme.colors.blue[6]} />
+                            </ThemeIcon>
+                            <div>
+                              <Text size="sm" fw={500}>{item.title}</Text>
+                              <Text size="xs" c="dimmed">{item.description}</Text>
+                            </div>
+                          </Group>
+                        </Link>
+                      ) : (
+                        <UnstyledButton className={classes.subLink} key={item.title}>
+                          <Group wrap="nowrap" align="flex-start">
+                            <ThemeIcon size={34} variant="default" radius="md">
+                              <item.icon size={22} color={theme.colors.blue[6]} />
+                            </ThemeIcon>
+                            <div>
+                              <Text size="sm" fw={500}>{item.title}</Text>
+                              <Text size="xs" c="dimmed">{item.description}</Text>
+                            </div>
+                          </Group>
+                        </UnstyledButton>
+                      )
                     ))}
                     </SimpleGrid>
                   </Tabs.Panel>
                   ))}
                 </Tabs>
                 );
-              })()}
-              <div className={classes.dropdownFooter}>
+                })()}
+                <div className={classes.dropdownFooter}>
                 <Group justify="space-between">
                   <div>
-                    <Text fw={500} fz="sm">
-                      Get started
-                    </Text>
-                    <Text size="xs" c="dimmed">
-                      Their food sources have decreased, and their numbers
-                    </Text>
+                  <Text fw={500} fz="sm">
+                    Get started
+                  </Text>
+                  <Text size="xs" c="dimmed">
+                    Their food sources have decreased, and their numbers
+                  </Text>
                   </div>
-                  <Button variant="default" size="md">Get started</Button>
+                  <Button
+                  variant="default"
+                  size="md"
+                  component={Link}
+                  href="/contact"
+                  >
+                  Contact us
+                  </Button>
                 </Group>
-              </div>
-            </HoverCard.Dropdown>
-          </HoverCard>
-          <Link href="/blogs" className={classes.link}>
-            Blog
-          </Link>
-        </Group>
+                </div>
+              </HoverCard.Dropdown>
+              </HoverCard>
+              <Link href="/blogs" className={classes.link}>
+              Blog
+              </Link>
+            
+            </Group>
 
-        <Group visibleFrom="sm">
-          <Button variant="default" size="md">Log in</Button>
-          <Button size="md">Sign up</Button>
-        </Group>
+            <Group visibleFrom="sm">
+              <Button
+              size="md"
+              component={Link}
+              href="/demo"
+              >
+              Get a demo
+              </Button>
+            </Group>
 
-        <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="sm" size="md" />
-      </Group>
-    </header>
+            <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="sm" size="md" />
+            </Group>
+          </header>
 
-    <Drawer
-      opened={drawerOpened}
-      onClose={closeDrawer}
-      size="100%"
-      padding="md"
-      title={
-        <Group>
-          {/* Logo added to Drawer title */}
+          <Drawer
+            opened={drawerOpened}
+            onClose={closeDrawer}
+            size="100%"
+            padding="md"
+            title={
+            <Group>
+              {/* Logo added to Drawer title */}
           <img src="/assets/black.svg" alt="CredStack" style={{ height: 20, marginRight: 8 }} />
         </Group>
       }

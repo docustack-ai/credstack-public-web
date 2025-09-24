@@ -1,9 +1,16 @@
 import { IconCheck } from '@tabler/icons-react';
 import { Button, Container, Group, Image, List, Text, ThemeIcon, Title, Flex } from '@mantine/core';
+import { useRouter } from 'next/navigation';
 // import image from '../assets/hero_image.png';
 import classes from './HeroBullets.module.css';
 
+
 function HeroBullets() {
+    const router = useRouter();
+    const handleDemoClick = () => {
+        router.push('/demo');
+    };
+
 return (
     <Container size="xl">
         <div className={classes.inner}>
@@ -37,15 +44,15 @@ return (
                 </List>
 
                 <Group mt={30}>
-                    <Button  size="md" className={classes.control}>
-                        Get started
+                    <Button size="md" className={classes.control} onClick={handleDemoClick}>
+                        Get Started
                     </Button>
-                    <Button variant="default"  size="md" className={classes.control}>
+                    {/* <Button variant="default"  size="md" className={classes.control}>
                         Source code
-                    </Button>
+                    </Button> */}
                 </Group>
             </div>
-            <Image src="/assets/hero_image.png" className={classes.image} alt="Hero image" />
+            <Image src="/assets/Approval.png" className={classes.image} alt="Hero image" />
         </div>
     </Container>
 );

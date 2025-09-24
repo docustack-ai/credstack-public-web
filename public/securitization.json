@@ -1,0 +1,80 @@
+{
+  "title": "Close Securitization Deals 80% Faster",
+  "subtitle": "Financial institutions deserve loan pool due diligence that doesn't take weeks",
+  "cta": "Get 100% Coverage Today",
+  "problems": [
+    {
+      "icon": "⏰",
+      "title": "Deals Are Slipping Away",
+      "description": "While your team spends 3-4 weeks manually reviewing loan pools, competitors with faster processes are winning the deals you should be closing."
+    },
+    {
+      "icon": "🎯",
+      "title": "You're Flying Blind on 50% of Risk",
+      "description": "Sampling-based evaluations leave massive blind spots in your portfolio. Hidden risks in the unchecked loans could devastate your returns."
+    },
+    {
+      "icon": "⚖️",
+      "title": "Regulators Are Asking Hard Questions",
+      "description": "Manual processes create inconsistent documentation and weak audit trails, making regulatory reviews a nightmare to defend."
+    }
+  ],
+  "stats": [
+    { "label": "3-4", "value": "Weeks Lost Per Deal" },
+    { "label": "50%", "value": "Risk Coverage Gap" },
+    { "label": "30%", "value": "Higher Operational Costs" }
+  ],
+  "trusted": [
+    { "icon": "🏦", "title": "Trusted by Banks", "description": "Leading institutions rely on our AI-powered platform" },
+    { "icon": "🤖", "title": "130+ Risk Parameters", "description": "Comprehensive credit, legal, and operational checks" },
+    { "icon": "📊", "title": "100% Portfolio Coverage", "description": "No sampling gaps, complete transparency" }
+  ],
+  "steps": [
+    {
+      "title": "Step 1: Automated Full-File Analysis",
+      "description": "Our AI reviews 100% of your loan pool with 130+ parameter risk checks across credit, legal, operational, and technical dimensions. No more sampling gaps."
+    },
+    {
+      "title": "Step 2: Explainable Risk Scoring",
+      "description": "Get audit-ready reasoning for every decision. Our platform provides transparent documentation that satisfies regulators and builds investor confidence."
+    },
+    {
+      "title": "Step 3: Continuous Monitoring",
+      "description": "Stay ahead of portfolio risks with 24/7 AI-driven monitoring. Detect fraud patterns, duplicate accounts, and borrower stress before they impact your returns."
+    },
+    {
+      "title": "Step 4: Seamless Integration",
+      "description": "Plug directly into your existing LOS/LMS systems with our API-first design. No disruption to your current workflow."
+    }
+  ],
+  "results": [
+    { "label": "90%", "value": "Improved Loan Pool Coverage" },
+    { "label": "80%", "value": "Faster Deal Evaluation" },
+    { "label": "5X", "value": "More Accurate Risk Detection" },
+    { "label": "70%", "value": "Reduction in Fraud Exposure" }
+  ],
+  "closing": {
+    "title": "Join the financial institutions that have eliminated deal delays and regulatory headaches while improving their risk management.",
+    "problems": [
+      {
+        "icon": "💰",
+        "title": "Lost Revenue",
+        "description": "Competitors close deals while you're still in week 2 of manual review. Your slow process is literally costing you millions in missed opportunities."
+      },
+      {
+        "icon": "📈",
+        "title": "Mounting Risk Exposure",
+        "description": "That 50% coverage gap isn't getting smaller. Hidden defaults and fraud in your blind spots will eventually surface—and it won't be pretty."
+      },
+      {
+        "icon": "🚨",
+        "title": "Regulatory Penalties",
+        "description": "Manual processes with inconsistent documentation make you a target for regulatory action. The fines and reputation damage could be devastating."
+      }
+    ],
+    "cta": "Stop Losing Deals to Slow Due Diligence",
+    "solution": "Get the AI-powered solution that delivers 100% loan coverage, explainable decisions, and 80% faster deal closures.",
+    "demo": "Schedule Your Demo Today",
+    "demoDesc": "See how CredStack can transform your securitization process in just 30 minutes"
+  }
+}

@@ -10,20 +10,20 @@ const data = [
     title: 'Pages',
     links: [
       { label: 'Home', link: '/' },
-      { label: 'Features', link: '/features' },
+      { label: 'Features', link: '/teams' },
       { label: 'Contact', link: '/contact' },
       { label: 'Blog', link: '/blogs' },
     ],
   },
-  // {
-  //   title: 'Project',
-  //   links: [
-  //     { label: 'Contribute', link: '#' },
-  //     { label: 'Media assets', link: '#' },
-  //     { label: 'Changelog', link: '#' },
-  //     { label: 'Releases', link: '#' },
-  //   ],
-  // },
+  {
+    title: 'Resources',
+    links: [
+      { label: 'Teams', link: '/teams' },
+      { label: 'Media assets', link: '#' },
+      { label: 'Changelog', link: '#' },
+      { label: 'Releases', link: '#' },
+    ],
+  },
   // {
   //   title: 'Community',
   //   links: [
