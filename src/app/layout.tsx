@@ -27,6 +27,7 @@ export default function RootLayout({ children }: { children: any }) {
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
         />
+        <script src="https://analytics.ahrefs.com/analytics.js" data-key="uWSS76umRTWKCgLt1/MqEw" async></script>
       </head>
       <body className={styles["body-margin"]}>
         <MantineProvider theme={theme}>
