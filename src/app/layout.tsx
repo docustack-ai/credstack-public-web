@@ -28,6 +28,8 @@ export default function RootLayout({ children }: { children: any }) {
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
         />
         <script src="https://analytics.ahrefs.com/analytics.js" data-key="uWSS76umRTWKCgLt1/MqEw" async></script>
+        <meta name="ahrefs-site-verification" content="c14bef5b050086b669872690b1c89dc32433c4ff02246c80ce3e01cd2bdd42a9" />
+
       </head>
       <body className={styles["body-margin"]}>
         <MantineProvider theme={theme}>
