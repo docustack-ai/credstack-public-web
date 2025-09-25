@@ -52,7 +52,7 @@ return (
                     </Button> */}
                 </Group>
             </div>
-            <Image src="/assets/Approval.png" className={classes.image} alt="Hero image" />
+            <Image src="/assets/approval.png" className={classes.image} alt="Hero image" />
         </div>
     </Container>
 );
