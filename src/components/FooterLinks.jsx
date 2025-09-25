@@ -19,9 +19,9 @@ const data = [
     title: 'Resources',
     links: [
       { label: 'Teams', link: '/teams' },
-      { label: 'Media assets', link: '#' },
-      { label: 'Changelog', link: '#' },
-      { label: 'Releases', link: '#' },
+      // { label: 'Media assets', link: '#' },
+      // { label: 'Changelog', link: '#' },
+      // { label: 'Releases', link: '#' },
     ],
   },
   // {

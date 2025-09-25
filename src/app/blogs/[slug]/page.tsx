@@ -2,6 +2,7 @@
 
 import { useParams } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import classes from './BlogPage.module.css';
@@ -37,7 +38,7 @@ export default function BlogPage() {
       <div className={classes.meta}>
         <span>{blog.author}</span> | <span>{blog.date}</span>
       </div>
-      <img src={blog.image} alt={blog.title} className={classes.image} />
+      <Image src={blog.image} alt={blog.title} className={classes.image} width={800} height={400} style={{ width: '100%', height: 'auto' }} />
       <ReactMarkdown>{content}</ReactMarkdown>
     </div>
   );

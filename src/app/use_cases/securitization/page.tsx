@@ -1,7 +1,7 @@
 
 
 "use client";
-import { Container, Title, Text, Button, SimpleGrid, ThemeIcon, rem, Group, Paper } from '@mantine/core';
+import { Container, Title, Text, Button, SimpleGrid, ThemeIcon, Group, Paper } from '@mantine/core';
 import HeroBullets from '../../../components/HeroBullets';
 import { IconGauge, IconUser, IconCookie, IconCheck, IconShield, IconEye, IconTrendingUp, IconClock, IconAlertTriangle } from '@tabler/icons-react';
 
@@ -42,7 +42,7 @@ export default function SecuritizationUseCase() {
             <Container size="md" py="xl">
                 <Title order={1} mb="xs">Close Securitization Deals 80% Faster</Title>
                 <Text size="lg" c="dimmed" mb="md">
-                    Financial institutions deserve loan pool due diligence that doesn't take weeks
+                    Financial institutions deserve loan pool due diligence that doesn&apos;t take weeks
                 </Text>
                 <Button size="lg" mb="xl">Get 100% Coverage Today</Button>
 
@@ -58,7 +58,7 @@ export default function SecuritizationUseCase() {
                         <ThemeIcon size={48} radius="xl" variant="light" color="blue">
                             <IconAlertTriangle size={32} />
                         </ThemeIcon>
-                        <Text fw={700} mt="md">You're Flying Blind on 50% of Risk</Text>
+                        <Text fw={700} mt="md">You&apos;re Flying Blind on 50% of Risk</Text>
                         <Text c="dimmed" fz="sm">Sampling-based evaluations leave massive blind spots in your portfolio. Hidden risks in the unchecked loans could devastate your returns.</Text>
                     </Paper>
                     <Paper radius="md" p="md" withBorder ta="center" bg="blue.0">

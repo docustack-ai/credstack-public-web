@@ -36,6 +36,7 @@ import { useState } from 'react';
 import classes from './HeaderMegaMenu.module.css';
 import layoutStyles from '../app/layout.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const mockdata = [
   {
@@ -101,7 +102,7 @@ return (
       <Group justify="space-between" h="100%">
         <div className={classes.logo}>
           {/* Logo added here */}
-          <img src="/assets/black.svg" alt="CredStack" style={{ height: 32 }} />
+          <Image src="/assets/black.svg" alt="CredStack" width={120} height={32} style={{ height: 32, width: 'auto' }} />
         </div>
 
         <Group h="100%" gap={0} visibleFrom="sm">
@@ -335,9 +336,9 @@ return (
             title={
             <Group>
               {/* Logo added to Drawer title */}
-          <img src="/assets/black.svg" alt="CredStack" style={{ height: 20, marginRight: 8 }} />
-        </Group>
-      }
+              <Image src="/assets/black.svg" alt="CredStack" width={80} height={20} style={{ height: 20, width: 'auto', marginRight: 8 }} />
+            </Group>
+          }
       hiddenFrom="sm"
       zIndex={1000000}
   className={layoutStyles.fullWidthDrawer}
