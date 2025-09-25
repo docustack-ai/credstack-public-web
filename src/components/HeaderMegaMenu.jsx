@@ -96,8 +96,9 @@ function HeaderMegaMenu() {
     </UnstyledButton>
   ));
 
+  
 return (
-  <Box pb={theme.spacing.xl} pt={theme.spacing.sm}>
+  <Box >
     <header className={classes.header}>
       <Group justify="space-between" h="100%">
         <div className={classes.logo}>
