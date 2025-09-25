@@ -10,29 +10,25 @@ const data = [
     title: 'Pages',
     links: [
       { label: 'Home', link: '/' },
-      { label: 'Features', link: '/teams' },
-      { label: 'Contact', link: '/contact' },
+      { label: 'Features', link: '/features' },
       { label: 'Blog', link: '/blogs' },
+      { label: 'Contact', link: '/contact' },
+    ],
+  },
+  {
+    title: 'Company',
+    links: [
+      { label: 'Our Story', link: '/about/our-story' },
+      { label: 'Terms & Conditions', link: '/legal/terms' },
+      { label: 'Privacy Policy', link: '/legal/privacy' },
     ],
   },
   {
     title: 'Resources',
     links: [
       { label: 'Teams', link: '/teams' },
-      // { label: 'Media assets', link: '#' },
-      // { label: 'Changelog', link: '#' },
-      // { label: 'Releases', link: '#' },
     ],
   },
-  // {
-  //   title: 'Community',
-  //   links: [
-  //     { label: 'Join Discord', link: '#' },
-  //     { label: 'Follow on Twitter', link: '#' },
-  //     { label: 'Email newsletter', link: '#' },
-  //     { label: 'GitHub discussions', link: '#' },
-  //   ],
-  // },
 ];
 
 function FooterLinks() {
