@@ -38,47 +38,83 @@ import layoutStyles from '../app/layout.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 
-const mockdata = [
+const feature_list = [
   {
     icon: IconCode,
     title: 'Open source',
     description: 'This Pokémon’s cry is very loud and distracting',
+    url: '/open-source',
   },
   {
     icon: IconCoin,
     title: 'Free for everyone',
     description: 'The fluid of Smeargle’s tail secretions changes',
+    url: '/free',
   },
   {
     icon: IconBook,
     title: 'Documentation',
     description: 'Yanma is capable of seeing 360 degrees without',
+    url: '/docs',
   },
+  
+];
+
+const solutions_list = [
   {
-    icon: IconFingerprint,
-    title: 'Security',
-    description: 'The shell’s rounded shape and the grooves on its.',
-  },
-  {
-    icon: IconChartPie3,
-    title: 'Analytics',
-    description: 'This Pokémon uses its flying ability to quickly chase',
+    icon: IconCoin,
+    title: 'Banking Underwriting',
+    description: 'Automate risk assessment and loan approvals for banking.',
+    url: '/solutions/banking-underwriting',
   },
   {
     icon: IconNotification,
-    title: 'Notifications',
-    description: 'Combusken battles with the intensely hot flames it spews',
+    title: 'Banking Onboarding',
+    description: 'Streamline customer onboarding and KYC for banks.',
+    url: '/solutions/banking-onboarding',
+  },
+  {
+    icon: IconCode,
+    title: 'Securitization',
+    description: 'Digitize and manage asset-backed securities.',
+    url: '/use_cases/securitization',
+  },
+  {
+    icon: IconChartPie3,
+    title: 'Insurance Underwriting',
+    description: 'AI-powered underwriting for insurance risk analysis.',
+    url: '/solutions/insurance-underwriting',
+  },
+  {
+    icon: IconNotification,
+    title: 'Insurance Onboarding',
+    description: 'Automate policyholder onboarding and verification.',
+    url: '/solutions/insurance-onboarding',
+  },
+  {
+    icon: IconBook,
+    title: 'Legal Drafting',
+    description: 'Generate legal documents and contracts efficiently.',
+    url: '/solutions/legal-drafting',
+  },
+  {
+    icon: IconFingerprint,
+    title: 'Legal Compliance',
+    description: 'Ensure regulatory compliance and audit readiness.',
+    url: '/solutions/legal-compliance',
   },
 ];
+  
 
 function HeaderMegaMenu() {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
-  const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false);
+  const [featuresOpened, { toggle: toggleFeatures }] = useDisclosure(false);
+  const [solutionsOpened, { toggle: toggleSolutions }] = useDisclosure(false);
   const [selectedFeaturesTab, setSelectedFeaturesTab] = useState('credlens');
   const [selectedSolutionsTab, setSelectedSolutionsTab] = useState('banking');
   const theme = useMantineTheme();
 
-  const links = mockdata.map((item) => (
+  const links = feature_list.map((item) => (
     <UnstyledButton className={classes.subLink} key={item.title}>
       <Group wrap="nowrap" align="flex-start">
         <ThemeIcon size={34} variant="default" radius="md">
@@ -347,10 +383,10 @@ return (
       <ScrollArea h="calc(100vh - 80px" mx="-md">
         <Divider/>
 
-        <Link href="/" className={classes.link}>
+        <Link href="/" className={classes.link} onClick={closeDrawer}>
           Home
         </Link>
-        <UnstyledButton className={classes.link} onClick={toggleLinks}>
+        <UnstyledButton className={classes.link} onClick={toggleFeatures}>
           <Center inline>
             <Box component="span" mr={5}>
               Features
@@ -358,16 +394,72 @@ return (
             <IconChevronDown size={16} color={theme.colors.blue[6]} />
           </Center>
         </UnstyledButton>
-        <Collapse in={linksOpened}>{links}</Collapse>
-        <Link href="/blogs" className={classes.link}>
+        <Collapse in={featuresOpened}>
+          <Box pl="lg">
+            {feature_list.map((item) => (
+              <Link href={item.url} key={item.title} className={classes.subLink} style={{ textDecoration: 'none' }} onClick={closeDrawer}>
+                <Group wrap="nowrap" align="flex-start">
+                  <ThemeIcon size={34} variant="default" radius="md">
+                    <item.icon size={22} color={theme.colors.blue[6]} />
+                  </ThemeIcon>
+                  <div>
+                    <Text size="sm" fw={500}>{item.title}</Text>
+                    <Text size="xs" c="dimmed">{item.description}</Text>
+                  </div>
+                </Group>
+              </Link>
+            ))}
+          </Box>
+        </Collapse>
+        <UnstyledButton className={classes.link} onClick={toggleSolutions}>
+          <Center inline>
+            <Box component="span" mr={5}>
+              Solutions
+            </Box>
+            <IconChevronDown size={16} color={theme.colors.blue[6]} />
+          </Center>
+        </UnstyledButton>
+        <Collapse in={solutionsOpened}>
+          <Box pl="lg">
+            {solutions_list.map((item) => (
+              <Link href={item.url} key={item.title} className={classes.subLink} style={{ textDecoration: 'none' }} onClick={closeDrawer}>
+                <Group wrap="nowrap" align="flex-start">
+                  <ThemeIcon size={34} variant="default" radius="md">
+                    <item.icon size={22} color={theme.colors.blue[6]} />
+                  </ThemeIcon>
+                  <div>
+                    <Text size="sm" fw={500}>{item.title}</Text>
+                    <Text size="xs" c="dimmed">{item.description}</Text>
+                  </div>
+                </Group>
+              </Link>
+            ))}
+          </Box>
+        </Collapse>
+        <Link href="/blogs" className={classes.link} onClick={closeDrawer}>
           Blog
         </Link>
 
         <Divider my="sm" />
 
         <Group justify="center" grow pb="xl" px="md">
-          <Button variant="default" size="md">Log in</Button>
-          <Button size="md">Sign up</Button>
+          <Button
+            variant="default"
+            size="md"
+            component={Link}
+            href="/contact"
+            onClick={closeDrawer}
+          >
+            Contact Us
+          </Button>
+          <Button
+            size="md"
+            component={Link}
+            href="/demo"
+            onClick={closeDrawer}
+          >
+            Get Demo
+          </Button>
         </Group>
       </ScrollArea>
     </Drawer>
