@@ -1,28 +1,26 @@
----
-title: Terms & Conditions
-date: 2025-09-26
----
+# Terms and Conditions
+#### Last Updated: 2025-09-26
 
-These terms and conditions outline the rules and regulations for the use of October Technologies Private Limited's Website, and all websites operated by docustack including www.docustack.ai and docustack.xyz, hereafter referred as docustack websites.
+These terms and conditions outline the rules and regulations for the use of October Technologies Private Limited's Website, and all websites operated by credstack including www.credstack.ai and credstack.xyz, hereafter referred as credstack websites.
 
-By accessing docustack websites we assume you accept these terms and conditions. Do not continue to use docustack websites if you do not agree to take all of the terms and conditions stated on this page.
+By accessing credstack websites we assume you accept these terms and conditions. Do not continue to use credstack websites if you do not agree to take all of the terms and conditions stated on this page.
 
 ## Terminology
 The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: "Client", "You" and "Your" refers to you, the person log on this website and compliant to the Company's terms and conditions. "The Company", "Ourselves", "We", "Our" and "Us", refers to our Company. "Party", "Parties", or "Us", refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client's needs in respect of provision of the Company's stated services, in accordance with and subject to, prevailing law of in. Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to same.
 
 ## Cookies
-We employ the use of cookies. By accessing docustack websites, you agree to accept cookies in agreement with the October Technologies Private Limited's Privacy Policy.
+We employ the use of cookies. By accessing credstack websites, you agree to accept cookies in agreement with the October Technologies Private Limited's Privacy Policy.
 
 Most interactive websites use cookies to let us retrieve the user's details for each visit. Cookies are used by our website to enable the functionality of certain areas to make it easier for people visiting our website. Some of our affiliate/advertising partners may also use cookies.
 
 ## License
-Unless otherwise stated, October Technologies Private Limited and/or its licensors own the intellectual property rights for all material on docustack websites. All intellectual property rights are reserved. You may access this from docustack websites for your own personal use subjected to restrictions set in these terms and conditions.
+Unless otherwise stated, October Technologies Private Limited and/or its licensors own the intellectual property rights for all material on credstack websites. All intellectual property rights are reserved. You may access this from credstack websites for your own personal use subjected to restrictions set in these terms and conditions.
 
 **You must not:**
-- Republish material from docustack websites
-- Sell, rent or sub-license material from docustack websites
-- Reproduce, duplicate or copy material from docustack websites
-- Redistribute content from docustack websites
+- Republish material from credstack websites
+- Sell, rent or sub-license material from credstack websites
+- Reproduce, duplicate or copy material from credstack websites
+- Redistribute content from credstack websites
 
 This Agreement shall begin on the date hereof.
 
@@ -103,22 +101,22 @@ Notwithstanding anything to the contrary, except for bodily injury of a person, 
 - for any amounts that, together with amounts associated with all other claims, exceed the fees actually paid by customer to service provider for the applicable services under this agreement or relating to any subject matter of this agreement in the 12 months prior to the act that gave rise to the liability, even if the party has been advised of the possibility of any of the foregoing types of losses or damages. Customer acknowledges that an interruption in service(s) due to circumstances beyond the reasonable control of service provider, such as a failure of telecommunications or network systems not controlled by service provider, shall not be considered a service outage or service deficiency for purposes of any remedy provided in this agreement.
 
 ## Third Party Software and Services
-As part of the DocuStack Services, Service Provider may make third party software and services available to Customer. Such third party software and services are governed by their respective terms and conditions, and this Agreement in no way modifies or alters such third party terms and conditions or imposes additional terms and conditions other than those set forth herein. In particular, when using Azure OpenAI or OpenAI third party through the DocuStack Services, the following terms and conditions apply:
+As part of the credstack Services, Service Provider may make third party software and services available to Customer. Such third party software and services are governed by their respective terms and conditions, and this Agreement in no way modifies or alters such third party terms and conditions or imposes additional terms and conditions other than those set forth herein. In particular, when using Azure OpenAI or OpenAI third party through the credstack Services, the following terms and conditions apply:
 
 **a. Explicit Feature Usage**
-DocuStack will only transmit customer data to Azure OpenAI/OpenAI upon explicit usage of generative AI features within the DocuStack platform. This condition reinforces the principle of data minimization and ensures that data is only shared with Azure OpenAI/OpenAI when necessary for the specific purposes of providing the requested generative AI functionalities.
+credstack will only transmit customer data to Azure OpenAI/OpenAI upon explicit usage of generative AI features within the credstack platform. This condition reinforces the principle of data minimization and ensures that data is only shared with Azure OpenAI/OpenAI when necessary for the specific purposes of providing the requested generative AI functionalities.
 
 **b. Training Data Restrictions**
-While using DocuStack's OpenAI/Azure OpenAI key, customer data will not be used to inform or train Azure OpenAI/OpenAI's generative AI model.
+While using credstack's OpenAI/Azure OpenAI key, customer data will not be used to inform or train Azure OpenAI/OpenAI's generative AI model.
 
 ## Refund and Cancellation Policy
-At DocuStack, we strive to provide the best service possible to our valued customers. This Refund Policy outlines the terms and conditions under which refunds will be provided for our services.
+At credstack, we strive to provide the best service possible to our valued customers. This Refund Policy outlines the terms and conditions under which refunds will be provided for our services.
 
 **Monthly Subscriptions**
 If at anytime during your first month using our service you are dissatisfied, please contact us. We will do our best to address your issue, provide a work around or give a timeline for a solution that will meet your needs. If you are not satisfied, we will consider a pro-rated refund or your purchase.
 
 **Annual Subscriptions**
-DocuStack doesn't force you into an annual subscription as a condition to use our services. We prefer to give you the flexibility to choose. In exchange for you signing up for an annual up-front commitment, we offer you a significant discount over the already-low monthly subscription cost. If at anytime during your first 45 days using our service you are dissatisfied, please contact us. We will do our best to address your issue, provide a work around or give a timeline for a solution that will meet your needs. If you are not satisfied, we will gladly offer you a pro-rated refund for your purchase.
+credstack doesn't force you into an annual subscription as a condition to use our services. We prefer to give you the flexibility to choose. In exchange for you signing up for an annual up-front commitment, we offer you a significant discount over the already-low monthly subscription cost. If at anytime during your first 45 days using our service you are dissatisfied, please contact us. We will do our best to address your issue, provide a work around or give a timeline for a solution that will meet your needs. If you are not satisfied, we will gladly offer you a pro-rated refund for your purchase.
 
 We want you to be happy with our service throughout your entire contract, not only the first 30 days (in case of monthly subscription) and the first 45 days (in case of annual subscription). So we go beyond that. If at anytime during your contract we remove, break or discontinue functionality that was available at the time you signed up for our services , we ask you to notify us immediately. If we fail to address the breakage of a functionality within any promised timelines , or if we are unable to provide a satisfactory work around for discontinued functionality, we will offer you a pro-rated refund for the reminder of your contract.
 
@@ -129,7 +127,7 @@ There may be situations where you wish to partially downgrade your annual subscr
 For your convenience, your monthly and yearly subscriptions will auto-renew until you cancel the service. Every time before your subscription auto-renews, we will send a mail specifying the amount that will be charged to your credit card. Similarly, after each renewal we will send you a receipt via e-mail specifying the amount that has been deducted together with the next renewal date and the next renewal amount.
 
 **Exception to our Refund Policy**
-There will be strictly no refund (FULL OR PRO-RATED) in cases where your account is terminated or suspended or blocked by DocuStack for activities that are in violation of our Terms of Service including, but not limited to phishing, impersonation, fraud, and violation of any applicable laws.
+There will be strictly no refund (FULL OR PRO-RATED) in cases where your account is terminated or suspended or blocked by credstack for activities that are in violation of our Terms of Service including, but not limited to phishing, impersonation, fraud, and violation of any applicable laws.
 
 ## Contact Us
 If you have any questions, please contact us at [contact@docustack.ai](mailto:contact@docustack.ai)
