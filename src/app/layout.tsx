@@ -13,7 +13,7 @@ import FooterLinks from "../components/FooterLinks";
 
 export const metadata = {
   title: "CredStack.ai",
-  description: "CredStack - Your trusted partner in document automation and AI solutions",
+  description: "CredStack - AI Agents for due diligencem, underwriting and document automation.",
 };
 
 export default function RootLayout({ children }: { children: any }) {

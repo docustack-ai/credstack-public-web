@@ -10,7 +10,7 @@ const data = [
     title: 'Pages',
     links: [
       { label: 'Home', link: '/' },
-      { label: 'Features', link: '/features' },
+      // { label: 'Features', link: '/features' },
       { label: 'Blog', link: '/blogs' },
       { label: 'Contact', link: '/contact' },
     ],
@@ -19,14 +19,15 @@ const data = [
     title: 'Company',
     links: [
       { label: 'Our Story', link: '/about/our-story' },
-      { label: 'Terms & Conditions', link: '/legal/terms' },
-      { label: 'Privacy Policy', link: '/legal/privacy' },
+      { label: 'Teams', link: '/teams' }
     ],
   },
   {
     title: 'Resources',
     links: [
-      { label: 'Teams', link: '/teams' },
+      
+      { label: 'Terms & Conditions', link: '/legal/terms' },
+      { label: 'Privacy Policy', link: '/legal/privacy' }
     ],
   },
 ];

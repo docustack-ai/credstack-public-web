@@ -17,15 +17,15 @@ const teamMembers = [
         image: '/assets/team/chaitanya.png',
         bio: 'Technology leader with deep expertise in AI/ML, product engineering, and building scalable enterprise-grade platforms.',
         innuendo: 'Rumor has it, he codes faster than AI itself.',
-        linkedin: 'https://www.linkedin.com/in/chaitanya-credstack/'
+        linkedin: 'https://www.linkedin.com/in/chaitanyabhagavan/'
     },
     {
         name: 'Sandeep Sahu',
-        role: 'Head of Sales',
+        role: 'Growth and Partnerships',
         image: '/assets/team/sandeep.png',
         bio: 'Seasoned sales leader who scaled Salesken from 0-to-1 and built high-performing enterprise sales engines.',
         innuendo: 'Can close a deal before finishing his coffee.',
-        linkedin: 'https://www.linkedin.com/in/sandeepsahu/'
+        linkedin: 'https://www.linkedin.com/in/sandeep-sahu-38b966bb/'
     },
     {
         name: 'Sandipan Sapui',
@@ -33,7 +33,7 @@ const teamMembers = [
         image: '/assets/team/sandipan.png',
         bio: 'Growth strategist with extensive experience in BFSI sales and enterprise partnerships. Focused on driving adoption and scaling revenue across key markets.',
         innuendo: 'Sees growth opportunities where others see roadblocks.',
-        linkedin: 'https://www.linkedin.com/in/sandipansapui/'
+        linkedin: 'https://www.linkedin.com/in/sandipan-sapui-206618237/'
     }
 
 ];
