@@ -1,0 +1,35 @@
+.problemCard {
+  border-left: 6px solid #fa5252;
+  background: #fff;
+  max-width: 420px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: var(--mantine-shadow-md);
+  border-radius: var(--mantine-radius-md);
+  padding: var(--mantine-spacing-lg);
+}
+
+.problemTitle {
+  color: #fa5252;
+  font-weight: 800;
+  margin-bottom: 12px;
+  font-size: 28px;
+}
+
+.problemSectionLabel {
+  color: #228be6;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.problemText {
+  margin-bottom: 24px;
+}
+
+.problemImpact {
+  color: #fa5252;
+  margin-top: 16px;
+  font-size: 2rem;
+  font-weight: 600;
+}

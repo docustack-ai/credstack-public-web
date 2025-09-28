@@ -1,0 +1,9 @@
+.cell {
+  transition: box-shadow 0.2s;
+  box-shadow: var(--mantine-shadow-sm);
+  background: #fff;
+}
+
+.cell:hover {
+  box-shadow: var(--mantine-shadow-xl);
+}

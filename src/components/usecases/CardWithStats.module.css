@@ -1,0 +1,20 @@
+.card {
+  background-color: var(--mantine-color-body);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer {
+    display: flex;
+    justify-content: start;
+    gap: calc(var(--mantine-spacing-xl) * 2);
+    padding: var(--mantine-spacing-sm) var(--mantine-spacing-lg);
+    border-top: 1px solid light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-5));
+}
+
+.title {
+  font-family: Outfit, var(--mantine-font-family);
+  font-weight: 500;
+  line-height: 1;
+  font-size: 2rem;
+}
