@@ -88,13 +88,10 @@ export default function SecuritizationUseCase() {
     return (
         <>
             <HeroBullets {...heroProps} />
-            {/* --- CardWithStats Section --- */}
-            <div style={{ margin: '2rem 0' }}>
-                <CardWithStats {...cardWithStatsProps} />
-            </div>
-            {/* --- FeaturesTitle Section --- */}
 
-            <Container size="md" py="xl">
+            <CardWithStats {...cardWithStatsProps} />
+
+            <Container size="xl" >
 
 
                 <Feature02

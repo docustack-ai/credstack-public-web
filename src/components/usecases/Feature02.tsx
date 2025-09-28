@@ -14,7 +14,7 @@ import {
     IconRocket,
     IconTool,
 } from '@tabler/icons-react';
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { ReactNode } from 'react';
 import classes from './index.module.css';
 
