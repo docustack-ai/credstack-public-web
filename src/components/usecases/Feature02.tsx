@@ -54,11 +54,14 @@ const FeatureCell = ({
         >
             <Card radius="lg" p="xl" className={classes.cell} h="100%">
                 <Stack gap="xs">
-                    <Flex w={iconSize} h={iconSize} justify="center" align="center">
+                    {/* <Flex w={iconSize} h={iconSize} justify="center" align="center">
                         {icon}
-                    </Flex>
-                    <Box>
-                        <Text fz="xl">{title}</Text>
+                    </Flex> */}
+                    <Card.Section style={{ height: 50, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        <Text fz="xl" ta="center">{title}</Text>
+                    </Card.Section>
+
+                    <Box pt={10}>
                         <Text fz="md" c="dimmed">
                             {description}
                         </Text>
@@ -68,6 +71,7 @@ const FeatureCell = ({
                             </Text>
                         )}
                     </Box>
+
                 </Stack>
             </Card>
         </motion.div>

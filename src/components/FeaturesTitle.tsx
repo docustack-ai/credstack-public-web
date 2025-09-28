@@ -25,7 +25,7 @@ export function FeaturesTitle({
     features,
     buttonLabel = 'Get started',
     buttonIcon,
-    buttonGradient = { deg: 133, from: 'blue', to: 'cyan' },
+    buttonGradient = { deg: 133, from: 'rgb(28, 126, 214)', to: 'cyan' },
     buttonOnClick,
 }: FeaturesTitleProps) {
     const items = features.map((feature) => {
