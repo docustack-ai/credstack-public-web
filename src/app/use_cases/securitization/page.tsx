@@ -221,7 +221,7 @@ export default function SecuritizationUseCase() {
             <DownloadCTA
                 title="Download Whitepaper"
                 description="Understand how AI can transform underwriting and securitization due diligence for DA and PTC deals."
-                fileUrl="public/assets/docs/CredStack Securitization Brochure.pdf"
+                fileUrl="/assets/docs/CredStack Securitization Brochure.pdf"
                 buttonLabel="Start Download"
             />
 
