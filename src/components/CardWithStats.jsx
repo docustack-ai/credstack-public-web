@@ -24,7 +24,7 @@ function CardWithStats() {
 return (
   <Flex direction="column" align="center">
     <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 0, marginTop: 20 }}>
-      <Button leftSection={<IconFlag size={18} />} variant="light" radius="xl" size="md">
+      <Button variant="light" radius="xl" size="md">
         Why CredStack.ai
       </Button>
     </div>

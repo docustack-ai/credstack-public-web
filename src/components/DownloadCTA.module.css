@@ -1,0 +1,22 @@
+.card {
+  background-color: var(--mantine-color-body);
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+@media (max-width: 755px) {
+  .card {
+    flex-direction: column;
+  }
+}
+
+.title {
+  font-weight: 500;
+  font-family: Outfit, var(--mantine-font-family);
+  line-height: 1.2;
+}
+
+.body {
+  padding: var(--mantine-spacing-md);
+}
