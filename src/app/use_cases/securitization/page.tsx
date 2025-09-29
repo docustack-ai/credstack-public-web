@@ -23,7 +23,8 @@ export default function SecuritizationUseCase() {
                 src: '/assets/page_images/classification.png',
                 alt: 'Classification',
                 w: 400,
-                h: 'auto',
+                h: 300,
+
             },
         },
         {
@@ -35,7 +36,8 @@ export default function SecuritizationUseCase() {
                 src: '/assets/page_images/extraction.png',
                 alt: 'Extraction',
                 w: 400,
-                h: 'auto',
+                h: 300,
+
             },
         },
         {
@@ -48,6 +50,7 @@ export default function SecuritizationUseCase() {
                 alt: 'Validation',
                 w: 400,
                 h: 300,
+
             },
         },
         {
@@ -60,6 +63,7 @@ export default function SecuritizationUseCase() {
                 alt: 'Human in the Loop',
                 w: 400,
                 h: 300,
+
             },
         },
         {
@@ -72,6 +76,7 @@ export default function SecuritizationUseCase() {
                 alt: 'AI Agents for Decisioning',
                 w: 400,
                 h: 300,
+
             },
         },
     ];
@@ -152,46 +157,7 @@ export default function SecuritizationUseCase() {
         }
     };
 
-    const features = [
-        {
-            icon: IconGauge,
-            title: 'Extreme Performance',
-            description: 'AI reviews 100% of your loan pool with 130+ parameter risk checks. No more sampling gaps.'
-        },
-        {
-            icon: IconShield,
-            title: 'Explainable Risk Scoring',
-            description: 'Get audit-ready reasoning for every decision. Transparent documentation for regulators and investors.'
-        },
-        {
-            icon: IconEye,
-            title: 'Continuous Monitoring',
-            description: '24/7 AI-driven monitoring. Detect fraud, duplicates, and borrower stress before they impact returns.'
-        },
-        {
-            icon: IconUser,
-            title: 'Seamless Integration',
-            description: 'Plug directly into your existing LOS/LMS systems with our API-first design.'
-        }
-    ];
 
-    const stats = [
-        { label: '90%', value: 'Improved Loan Pool Coverage' },
-        { label: '80%', value: 'Faster Deal Evaluation' },
-        { label: '5X', value: 'More Accurate Risk Detection' },
-        { label: '70%', value: 'Reduction in Fraud Exposure' },
-    ];
-
-    const cardWithStatsProps = {
-        buttonLabel: "Why credstack.ai for securitization?",
-        title: "AI reviews every loan, not just a sample",
-        subtitle: "CredStack's AI delivers audit-ready, explainable results for every loan in your pool—no more blind spots.",
-        stats: [
-            { title: 'Coverage', value: '100% of Loans' },
-            { title: 'Risk Checks', value: '130+ Parameters' },
-            { title: 'Speed', value: '80% Faster' },
-        ],
-    };
 
 
 
@@ -230,7 +196,7 @@ export default function SecuritizationUseCase() {
                 buttonLabel="See Platform Demo"
             />
 
-            <CardWithStats {...cardWithStatsProps} />
+            {/* <CardWithStats {...cardWithStatsProps} /> */}
 
             <FeaturesCards
                 title="How CredStack Solves This"

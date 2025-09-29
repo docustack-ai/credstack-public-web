@@ -27,12 +27,12 @@ type Feature = {
 
 
 const FeatureCell = ({
-    icon,
+
     title,
     description,
     impact,
     index = 1,
-    iconSize,
+
 }: Feature & {
     index?: number;
     iconSize?: number;

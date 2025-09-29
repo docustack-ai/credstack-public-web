@@ -11,9 +11,9 @@ import {
 } from '@mantine/core';
 import classes from './FeaturesCards.module.css';
 
-export default function FeaturesCards({ featuresData, productName }) {
+export function FeaturesCards({ features, productName }) {
   const theme = useMantineTheme();
-  const features = featuresData.map((feature) => (
+  const featuresList = features.map((feature) => (
     <Card key={feature.title} shadow="md" radius="md" className={classes.card} padding="xl">
       {feature.icon && typeof feature.icon === 'string' ? (
         feature.icon === 'IconGauge' ? <IconGauge size={50} stroke={1.5} color={theme.colors.blue[6]} /> :
@@ -47,7 +47,7 @@ export default function FeaturesCards({ featuresData, productName }) {
       </Text>
 
       <SimpleGrid cols={{ base: 1, md: 3 }} spacing="xl" mt={50}>
-        {features}
+        {featuresList}
       </SimpleGrid>
     </Container>
   );

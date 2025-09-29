@@ -1,15 +1,17 @@
 import { Card, Group, Text, Button, Container } from '@mantine/core';
 import classes from './DownloadCTA.module.css';
 
+interface DownloadCTAProps {
+  title: string;
+  description: string;
+  fileUrl: string;
+  buttonLabel?: string;
+}
+
 /**
  * DownloadCTA - Common component for file download call-to-action
- * @param {Object} props
- * @param {string} props.title - Title for the CTA
- * @param {string} props.description - Description text
- * @param {string} props.fileUrl - URL of the file to download
- * @param {string} [props.buttonLabel] - Button label (default: 'Download')
  */
-export function DownloadCTA({ title, description, fileUrl, buttonLabel = 'Download' }) {
+export function DownloadCTA({ title, description, fileUrl, buttonLabel = 'Download' }: DownloadCTAProps) {
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = fileUrl;

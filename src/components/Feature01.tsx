@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import {
     Accordion,
@@ -13,10 +13,10 @@ import {
     TextProps,
     Title,
     Button,
-} from '@mantine/core';
-import { IconChevronUp } from '@tabler/icons-react';
-import { ReactNode, useState } from 'react';
-import classes from './Feature01.module.css';
+} from "@mantine/core";
+import { IconChevronUp } from "@tabler/icons-react";
+import { ReactNode, useState } from "react";
+import classes from "./Feature01.module.css";
 
 type Item = {
     value: string;
@@ -27,7 +27,7 @@ type Item = {
         src: string;
         alt: string;
         w: number;
-        h: number;
+        h: number | "auto";
     };
 };
 
@@ -47,7 +47,10 @@ export const Feature01 = ({
     radius = 'lg',
 }: FeatureProps) => {
     const [selectedValue, setSelectedValue] = useState<string>(items[0].value);
-    const maxImageHeight = items.reduce((max, item) => Math.max(max, item.image.h), 0);
+    const maxImageHeight = items.reduce<number>((max: number, item: Item) => {
+        if (typeof item.image.h === 'number') return Math.max(max, item.image.h);
+        return max;
+    }, 0);
 
     return (
         <Container
@@ -123,7 +126,8 @@ export const Feature01 = ({
                                         <Image
                                             my="xl"
                                             w="100%"
-                                            h="auto"
+                                            h={item.image.h === 'auto' ? undefined : item.image.h}
+                                            style={item.image.h === 'auto' ? { height: 'auto' } : undefined}
                                             hiddenFrom={collapseBreakpoint}
                                             alt={item.image.alt}
                                             src={item.image.src}
@@ -134,7 +138,7 @@ export const Feature01 = ({
                         </Accordion>
                     </Flex>
                     <Flex visibleFrom={collapseBreakpoint} maw="60%" align="center" h={maxImageHeight}>
-                        {items.map((item) => (
+                        {items.map((item: Item) => (
                             <Flex
                                 key={item.value}
                                 visibleFrom={collapseBreakpoint}
@@ -145,7 +149,13 @@ export const Feature01 = ({
                                     display: selectedValue === item.value ? 'initial' : 'none',
                                 }}
                             >
-                                <Image {...item.image} />
+                                <Image
+                                    src={item.image.src}
+                                    alt={item.image.alt}
+                                    width={item.image.w}
+                                    height={item.image.h === 'auto' ? undefined : item.image.h}
+                                    style={item.image.h === 'auto' ? { height: 'auto' } : undefined}
+                                />
                             </Flex>
                         ))}
                     </Flex>
