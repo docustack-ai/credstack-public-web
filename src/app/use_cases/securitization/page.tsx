@@ -156,6 +156,16 @@ export default function SecuritizationUseCase() {
             window.location.href = '/demo';
         }
     };
+    const cardWithStatsProps = {
+        buttonLabel: "Why credstack.ai for securitization?",
+        title: "AI reviews every loan, not just a sample",
+        subtitle: "CredStack's AI delivers audit-ready, explainable results for every loan in your pool—no more blind spots.",
+        stats: [
+            { title: 'Coverage', value: '100% of Loans' },
+            { title: 'Risk Checks', value: '130+ Parameters' },
+            { title: 'Speed', value: '80% Faster' },
+        ],
+    };
 
 
 
@@ -196,7 +206,7 @@ export default function SecuritizationUseCase() {
                 buttonLabel="See Platform Demo"
             />
 
-            {/* <CardWithStats {...cardWithStatsProps} /> */}
+            <CardWithStats {...cardWithStatsProps} />
 
             <FeaturesCards
                 title="How CredStack Solves This"
