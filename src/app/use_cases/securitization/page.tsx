@@ -141,8 +141,8 @@ export default function SecuritizationUseCase() {
         },
     ];
     const heroProps = {
-        title: 'AI Agentic Due Diligence for Securitization, PTC & DA Deals',
-        description: 'Automate due diligence for ARC transactions, PTC structures, and Direct Assignment deals. Review 100% of your loan pool with explainable AI risk scoring and deliver audit-ready results in hours, not weeks.',
+        title: 'AI Agentic Due Diligence for Securitization',
+        description: 'Automate due diligence for ARC transactions, PTC structures, and Direct Assignment (DA) deals. Review 100% of your loan pool with explainable AI risk scoring and deliver audit-ready results in hours, not weeks.',
         bullets: [
             'Complete Loan Pool Coverage across securitization, PTC, and DA portfolios',
             'AI reviews 100% of your loan pool with 130+ parameter risk checks',

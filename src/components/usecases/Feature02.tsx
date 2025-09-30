@@ -98,9 +98,9 @@ export const Feature02 = ({
         <Container
             bg="var(--mantine-color-body)"
             py={{
-                base: 'calc(var(--mantine-spacing-lg) * 4)',
-                xs: 'calc(var(--mantine-spacing-lg) * 5)',
-                lg: 'calc(var(--mantine-spacing-lg) * 6)',
+                base: 'calc(var(--mantine-spacing-lg) * 1)',
+                xs: 'calc(var(--mantine-spacing-lg) * 1)',
+                lg: 'calc(var(--mantine-spacing-lg) * 1)',
             }}
             fluid
         >
