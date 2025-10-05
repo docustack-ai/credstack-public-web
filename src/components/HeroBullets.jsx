@@ -12,7 +12,7 @@ function HeroBullets() {
     };
 
 return (
-    <Container size="xl">
+    <Container className={classes.root} >
         <div className={classes.inner}>
             <div className={classes.content}>
                 <Title className={classes.title}>
@@ -43,13 +43,18 @@ return (
                     </List.Item>
                 </List>
 
-                <Group mt={30}>
+                
+                <Group mt={20}>
                     <Button size="md" className={classes.control} onClick={handleDemoClick}>
                         Get Started
                     </Button>
                     {/* <Button variant="default"  size="md" className={classes.control}>
                         Source code
                     </Button> */}
+                </Group>
+                <Group mt={30} mb={10} gap={30} >
+                    <Image src="/assets/page_images/soc.jpg" alt="SOC 2 Certified" w={80}  style={{ borderRadius: 8, background: '#fff' }} />
+                    <Image src="/assets/page_images/iso.png" alt="ISO 27001 Certified" w={80}  style={{ borderRadius: 8, background: '#fff' }} />
                 </Group>
             </div>
             <Image src="/assets/approval.png" className={classes.image} alt="Hero image" />
