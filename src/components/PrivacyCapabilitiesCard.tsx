@@ -1,21 +1,22 @@
+
 import { Card, Group, Text, Badge, Flex, Title, Image, Button } from '@mantine/core';
 import { IconCloud, IconScanEye, IconServer, IconEyeCode } from '@tabler/icons-react';
+import classes from './PrivacyCapabilitiesCard.module.css';
 
 /**
  * PrivacyCapabilitiesCard - Highlights privacy deployment options: Cloud and On-Premise
  */
 export function PrivacyCapabilitiesCard() {
     return (
-        <Flex direction="column" align="center" gap="xl" style={{ maxWidth: 1200, margin: '0 auto', padding: '0 150px' }}>
-            <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 0, marginTop: 20 }}>
+        <div className={classes.root}>
+            <div className={classes.buttonRow}>
                 <Button leftSection={<IconEyeCode size={16} />} variant="light" radius="xl" size="md">
                     Privacy & Deployment Options
                 </Button>
             </div>
-
-            <Flex direction={{ base: 'column', sm: 'row' }} gap="lg" justify="space-between" style={{ width: '100%' }}>
+            <div className={classes.optionsRow}>
                 {/* Cloud Capability */}
-                <Card withBorder radius="md" p="md" style={{ flex: 1, minWidth: 220 }}>
+                <Card withBorder radius="md" p="md" className={classes.card}>
                     <Group mb="sm">
                         <IconCloud size={32} color="#228be6" />
                         <Text fw={600}>Cloud</Text>
@@ -24,10 +25,10 @@ export function PrivacyCapabilitiesCard() {
                         <Image
                             src="/assets/page_images/iso_soc.jpeg"
                             height={160}
-                            alt="Norway"
+                            alt="ISO 27001 and SOC 2"
+                            className={classes.certImage}
                         />
                     </Card.Section>
-
                     <Text c="dimmed" size="sm" mb="xs" mt="md">
                         Experience hassle-free deployment with our secure, scalable SaaS platform.<br />
                         Fully managed and continuously updated — compliant with ISO 27001 and SOC 2 standards.
@@ -36,20 +37,19 @@ export function PrivacyCapabilitiesCard() {
                         <Badge color="blue" variant="light">SOC 2</Badge>
                         <Badge color="blue" variant="light">ISO 27001</Badge>
                     </Group>
-
                 </Card>
                 {/* On-Premise Capability */}
-                <Card withBorder radius="md" p="md" style={{ flex: 1, minWidth: 220 }}>
+                <Card withBorder radius="md" p="md" className={classes.card}>
                     <Group mb="sm">
                         <IconServer size={32} color="#40c057" />
                         <Text fw={600}>On-Premise</Text>
                     </Group>
-
                     <Card.Section>
                         <Image
                             src="/assets/page_images/server.webp"
                             height={160}
-                            alt="Norway"
+                            alt="On-Premise Server"
+                            className={classes.certImage}
                         />
                     </Card.Section>
                     <Text c="dimmed" size="sm" mb="xs" mt="md">
@@ -60,8 +60,7 @@ export function PrivacyCapabilitiesCard() {
                         <Badge color="green" variant="light">Self-Hosted</Badge>
                     </Group>
                 </Card>
-            </Flex>
-
-        </Flex>
+            </div>
+        </div>
     );
 }

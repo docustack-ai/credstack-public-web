@@ -1,0 +1,49 @@
+.root {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 1200px) {
+  .root {
+    padding: 0 100px;
+  }
+}   
+
+.buttonRow {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.optionsRow {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: var(--mantine-spacing-lg);
+  justify-content: space-between;
+}
+
+@media (max-width: 900px) {
+  .root {
+    padding: 0 16px;
+  }
+  .optionsRow {
+    flex-direction: column;
+    gap: var(--mantine-spacing-lg);
+  }
+}
+
+.card {
+  flex: 1;
+  min-width: 220px;
+}
+
+.certImage {
+  border-radius: 8px;
+  background: #fff;
+}
