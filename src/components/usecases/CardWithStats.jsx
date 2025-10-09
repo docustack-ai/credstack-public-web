@@ -35,7 +35,7 @@ function CardWithStats({
   ));
 
   return (
-    <Flex direction="column" align="center">
+    <Flex direction="column" align="center" className={classes.root} >
       <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 0, marginTop: 20 }}>
         <Button leftSection={buttonIcon} variant="light" radius="xl" size="md">
           {buttonLabel}
