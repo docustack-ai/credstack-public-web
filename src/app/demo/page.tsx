@@ -1,6 +1,6 @@
 'use client';
 
-import { Button, Group, SimpleGrid, Textarea, TextInput, Title, Paper, Image, List, ThemeIcon, Text, rem } from '@mantine/core';
+import { Button, Group, SimpleGrid, Textarea, TextInput, Title, Paper, Image, List, ThemeIcon, Text, rem, Anchor } from '@mantine/core';
 import { IconCheck } from '@tabler/icons-react';
 import { useForm } from '@mantine/form';
 import { useState } from 'react';
@@ -118,6 +118,17 @@ export default function ContactUs() {
             variant="filled"
             {...form.getInputProps('message')}
           />
+          <Text size="sm" c="dimmed" ta="center" mt="md" style={{ fontSize: rem(12) }}>
+            By submitting this form, you agree to our{' '}
+            <Anchor href="/legal/privacy" target="_blank" style={{ fontSize: rem(12) }} fw={500}>
+              privacy policy
+            </Anchor>
+            {' '}and{' '}
+            <Anchor href="/legal/terms" target="_blank" style={{ fontSize: rem(12) }} fw={500}>
+              terms of use
+            </Anchor>
+            .
+          </Text>
           <Group justify="center" mt="xl">
             <Button type="submit" size="md" loading={loading} disabled={loading}>
               Send message
