@@ -32,3 +32,12 @@
   border-radius: 8px;
   margin-bottom: 2rem;
 }
+
+/* BlogPage.module.css */
+.title {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: bold;
+  text-align: left;
+  margin: 20px 0;
+}

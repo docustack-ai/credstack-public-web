@@ -7,9 +7,14 @@ import {
   mantineHtmlProps,
   Box,
 } from "@mantine/core";
-import { theme } from "../theme";
+import { shadcnTheme } from "../theme.ts";
+import "../style.css"
+import { GeistSans } from 'geist/font/sans';
+
+
 import HeaderMegaMenu from "../components/HeaderMegaMenu";
 import FooterLinks from "../components/FooterLinks";
+import { shadcnCssVariableResolver } from "../cssVariableResolver.ts";
 
 export const metadata = {
   title: "CredStack.ai",
@@ -18,7 +23,7 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: any }) {
   return (
-    <html lang="en" {...mantineHtmlProps}>
+    <html lang="en" {...mantineHtmlProps} className={GeistSans.className}>
       <head>
         <ColorSchemeScript />
         <link rel="icon" type="image/png" href="/favicon-light.png" media="(prefers-color-scheme: light)" />
@@ -32,7 +37,10 @@ export default function RootLayout({ children }: { children: any }) {
 
       </head>
       <body className={styles["body-margin"]}>
-        <MantineProvider theme={theme}>
+        <MantineProvider
+          theme={shadcnTheme}
+          cssVariablesResolver={shadcnCssVariableResolver}
+        >
           <Box className={styles["layout-root"]}>
             <HeaderMegaMenu />
             <Box className={styles["layout-content"]}>

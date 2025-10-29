@@ -21,18 +21,19 @@ export default function ArticleCard({
   const theme = useMantineTheme();
 
   return (
-    <Card withBorder radius="md" className={classes.card}>
+    <Card withBorder radius="md" className={classes.card} m={0} p={0}>
       <Card.Section>
         <Image src={image} height={180} alt={title} />
       </Card.Section>
+    
 
       <Badge className={classes.rating} variant="gradient" gradient={{ from: 'yellow', to: 'red' }}>
         outstanding
       </Badge>
-
-      <Text className={classes.title} fw={500}>
-        {title}
-      </Text>
+      <div style={{ padding: '1rem' }}>
+        <Text className={classes.title} fw={500}>
+          {title}
+        </Text>
 
       <Text fz="sm" c="dimmed" lineClamp={4}>
         {excerpt}
@@ -63,6 +64,7 @@ export default function ArticleCard({
           </ActionIcon>
         </Group>
       </Group>
+      </div>
     </Card>
   );
 }

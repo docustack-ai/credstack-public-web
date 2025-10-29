@@ -1,6 +1,6 @@
 .body-margin {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 @media (max-width: 767px) {
@@ -12,13 +12,13 @@
 
 .layout-root {
   min-height: 100vh;
-  display: flex;
+  width: 100%;
   flex-direction: column;
 }
 
 .layout-content {
   flex: 1;
-  width: 100%;
+  width: 100vw;
 }
 
 @media (max-width: 767px) {

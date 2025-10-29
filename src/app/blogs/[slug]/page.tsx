@@ -34,7 +34,7 @@ export default function BlogPage() {
       <div className={classes.topBar}>
         <Link href="/blogs" className={classes.backButton}>&larr; Back to all blogs</Link>
       </div>
-      <h1>{blog.title}</h1>
+      <h1 className={classes.title}>{blog.title}</h1>
       <div className={classes.meta}>
         <span>{blog.author}</span> | <span>{blog.date}</span>
       </div>

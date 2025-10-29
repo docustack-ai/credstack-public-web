@@ -1,10 +1,10 @@
-import { Card, Group, Image, RingProgress, Text, Badge, Button, Flex } from '@mantine/core';
+import { Card, Group, Image, RingProgress, Text, Badge, Button, Flex, Container } from '@mantine/core';
 import classes from './CardWithStats.module.css';
 import { IconFlag} from '@tabler/icons-react';
 
 
 const stats = [
-    { title: 'Accuracy', value: '99.5% +' },
+    { title: 'Accuracy', value: '97% +' },
     { title: 'Checkpoints', value: '130+' },
     { title: 'Decisions Taken', value: '1,60,00,000+' },
 ];
@@ -22,13 +22,16 @@ function CardWithStats() {
   ));
 
 return (
+  <Container fluid style={{ border: '1px solid rgb(228, 224, 217)', backgroundColor:'rgb(249, 246, 241)' }}>
+        <Container fluid p={20} style={{ border: '1px solid rgb(228, 224, 217)', maxWidth: '1200px', backgroundColor: 'white' }}>
+          
   <Flex direction="column" align="center">
-    <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 0, marginTop: 20 }}>
+    <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 20, marginTop: 20 }}>
       <Button variant="light" radius="xl" size="md">
         Why CredStack.ai
       </Button>
     </div>
-    <Card w="100%" radius="md" className={classes.card}>
+    <Card w="100%" radius="md" className={classes.card} shadow='sm'>
       <Group justify="left" mt="lg">
         <Text className={classes.title}>Unmatched accuracy in document extraction, risk evaluation and decisioning</Text>
       </Group>
@@ -48,6 +51,8 @@ return (
       </Card.Section>
     </Card>
   </Flex>
+  </Container>
+  </Container>
 );
 }
 
