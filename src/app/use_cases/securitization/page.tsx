@@ -1,6 +1,6 @@
 
 "use client";
-import { Container, Title, Text, Button, SimpleGrid, ThemeIcon, Group, Paper } from '@mantine/core';
+import { Container, Title, Text, Button, SimpleGrid, ThemeIcon, Group, Paper, Box } from '@mantine/core';
 import HeroBullets from '../../../components/usecases/HeroBullets.jsx';
 import { FeaturesTitle } from '../../../components/FeaturesTitle';
 import { DownloadCTA } from '../../../components/DownloadCTA';
@@ -172,15 +172,21 @@ export default function SecuritizationUseCase() {
 
 
     return (
-        <>
+
+        <Box>
             <HeroBullets {...heroProps} />
+
+
+
+
+
             <Feature02
                 buttonLabel="Why These Problems Matter"
                 iconSize={40}
                 features={[
                     {
                         icon: <span style={{ fontSize: 32 }}>⏰</span>,
-                        title: 'Deals Are Slipping Away',
+                        title: 'Deal Are Slipping Away',
                         description: 'While your team spends 3-4 weeks manually reviewing loan pools, competitors with faster processes are winning the deals you should be closing.',
                         impact: '3-4 deals lost',
                     },
@@ -198,6 +204,7 @@ export default function SecuritizationUseCase() {
                     },
                 ]}
             />
+
 
             <FeaturesTitle
                 title={solvedTitle}
@@ -224,8 +231,10 @@ export default function SecuritizationUseCase() {
                 fileUrl="/assets/docs/CredStack Securitization Brochure.pdf"
                 buttonLabel="Start Download"
             />
+        </Box>
 
 
-        </>
+
+
     );
 }

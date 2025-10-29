@@ -68,7 +68,7 @@ font-size: larger;
 .title {
   font-size: 1.1rem;
   font-weight: 500;
-  font-family: Outfit, var(--mantine-font-family);
+  
   margin-bottom: 8px;
   color: #222;
 }

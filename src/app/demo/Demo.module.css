@@ -8,15 +8,11 @@
 }
 
 .title {
-  font-family: 'Outfit', var(--mantine-font-family);
   font-weight: 900;
   margin-bottom: 24px;
 }
 
-.form input,
-.form textarea {
-  font-family: 'Outfit', var(--mantine-font-family);
-}
+
 
 @media (max-width: 600px) {
   .form {
