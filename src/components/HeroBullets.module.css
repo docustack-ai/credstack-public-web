@@ -1,7 +1,11 @@
+/* Updated the .root class to ensure the background color spans the entire width */
 .root {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100%; /* Ensures the element spans the entire viewport width */
+  background-color: rgb(249, 246, 241);
+  overflow-x: hidden; /* Prevents horizontal scrolling caused by 100vw */
+  margin: 0;
+  border: 1px solid rgb(228, 224, 217);
+  box-sizing: border-box;
 }
 
 @media (min-width: 1200px) {
@@ -28,9 +32,9 @@
 .title {
   color: #222;
   
-  font-size: 44px;
+  font-size: 50px;
   line-height: 1.5;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .control {

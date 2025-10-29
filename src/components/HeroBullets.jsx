@@ -1,5 +1,5 @@
 import { IconCheck } from '@tabler/icons-react';
-import { Button, Container, Group, Image, List, Text, ThemeIcon, Title, Flex } from '@mantine/core';
+import { Button, Container, Group, Image, List, Text, ThemeIcon, Title, Flex, Paper, SimpleGrid, px } from '@mantine/core';
 import { useRouter } from 'next/navigation';
 // import image from '../assets/hero_image.png';
 import classes from './HeroBullets.module.css';
@@ -12,14 +12,18 @@ function HeroBullets() {
     };
 
 return (
-    <Container className={classes.root} >
-        <div className={classes.inner}>
+    <Container fluid className={classes.root} >
+        <Container fluid p={0} style={{border: '1px solid rgb(228, 224, 217)', maxWidth: '1200px' }}>
+            <Paper  p={0} radius="xl" shadow="sm" style={{ overflow: 'hidden', background: 'linear-gradient(135deg, #f8fafc 60%, #e0e7ff 100%)' }}>
+              <SimpleGrid cols={{ base: 1, md: 5 }} spacing={0}>
+        
+        <div className={classes.inner} style={{gridColumn: 'span 3'}}>
             <div className={classes.content}>
                 <Title className={classes.title}>
-                    AI Agents for <span className={classes.highlight}>due diligence & underwriting</span>
+                    Due diligence and Risk Intelligence Platform 
                 </Title>
                 <Text c="dimmed" mt="md">
-                    Automate document-heavy underwriting, due-dilligence checks, and onboarding with an LLM-powered workflow builder.
+                    AI Agents for automating document-heavy underwriting, due-diligence checks, and onboarding with an LLM-powered workflow builder.
                 </Text>
 
                 <List
@@ -35,7 +39,7 @@ return (
                     <List.Item>
                         <b>Explainable by design</b> — every flag and approval comes with a traceable rationale
                     </List.Item>
-                    <List.Item>
+                    <List.Item> 
                         <b>130+ parameters</b> — credit, legal, operational, and technical checks out-of-the-box
                     </List.Item>
                     <List.Item>
@@ -45,7 +49,7 @@ return (
 
                 
                 <Group mt={20}>
-                    <Button size="md" className={classes.control} onClick={handleDemoClick}>
+                    <Button size="sm" className={classes.control} onClick={handleDemoClick}>
                         Get Started
                     </Button>
                     {/* <Button variant="default"  size="md" className={classes.control}>
@@ -57,8 +61,16 @@ return (
                     <Image src="/assets/page_images/iso.png" alt="ISO 27001 Certified" w={80}  style={{ borderRadius: 8, background: '#fff' }} />
                 </Group>
             </div>
-            <Image src="/assets/approval.png" className={classes.image} alt="Hero image" />
+            
         </div>
+        <div style={{gridColumn: 'span 2', justifyContent: 'center', alignItems: 'center', display: 'flex'}}>
+            <Container justify="center" align="center" style={{ display: 'flex', padding: px(20) }}>
+                <Image src="/assets/page_images/hero_1.png" className={classes.image} alt="Hero image" />
+            </Container>
+        </div>
+        </SimpleGrid>
+        </Paper>
+        </Container>
     </Container>
 );
 }

@@ -217,7 +217,7 @@ return (
                       Their food sources have decreased, and their numbers
                     </Text>
                   </div>
-                  <Button variant="default" size="md">Get started</Button>
+                  <Button size="sm" variant="default">Get started</Button>
                 </Group>
               </div>
             </HoverCard.Dropdown>
@@ -336,7 +336,7 @@ return (
 
             <Group visibleFrom="sm">
               <Button
-              size="md"
+              size="sm"
               component={Link}
               href="/demo"
               >
