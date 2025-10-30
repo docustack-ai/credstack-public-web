@@ -250,66 +250,68 @@ return (
                 const navTabs = [
                 { title: 'Banking', key: 'banking', icon: IconCoin },
                 { title: 'Insurance', key: 'insurance', icon: IconFingerprint },
-                { title: 'Legal', key: 'legal', icon: IconBook },
+                // { title: 'Legal', key: 'legal', icon: IconBook },
                 ];
+                // Replace your existing solutionsData with this (add url fields)
                 const solutionsData = {
-                banking: [
-                  { icon: IconChartPie3, title: 'Co-Lending', description: 'AI-driven co-lending platform for banks and NBFCs' },
-                  { icon: IconNotification, title: 'Onboarding', description: 'Streamline customer onboarding and KYC for banks.' },
-                  { icon: IconCode, title: 'Securitization', description: 'Digitize and manage asset-backed securities.' },
-                ],
-                insurance: [
-                  { icon: IconChartPie3, title: 'Underwriting', description: 'AI-powered underwriting for insurance risk analysis.' },
-                  { icon: IconNotification, title: 'Onboarding', description: 'Automate policyholder onboarding and verification.' },
-                ],
-                legal: [
-                  { icon: IconBook, title: 'Drafting', description: 'Generate legal documents and contracts efficiently.' },
-                  { icon: IconFingerprint, title: 'Compliance', description: 'Ensure regulatory compliance and audit readiness.' },
-                ],
+                  banking: [
+                    { icon: IconChartPie3, title: 'Co-Lending', description: 'AI-driven co-lending platform for banks and NBFCs', url: '/use_cases/co_lending' },
+                    { icon: IconNotification, title: 'Onboarding', description: 'Streamline customer onboarding and KYC for banks.', url: '/solutions/banking-onboarding' },
+                    { icon: IconCode, title: 'Securitization', description: 'Digitize and manage asset-backed securities.', url: '/use_cases/securitization' },
+                  ],
+                  insurance: [
+                    { icon: IconChartPie3, title: 'Underwriting', description: 'AI-powered underwriting for insurance risk analysis.', url: '/solutions/insurance-underwriting' },
+                    { icon: IconNotification, title: 'Onboarding', description: 'Automate policyholder onboarding and verification.', url: '' },
+                  ],
+                  // legal: [
+                  //   { icon: IconBook, title: 'Drafting', description: 'Generate legal documents and contracts efficiently.', url: '/solutions/legal-drafting' },
+                  //   { icon: IconFingerprint, title: 'Compliance', description: 'Ensure regulatory compliance and audit readiness.', url: '/solutions/legal-compliance' },
+                  // ],
                 };
+
                 return (
-                <Tabs variant="outline" orientation="vertical" defaultValue="banking" value={selectedSolutionsTab} onChange={setSelectedSolutionsTab} style={{ display: 'flex' }}>
-                  <Tabs.List>
-                  {navTabs.map(tab => (
-                    <Tabs.Tab key={tab.key} value={tab.key} leftSection={<tab.icon size={16} />}>
-                    {tab.title}
-                    </Tabs.Tab>
-                  ))}
-                  </Tabs.List>
-                  {navTabs.map(tab => (
-                  <Tabs.Panel key={tab.key} value={tab.key} style={{ flex: 1, paddingLeft: 24 }}>
-                    <SimpleGrid cols={2} spacing={0}>
-                    {solutionsData[tab.key].map(item => (
-                      item.title === 'Securitization' ? (
-                        <Link href="/use_cases/securitization" key={item.title} className={classes.subLink} style={{ textDecoration: 'none' }}>
-                          <Group wrap="nowrap" align="flex-start">
-                            <ThemeIcon size={34} variant="default" radius="md">
-                              <item.icon size={22} color={theme.colors.blue[6]} />
-                            </ThemeIcon>
-                            <div>
-                              <Text size="sm" fw={500}>{item.title}</Text>
-                              <Text size="xs" c="dimmed">{item.description}</Text>
-                            </div>
-                          </Group>
-                        </Link>
-                      ) : (
-                        <UnstyledButton className={classes.subLink} key={item.title}>
-                          <Group wrap="nowrap" align="flex-start">
-                            <ThemeIcon size={34} variant="default" radius="md">
-                              <item.icon size={22} color={theme.colors.blue[6]} />
-                            </ThemeIcon>
-                            <div>
-                              <Text size="sm" fw={500}>{item.title}</Text>
-                              <Text size="xs" c="dimmed">{item.description}</Text>
-                            </div>
-                          </Group>
-                        </UnstyledButton>
-                      )
-                    ))}
-                    </SimpleGrid>
-                  </Tabs.Panel>
-                  ))}
-                </Tabs>
+                <Tabs
+    variant="outline"
+    orientation="vertical"
+    defaultValue="banking"
+    value={selectedSolutionsTab}
+    onChange={setSelectedSolutionsTab}
+    style={{ display: 'flex' }}
+  >
+    <Tabs.List>
+      {navTabs.map((tab) => (
+        <Tabs.Tab key={tab.key} value={tab.key} leftSection={<tab.icon size={16} />}>
+          {tab.title}
+        </Tabs.Tab>
+      ))}
+    </Tabs.List>
+
+    {navTabs.map((tab) => (
+      <Tabs.Panel key={tab.key} value={tab.key} style={{ flex: 1, paddingLeft: 24 }}>
+        <SimpleGrid cols={2} spacing={0}>
+          {solutionsData[tab.key].map((item) => (
+            // Use Link so every item navigates. Using Link keeps Next.js client routing.
+            <Link
+              href={item.url}
+              key={item.title}
+              className={classes.subLink}
+              style={{ textDecoration: 'none' }}
+            >
+              <Group wrap="nowrap" align="flex-start">
+                <ThemeIcon size={34} variant="default" radius="md">
+                  <item.icon size={22} color={theme.colors.blue[6]} />
+                </ThemeIcon>
+                <div>
+                  <Text size="sm" fw={500}>{item.title}</Text>
+                  <Text size="xs" c="dimmed">{item.description}</Text>
+                </div>
+              </Group>
+            </Link>
+          ))}
+        </SimpleGrid>
+      </Tabs.Panel>
+    ))}
+  </Tabs>
                 );
                 })()}
                 <div className={classes.dropdownFooter}>

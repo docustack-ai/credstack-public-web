@@ -1,6 +1,6 @@
 // src/components/FeaturesCards.tsx
 import React from 'react';
-import { Badge, Card, Container, Group, SimpleGrid, Text, Title, Button } from '@mantine/core';
+import { Card, Container, Group, SimpleGrid, Text, Title, Button } from '@mantine/core';
 import classes from './FeaturesCards.module.css';
 import StyledContainer from './StyledContainer';
 
