@@ -59,7 +59,7 @@ export default function ContactUs() {
         {/* Left: Image & USPs */}
         <div style={{ background: 'linear-gradient(120deg, #e0e7ff 60%, #f8fafc 100%)', padding: '48px 32px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: 520 }}>
           <Image src="/assets/facetime-meeting.png" alt="Demo" radius="md" w={260} mb="lg" style={{ boxShadow: '0 4px 32px rgba(254, 254, 254, 0.08)' }} />
-          <Title order={2} size="h1" style={{ fontWeight: 900, textAlign: 'center', marginBottom: rem(12) }}>
+          <Title order={1} size="xl" style={{ fontWeight: 600, textAlign: 'center', marginBottom: rem(12) }}>
             Request a Demo
           </Title>
           <Text c="dimmed" ta="center" mb="md" style={{ fontSize: rem(18) }}>

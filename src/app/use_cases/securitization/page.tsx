@@ -10,7 +10,7 @@ import { Feature02 } from '../../../components/usecases/Feature02';
 import CardWithStats from '../../../components/usecases/CardWithStats.jsx';
 import { IconGauge, IconUser, IconShield, IconEye, IconBan, IconRobot, IconChartBar, IconMasksTheater } from '@tabler/icons-react';
 import { FeaturesCards } from '../../../components/FeaturesCards';
-import ApplicationFeatureCard from "../../../components/ApplicationFeatureCard.jsx";
+
 import { Feature01 } from '../../../components/Feature01';
 export default function SecuritizationUseCase() {
     // Implementation steps for Feature01
@@ -151,7 +151,7 @@ export default function SecuritizationUseCase() {
             'Continuous monitoring for fraud, duplicates, and borrower stress across loan pools',
             'Seamless API integration with your LOS/LMS systems',
         ],
-        image: '/assets/approval.png',
+        image: '/assets/page_images/secure_1.png',
         buttonLabel: 'Get 100% Coverage Today',
         onButtonClick: () => {
             window.location.href = '/demo';

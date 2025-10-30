@@ -10,7 +10,7 @@
 
 .content {
   max-width: 600px;
-  margin-right: calc(var(--mantine-spacing-xl) * 3);
+  margin-right: calc(var(--mantine-spacing-xl) * 1);
 }
 
 .title {
@@ -26,8 +26,7 @@
 }
 
 .image {
-  width: 376px;
-  height: 356px;
+  max-width: 400px;
   object-fit: contain;
 }
 
