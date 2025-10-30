@@ -3,6 +3,7 @@ import { Button, Container, Group, Image, List, Text, ThemeIcon, Title, Flex, Pa
 import { useRouter } from 'next/navigation';
 // import image from '../assets/hero_image.png';
 import classes from './HeroBullets.module.css';
+import StyledContainer from './StyledContainer';
 
 
 function HeroBullets() {
@@ -12,15 +13,15 @@ function HeroBullets() {
     };
 
 return (
-    <Container fluid className={classes.root} >
-        <Container fluid p={0} style={{border: '1px solid rgb(228, 224, 217)', maxWidth: '1200px' }}>
+    <StyledContainer>
+        
             <Paper  p={0} radius="xl" shadow="sm" style={{ overflow: 'hidden', background: 'linear-gradient(135deg, #f8fafc 60%, #e0e7ff 100%)' }}>
               <SimpleGrid cols={{ base: 1, md: 5 }} spacing={0}>
         
         <div className={classes.inner} style={{gridColumn: 'span 3'}}>
             <div className={classes.content}>
                 <Title className={classes.title}>
-                    Due diligence and Risk Intelligence Platform 
+                    Due Diligence and Risk Intelligence Platform 
                 </Title>
                 <Text c="dimmed" mt="md">
                     AI Agents for automating document-heavy underwriting, due-diligence checks, and onboarding with an LLM-powered workflow builder.
@@ -70,8 +71,7 @@ return (
         </div>
         </SimpleGrid>
         </Paper>
-        </Container>
-    </Container>
+        </StyledContainer>
 );
 }
 

@@ -3,6 +3,7 @@ import { Button, Container, Group, Image, List, Text, ThemeIcon, Title, Flex } f
 import { useRouter } from 'next/navigation';
 // import image from '../assets/hero_image.png';
 import classes from './HeroBullets.module.css';
+import StyledContainer from '../StyledContainer';
 
 
 /**
@@ -34,6 +35,7 @@ function HeroBullets({
     };
 
     return (
+        <StyledContainer>
         <Container size="xl">
             <div className={classes.inner}>
                 <div className={classes.content}>
@@ -63,7 +65,7 @@ function HeroBullets({
                     )}
 
                     <Group mt={30}>
-                        <Button size="md" className={classes.control} onClick={handleClick}>
+                        <Button size="sm" className={classes.control} onClick={handleClick}>
                             {buttonLabel}
                         </Button>
                     </Group>
@@ -71,6 +73,7 @@ function HeroBullets({
                 <Image src={image} className={classes.image} alt="Hero image" />
             </div>
         </Container>
+        </StyledContainer>
     );
 }
 

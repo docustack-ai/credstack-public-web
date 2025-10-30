@@ -1,6 +1,6 @@
 import { Card, Group, Image, RingProgress, Text, Badge, Button, Flex, Container } from '@mantine/core';
 import classes from './CardWithStats.module.css';
-import { IconFlag} from '@tabler/icons-react';
+import StyledContainer from './StyledContainer';
 
 
 const stats = [
@@ -22,8 +22,7 @@ function CardWithStats() {
   ));
 
 return (
-  <Container fluid style={{ border: '1px solid rgb(228, 224, 217)', backgroundColor:'rgb(249, 246, 241)' }}>
-        <Container fluid p={20} style={{ border: '1px solid rgb(228, 224, 217)', maxWidth: '1200px', backgroundColor: 'white' }}>
+  <StyledContainer>
           
   <Flex direction="column" align="center">
     <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 20, marginTop: 20 }}>
@@ -31,7 +30,7 @@ return (
         Why CredStack.ai
       </Button>
     </div>
-    <Card w="100%" radius="md" className={classes.card} shadow='sm'>
+    <Card w="100%" radius="md" className={classes.card} shadow='sm' mb="md">
       <Group justify="left" mt="lg">
         <Text className={classes.title}>Unmatched accuracy in document extraction, risk evaluation and decisioning</Text>
       </Group>
@@ -51,8 +50,7 @@ return (
       </Card.Section>
     </Card>
   </Flex>
-  </Container>
-  </Container>
+  </StyledContainer>
 );
 }
 

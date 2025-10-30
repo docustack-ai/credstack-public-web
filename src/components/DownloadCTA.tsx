@@ -1,5 +1,7 @@
 import { Card, Group, Text, Button, Container } from '@mantine/core';
 import classes from './DownloadCTA.module.css';
+import StyledContainer from './StyledContainer';
+
 
 interface DownloadCTAProps {
   title: string;
@@ -22,13 +24,16 @@ export function DownloadCTA({ title, description, fileUrl, buttonLabel = 'Downlo
   };
 
   return (
-    <Container size="md" my="xl">
-      <Card withBorder radius="md" p={0} className={classes.card} >
+
+    <StyledContainer>
+
+
+      <Card radius="md" pl={30} className={classes.card} >
         <div className={classes.body}>
           <Text className={classes.title} mt="xs" mb="md">
             {title}
           </Text>
-          <Text c="dimmed" mb="md">
+          <Text c="dimmed" mb="md" className={classes.description}>
             {description}
           </Text>
           <Group>
@@ -36,6 +41,7 @@ export function DownloadCTA({ title, description, fileUrl, buttonLabel = 'Downlo
           </Group>
         </div>
       </Card>
-    </Container>
+
+    </StyledContainer>
   );
 }

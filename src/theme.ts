@@ -106,7 +106,11 @@ export const shadcnTheme: MantineThemeOverride = createTheme({
     success: greenColors,
     info: blueColors,
     warning: amberColors,
+
   },
+  
+  
+
   focusRing: "never",
   scale: 1,
   primaryColor: "primary",
@@ -190,6 +194,10 @@ export const shadcnTheme: MantineThemeOverride = createTheme({
   cursorType: "pointer",
   other: {
     style: "shadcn",
+    userDefinedColors: {
+    background: 'rgb(249, 246, 241)',
+    border: 'rgb(228, 224, 217)',
+  },
   },
   components: {
     Container: Container.extend({

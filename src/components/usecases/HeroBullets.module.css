@@ -16,9 +16,9 @@
 .title {
   color: #222;
   
-  font-size: 44px;
+  font-size: 50px;
   line-height: 1.5;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .control {
@@ -53,6 +53,6 @@
     padding: 16px 8px;
   }
   .title {
-    font-size: 28px;
+    font-size: 40px;
   }
 }

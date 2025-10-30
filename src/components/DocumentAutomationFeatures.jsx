@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Box, Group, Text, Title, Button, Divider, Image, Card , Container} from '@mantine/core';
 import { IconFlag, IconRefresh, IconFileText, IconSparkles, IconUser, IconClock, IconEye } from '@tabler/icons-react';
 import classes from './DocumentAutomationFeatures.module.css';
+import StyledContainer from './StyledContainer';
 
 const features = [
   {
@@ -68,12 +69,12 @@ const unsplashImages = [
 ];
 
 return (
-    <Container fluid style={{ border: '1px solid rgb(228, 224, 217)', backgroundColor:'rgb(249, 246, 241)' }}>
-            <Container fluid p={20} style={{ border: '1px solid rgb(228, 224, 217)', maxWidth: '1200px', backgroundColor: 'white' }}>
+    <StyledContainer>
+            
     <Box className={classes.section}>
         <Box className={classes.header}>
-            <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 0, marginTop: 20 }}>
-                <Button leftSection={<IconFlag size={18} />} variant="light" radius="xl" size="md">
+            <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 0, marginTop: 0 }}>
+                <Button leftSection={<IconFlag size={18} />} variant="light" radius="xl" size="md" mt="md">
                     Key Features
                 </Button>
             </div>
@@ -143,8 +144,7 @@ return (
             </Card>
         </Group>
     </Box>
-    </Container>
-    </Container>
+    </StyledContainer>
   );
 }
 

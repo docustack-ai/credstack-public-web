@@ -1,22 +1,9 @@
 'use client';
 
-import { JumboTitle } from './JumboTitle';
-import { Box, Card, Container, Flex, Grid, Stack, Text } from '@mantine/core';
+import { Box, Card, Container, Flex, Grid, Stack, Text, SimpleGrid } from '@mantine/core';
 import { Button } from '@mantine/core';
-import {
-    IconBook,
-    IconBrandTypescript,
-    IconComponents,
-    IconDevices,
-    IconKeyframes,
-    IconMasksTheater,
-    IconMoon,
-    IconRocket,
-    IconTool,
-} from '@tabler/icons-react';
-import { motion } from 'framer-motion';
 import { ReactNode } from 'react';
-import classes from './index.module.css';
+import StyledContainer from '../StyledContainer';
 
 type Feature = {
     icon: ReactNode;
@@ -26,57 +13,6 @@ type Feature = {
 };
 
 
-const FeatureCell = ({
-
-    title,
-    description,
-    impact,
-    index = 1,
-
-}: Feature & {
-    index?: number;
-    iconSize?: number;
-}) => (
-    <motion.div
-        initial={{ opacity: 0.0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 * index, ease: 'easeInOut' }}
-        viewport={{ once: true }}
-        style={{ height: '100%' }}
-    >
-        <motion.div
-            whileHover={{ scale: 1.05, boxShadow: 'var(--mantine-shadow-xl)' }}
-            transition={{ type: 'spring' }}
-            style={{
-                borderRadius: 'var(--mantine-radius-lg)',
-                height: '100%',
-            }}
-        >
-            <Card radius="lg" p="xl" className={classes.cell} h="100%">
-                <Stack gap="xs">
-                    {/* <Flex w={iconSize} h={iconSize} justify="center" align="center">
-                        {icon}
-                    </Flex> */}
-                    <Card.Section style={{ height: 50, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                        <Text fz="xl" ta="center">{title}</Text>
-                    </Card.Section>
-
-                    <Box pt={10}>
-                        <Text fz="md" c="dimmed">
-                            {description}
-                        </Text>
-                        {impact && (
-                            <Text fz={20} fw={600} ta="center" mt={16} style={{ color: '#fa5252' }}>
-                                {impact}
-                            </Text>
-                        )}
-                    </Box>
-
-                </Stack>
-            </Card>
-        </motion.div>
-    </motion.div>
-);
 
 type Feature02Props = {
     title?: string;
@@ -95,41 +31,55 @@ export const Feature02 = ({
     buttonIcon,
 }: Feature02Props) => {
     return (
-        <Container
-            bg="var(--mantine-color-body)"
-            py={{
-                base: 'calc(var(--mantine-spacing-lg) * 1)',
-                xs: 'calc(var(--mantine-spacing-lg) * 1)',
-                lg: 'calc(var(--mantine-spacing-lg) * 1)',
-            }}
-            fluid
-        >
-            <Container size="lg" px={0}>
+
+        <StyledContainer>
+            <Container size="lg" p={0} >
                 {buttonLabel && (
-                    <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 0, marginTop: 20 }}>
+                    <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 20, paddingTop: 20 }}>
                         <Button leftSection={buttonIcon ?? null} variant="light" radius="xl" size="md">
                             {buttonLabel}
                         </Button>
                     </div>
                 )}
             </Container>
-            <Container size="lg" p={0} mt="xl">
-                <Grid gutter="xl">
-                    {features.map((feature, index) => (
-                        <Grid.Col key={feature.title} span={{ base: 12, xs: 6, md: 4 }} mih="100%">
-                            <FeatureCell
-                                key={feature.title}
-                                icon={feature.icon}
-                                title={feature.title}
-                                description={feature.description}
-                                impact={feature.impact}
-                                index={index}
-                                iconSize={iconSize}
-                            />
-                        </Grid.Col>
-                    ))}
-                </Grid>
-            </Container>
-        </Container>
+            <SimpleGrid cols={{ base: 1, md: 2, lg: 3 }} spacing="lg" style={{ borderTop: '1px solid ${theme.other.userDefinedColors.border}' }}>
+                {(features.length ? features.slice(0, 3) : [
+                    { title: 'Heading 1', description: 'Sample text for column 1.', impact: '+10%' },
+                    { title: 'Heading 2', description: 'Sample text for column 2.', impact: '+25%' },
+                    { title: 'Heading 3', description: 'Sample text for column 3.', impact: '+40%' },
+                ]).map((f, i) => (
+                    <Box
+                        key={`${f.title}-${i}`}
+                        style={{
+                            flex: 1,
+                            padding: 20,
+                            borderLeft: i === 0 ? 'none' : '1px solid rgba(0,0,0,0.08)',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            minHeight: 140,
+                        }}
+                    >
+                        <Text fz="lg" fw={700} ta="center" mb={8}>
+                            {f.title}
+                        </Text>
+                        <Text c="dimmed" ta="center">
+                            {f.description}
+                        </Text>
+                        {f.impact && (
+                            <Text fz={20} fw={600} ta="center" mt={12} style={{ color: '#fa5252' }}>
+                                {f.impact}
+                            </Text>
+                        )}
+                    </Box>
+                ))}
+            </SimpleGrid>
+
+
+        </StyledContainer>
+
+
+
     );
 };

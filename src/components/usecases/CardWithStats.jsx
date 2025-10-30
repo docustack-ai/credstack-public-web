@@ -1,6 +1,8 @@
 import { Card, Group, Image, RingProgress, Text, Badge, Button, Flex } from '@mantine/core';
 import classes from './CardWithStats.module.css';
 import { IconFlag} from '@tabler/icons-react';
+import StyledContainer from '../StyledContainer';
+
 
 
 
@@ -35,9 +37,10 @@ function CardWithStats({
   ));
 
   return (
-    <Flex direction="column" align="center" className={classes.root} >
-      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 0, marginTop: 20 }}>
-        <Button leftSection={buttonIcon} variant="light" radius="xl" size="md">
+    <StyledContainer>
+    <Flex direction="column" align="center" className={classes.root} p="md">
+      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 20 }}>
+        <Button variant="light" radius="xl" size="md">
           {buttonLabel}
         </Button>
       </div>
@@ -61,6 +64,7 @@ function CardWithStats({
         </Card.Section>
       </Card>
     </Flex>
+    </StyledContainer>
   );
 }
 

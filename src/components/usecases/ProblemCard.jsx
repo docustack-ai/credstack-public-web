@@ -1,7 +1,7 @@
 import { Card, Text, Title } from '@mantine/core';
 import classes from './ProblemCard.module.css';
 import PropTypes from 'prop-types';
-
+import StyledContainer from '../StyledContainer';
 
 /**
  * @param {Object} props
@@ -12,6 +12,7 @@ import PropTypes from 'prop-types';
  */
 function ProblemCard({ title, text, impact, sectionLabel }) {
   return (
+    <StyledContainer>
     <Card className={classes.problemCard}>
       {sectionLabel && (
         <Text className={classes.problemSectionLabel}>{sectionLabel}</Text>
@@ -26,6 +27,7 @@ function ProblemCard({ title, text, impact, sectionLabel }) {
         {impact}
       </Text>
     </Card>
+    </StyledContainer>
   );
 }
 

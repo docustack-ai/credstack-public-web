@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button, Grid, SimpleGrid, Text, ThemeIcon, Title, Container } from '@mantine/core';
 import classes from './FeaturesTitle.module.css';
+import StyledContainer from './StyledContainer';
 
 export type FeaturesTitleFeature = {
     icon: React.ComponentType<{ size?: number; stroke?: number }> | React.ReactElement | any;
@@ -25,7 +26,7 @@ export function FeaturesTitle({
     features,
     buttonLabel = 'Get started',
     buttonIcon,
-    buttonGradient = { deg: 133, from: 'rgb(28, 126, 214)', to: 'cyan' },
+    buttonGradient = { deg: 133, from: 'rgba(121, 121, 121, 1)', to: 'black' },
     buttonOnClick,
 }: FeaturesTitleProps) {
     const items = features.map((feature) => {
@@ -64,6 +65,7 @@ export function FeaturesTitle({
         }
 
         return (
+
             <div key={feature.title}>
                 <ThemeIcon size={44} radius="md" variant="gradient" gradient={buttonGradient}>
                     {iconNode}
@@ -80,31 +82,33 @@ export function FeaturesTitle({
     });
 
     return (
-        <Container className={classes.wrapper} size="lg">
-            <Grid gutter={80}>
-                <Grid.Col span={{ base: 12, md: 5 }}>
-                    <Title className={classes.title} order={2}>
-                        {title}
-                    </Title>
-                    <Text c="dimmed">{description}</Text>
-                    <Button
-                        variant="gradient"
-                        gradient={buttonGradient}
-                        size="lg"
-                        radius="md"
-                        mt="xl"
-                        leftSection={buttonIcon ?? null}
-                        onClick={buttonOnClick}
-                    >
-                        {buttonLabel}
-                    </Button>
-                </Grid.Col>
-                <Grid.Col span={{ base: 12, md: 7 }}>
-                    <SimpleGrid cols={{ base: 1, md: 2 }} spacing={30}>
-                        {items}
-                    </SimpleGrid>
-                </Grid.Col>
-            </Grid>
-        </Container>
+        <StyledContainer>
+            <Container fluid className={classes.wrapper} size="lg">
+                <Grid gutter={80}>
+                    <Grid.Col span={{ base: 12, md: 5 }}>
+                        <Title className={classes.title} order={2}>
+                            {title}
+                        </Title>
+                        <Text c="dimmed">{description}</Text>
+                        <Button
+                            variant="gradient"
+                            gradient={buttonGradient}
+                            size="sm"
+                            radius="sm"
+                            mt="xl"
+                            leftSection={buttonIcon ?? null}
+                            onClick={buttonOnClick}
+                        >
+                            {buttonLabel}
+                        </Button>
+                    </Grid.Col>
+                    <Grid.Col span={{ base: 12, md: 7 }}>
+                        <SimpleGrid cols={{ base: 1, md: 2 }} spacing={30}>
+                            {items}
+                        </SimpleGrid>
+                    </Grid.Col>
+                </Grid>
+            </Container>
+        </StyledContainer>
     );
 }

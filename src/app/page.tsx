@@ -13,15 +13,14 @@ export default function HomePage() {
     <>
 
       <HeroBullets />
-      {/* <SpaceComponent /> */}
-      <div style={{ height: 48 }} />
+      <SpaceComponent />
       <ParallaxCardDemo />
-      <div style={{ height: 48 }} />
+      <SpaceComponent />
       <CardWithStats />
       {/* <ApplicationFeatureCard /> */}
-      <div style={{ height: 48 }} />
+      <SpaceComponent />
       <DocumentAutomationFeatures />
-      <div style={{ height: 48 }} />
+      <SpaceComponent />
       <PrivacyCapabilitiesCard />
 
     </>

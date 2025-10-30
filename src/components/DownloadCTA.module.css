@@ -3,6 +3,7 @@
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
+  box-shadow: none;
 }
 
 @media (max-width: 755px) {
@@ -13,10 +14,17 @@
 
 .title {
   font-weight: 500;
+  font-size: xx-large;
   
   line-height: 1.2;
 }
 
 .body {
   padding: var(--mantine-spacing-md);
+}
+
+.description {
+  margin-top: var(--mantine-spacing-sm);
+  color: var(--mantine-color-gray-7);
+  font-size: large;
 }

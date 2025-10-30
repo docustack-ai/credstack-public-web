@@ -4,6 +4,7 @@ import { Container, Title, Text, Button, SimpleGrid, ThemeIcon, Group, Paper, Bo
 import HeroBullets from '../../../components/usecases/HeroBullets.jsx';
 import { FeaturesTitle } from '../../../components/FeaturesTitle';
 import { DownloadCTA } from '../../../components/DownloadCTA';
+import SpaceComponent from '../../../components/SpaceComponent.jsx';
 
 import { Feature02 } from '../../../components/usecases/Feature02';
 import CardWithStats from '../../../components/usecases/CardWithStats.jsx';
@@ -173,37 +174,39 @@ export default function SecuritizationUseCase() {
 
     return (
 
-        <Box>
+        <Box p={0} m={0}>
             <HeroBullets {...heroProps} />
+            <SpaceComponent />
 
 
 
 
 
             <Feature02
-                buttonLabel="Why These Problems Matter"
+                buttonLabel="Why AI for Securitization Due Diligence?"
                 iconSize={40}
                 features={[
                     {
                         icon: <span style={{ fontSize: 32 }}>⏰</span>,
                         title: 'Deal Are Slipping Away',
                         description: 'While your team spends 3-4 weeks manually reviewing loan pools, competitors with faster processes are winning the deals you should be closing.',
-                        impact: '3-4 deals lost',
+                        impact: 'Upto 30% fewer wins',
                     },
                     {
                         icon: <span style={{ fontSize: 32 }}>🎯</span>,
-                        title: `You're Flying Blind on 50% of Risk`,
+                        title: `You're Flying Blind`,
                         description: 'Sampling-based evaluations leave massive blind spots in your portfolio. Hidden risks in the unchecked loans could devastate your returns.',
-                        impact: '50%',
+                        impact: 'Upto 50% higher risk',
                     },
                     {
                         icon: <span style={{ fontSize: 32 }}>⚖️</span>,
                         title: 'Regulators Are Asking Hard Questions',
                         description: 'Manual processes create inconsistent documentation and weak audit trails, making regulatory reviews a nightmare to defend.',
-                        impact: '30%',
+                        impact: 'Upto 40% more compliance issues',
                     },
                 ]}
             />
+            <SpaceComponent />
 
 
             <FeaturesTitle
@@ -212,19 +215,23 @@ export default function SecuritizationUseCase() {
                 features={solvedFeatures}
                 buttonLabel="See Platform Demo"
             />
+            <SpaceComponent />
 
             <CardWithStats {...cardWithStatsProps} />
+            <SpaceComponent />
 
             <FeaturesCards
                 title="How CredStack Solves This"
                 description='CredStack leverages AI to provide comprehensive loan coverage and insights, ensuring no risks are overlooked.'
                 features={credstackFeatures}
             />
+            <SpaceComponent />
 
             <Feature01
                 items={implementationSteps}
                 containerProps={{ mt: 'xl', mb: 'xl' }}
             />
+            <SpaceComponent />
             <DownloadCTA
                 title="Download Whitepaper"
                 description="Understand how AI can transform underwriting and securitization due diligence for DA and PTC deals."

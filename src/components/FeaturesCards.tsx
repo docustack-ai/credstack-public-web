@@ -2,6 +2,8 @@
 import React from 'react';
 import { Badge, Card, Container, Group, SimpleGrid, Text, Title, useMantineTheme, Button } from '@mantine/core';
 import classes from './FeaturesCards.module.css';
+import StyledContainer from './StyledContainer';
+
 
 export type FeaturesCardsFeature = {
     title: string;
@@ -36,7 +38,7 @@ export function FeaturesCards({
         else if (typeof icon === 'function') {
             try {
                 const IconComponent = icon as React.ComponentType<any>;
-                iconNode = <IconComponent size={50} stroke={1.5} color={theme.colors.blue[6]} />;
+                iconNode = <IconComponent size={50} stroke={1.5} color="black" />;
             } catch (err) {
                 console.warn('Error rendering icon component for feature', feature.title, err);
                 iconNode = null;
@@ -46,7 +48,7 @@ export function FeaturesCards({
         //    try React.createElement as a last resort (wrapped in try/catch).
         else if (icon && typeof icon === 'object') {
             try {
-                iconNode = React.createElement(icon, { size: 50, stroke: 1.5, color: theme.colors.blue[6] });
+                iconNode = React.createElement(icon, { size: 50, stroke: 1.5, color: 'black' });
             } catch (err) {
                 // log full shape to inspect later
                 console.warn('Unsupported feature.icon shape for', feature.title, icon, ' — could not create element:', err);
@@ -57,7 +59,9 @@ export function FeaturesCards({
         }
 
         return (
-            <Card key={feature.title} shadow="md" radius="md" className={classes.card} padding="xl">
+
+
+            <Card key={feature.title} shadow="md" radius="md" className={classes.card} padding="sm">
                 {iconNode}
                 <Text fz="lg" fw={500} className={classes.cardTitle} mt="md">
                     {feature.title}
@@ -66,28 +70,32 @@ export function FeaturesCards({
                     {feature.description}
                 </Text>
             </Card>
+
         );
     });
 
     return (
-        <Container size="lg" py="xl">
-            <Group justify="center">
+        <StyledContainer>
+            <Container fluid size="lg" py="md">
+                <Group justify="center">
 
-                <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 0, marginTop: 20 }}>
-                    <Button variant="light" radius="xl" size="md">
-                        {badge}
-                    </Button>
-                </div>
-            </Group>
-            <Title order={2} className={classes.title} ta="center" mt="sm">
-                {title}
-            </Title>
-            <Text c="dimmed" className={classes.description} ta="center" mt="md">
-                {description}
-            </Text>
-            <SimpleGrid cols={{ base: 1, md: 2 }} spacing="xl" mt={50}>
-                {items}
-            </SimpleGrid>
-        </Container>
+                    <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 0, marginTop: 20 }}>
+                        <Button variant="light" radius="xl" size="md">
+                            {badge}
+                        </Button>
+                    </div>
+                </Group>
+                <Title order={2} className={classes.title} ta="center" mt="sm">
+                    {title}
+                </Title>
+                <Text c="dimmed" className={classes.description} ta="center" mt="md">
+                    {description}
+                </Text>
+                <SimpleGrid cols={{ base: 2, md: 4 }} spacing="xl" mt={10}>
+                    {items}
+                </SimpleGrid>
+            </Container>
+        </StyledContainer >
+
     );
 }

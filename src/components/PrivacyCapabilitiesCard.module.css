@@ -23,6 +23,8 @@
 .optionsRow {
   width: 100%;
   display: flex;
+  padding: 0 20px;
+  padding-bottom: 20px;
   flex-direction: row;
   gap: var(--mantine-spacing-lg);
   justify-content: space-between;
