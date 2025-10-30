@@ -1,5 +1,5 @@
 import { IconCheck } from '@tabler/icons-react';
-import { Button, Container, Group, Image, List, Text, ThemeIcon, Title, Flex } from '@mantine/core';
+import { Button, Container, Group, Image, List, Text, ThemeIcon, Title, Flex, Paper } from '@mantine/core';
 import { useRouter } from 'next/navigation';
 // import image from '../assets/hero_image.png';
 import classes from './HeroBullets.module.css';
@@ -36,7 +36,7 @@ function HeroBullets({
 
     return (
         <StyledContainer>
-        <Container size="xl">
+        <Paper  p={0} radius="xl" shadow="sm" style={{ overflow: 'hidden', background: 'linear-gradient(135deg, #f8fafc 60%, #e0e7ff 100%)' }}>
             <div className={classes.inner}>
                 <div className={classes.content}>
                     <Title className={classes.title}>
@@ -72,7 +72,7 @@ function HeroBullets({
                 </div>
                 <Image src={image} className={classes.image} alt="Hero image" />
             </div>
-        </Container>
+        </Paper>
         </StyledContainer>
     );
 }

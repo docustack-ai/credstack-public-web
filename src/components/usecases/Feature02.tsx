@@ -26,7 +26,7 @@ export const Feature02 = ({
 
 
     features = [],
-    iconSize = 20,
+
     buttonLabel,
     buttonIcon,
 }: Feature02Props) => {

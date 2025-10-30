@@ -16,7 +16,7 @@ import StyledContainer from '../StyledContainer';
  */
 function CardWithStats({
   buttonLabel = 'Why CredStack.ai',
-  buttonIcon = <IconFlag size={18} />,
+
   title = 'Unmatched accuracy in document extraction, risk evaluation and decisioning',
   subtitle = 'CredStack processes hand written, scanned documents with human like decisioning',
   stats = [

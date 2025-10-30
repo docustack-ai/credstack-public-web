@@ -24,7 +24,7 @@ export function FeaturesCards({
     badge = 'Our Capabilities',
     features,
 }: FeaturesCardsProps) {
-    const theme = useMantineTheme();
+
 
     const items = features.map((feature) => {
         const icon = feature.icon as any;

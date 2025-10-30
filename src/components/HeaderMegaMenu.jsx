@@ -103,6 +103,12 @@ const solutions_list = [
     description: 'Ensure regulatory compliance and audit readiness.',
     url: '/solutions/legal-compliance',
   },
+  {
+    icon: IconChartPie3,
+    title: 'Co-Lending',
+    description: 'AI-driven co-lending platform for banks and NBFCs',
+    url: '/use_cases/co_lending',
+  },
 ];
   
 
@@ -248,7 +254,7 @@ return (
                 ];
                 const solutionsData = {
                 banking: [
-                  { icon: IconChartPie3, title: 'Underwriting', description: 'Automate risk assessment and loan approvals for banking.' },
+                  { icon: IconChartPie3, title: 'Co-Lending', description: 'AI-driven co-lending platform for banks and NBFCs' },
                   { icon: IconNotification, title: 'Onboarding', description: 'Streamline customer onboarding and KYC for banks.' },
                   { icon: IconCode, title: 'Securitization', description: 'Digitize and manage asset-backed securities.' },
                 ],
