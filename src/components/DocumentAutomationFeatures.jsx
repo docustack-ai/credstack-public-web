@@ -102,12 +102,12 @@ return (
             ))}
         </Group>
         <Divider className={classes.divider} mt={16} mb={24} />
-        <Text size="lg" color="dimmed" align="center" mb={32}>
+        {/* <Text size="lg" color="dimmed" align="center" mb={32}>
             {featureDetails[selected]}
-        </Text>
-        <Group justify="center">
+        </Text> */}
+        <Group justify="center" p={0} m={0}>
             <Card radius="lg" shadow="md" className={classes.demoCard}>
-                <Group align="flex-start" gap={0}>
+                <Group align="flex-start" gap={0} p={0} m={0}>
                     <Image
                         src={unsplashImages[selected]}
                         alt={features[selected].label + " Demo"}

@@ -91,7 +91,7 @@ export function FeaturesCards({
                 <Text c="dimmed" className={classes.description} ta="center" mt="md">
                     {description}
                 </Text>
-                <SimpleGrid cols={{ base: 2, md: 4 }} spacing="xl" mt={10}>
+                <SimpleGrid cols={{ base: 1, md: 4 }} spacing="xl" mt={10}>
                     {items}
                 </SimpleGrid>
             </Container>

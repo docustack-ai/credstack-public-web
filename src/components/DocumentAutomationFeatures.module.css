@@ -1,14 +1,14 @@
 .section {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0cqmin 0px;
   text-align: center;
-  padding: 0 20px; /* Add normal padding for smaller screens */
+  padding: 20px 00px; /* Add normal padding for smaller screens */
 }
 
 @media (min-width: 1200px) {
   .section {
-    padding: 0 100px;
+    padding: 20px;
   }
 }
 
@@ -35,6 +35,8 @@
 .featureTabs {
   margin-bottom: 0;
 }
+
+
 
 .tab {
     display: flex;
@@ -73,7 +75,7 @@
 .demoCard {
   display: flex;
   align-items: flex-start;
-  padding: 0;
+  padding-bottom: 0px;
   
   border-radius: 24px;
   box-shadow: 0 2px 16px rgba(0,0,0,0.04);
@@ -82,12 +84,24 @@
   overflow: hidden;
 }
 
+
 .demoImage {
   width: 320px;
+  
   height: auto;
   border-radius: 24px 0 0 24px;
-  object-fit: cover;
+  object-fit: fill;
 }
+
+@media (max-width: 700px) {
+  .demoImage {
+    width: 100%;
+    height: auto;
+    border-radius: 24px 24px 0 0;
+  }
+}
+
+
 
 .demoTextBox {
   flex: 1;

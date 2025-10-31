@@ -148,7 +148,7 @@ export default function CoLendingUseCase() {
             'Continuous monitoring and explainable risk scoring across co-lending pools',
             'API-first integration with LOS/LMS and partner systems',
         ],
-        image: '/assets/page_images/colending_1.png',
+        image: '/assets/page_images/colending_2.png',
         buttonLabel: 'Request a Demo',
         onButtonClick: () => {
             window.location.href = '/demo';
