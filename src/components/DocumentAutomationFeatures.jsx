@@ -44,15 +44,15 @@ const features = [
   },
 ];
 
-const featureDetails = [
-  'Automatically categorize scanned documents using image, text, and rule-based methods to any number of documents with 95% accuracy.',
-  'Extract key data points from documents for fast and reliable automation.',
-  'Validate extracted data for accuracy and compliance.',
-  'Enrich data with additional context for deeper insights.',
-  'Mimics human decision-making with custom rules for complex scenarios. Reads and interprets complex, unstructured data types for deeper insights.',
-  'Re-validate for compliance and audit readiness.',
-  'Visualize results for deeper insights and reporting.',
-];
+// const featureDetails = [
+//   'Automatically categorize scanned documents using image, text, and rule-based methods to any number of documents with 95% accuracy.',
+//   'Extract key data points from documents for fast and reliable automation.',
+//   'Validate extracted data for accuracy and compliance.',
+//   'Enrich data with additional context for deeper insights.',
+//   'Mimics human decision-making with custom rules for complex scenarios. Reads and interprets complex, unstructured data types for deeper insights.',
+//   'Re-validate for compliance and audit readiness.',
+//   'Visualize results for deeper insights and reporting.',
+// ];
 
 function DocumentAutomationFeatures() {
   const [selected, setSelected] = useState(0); // Default to "Classify"
