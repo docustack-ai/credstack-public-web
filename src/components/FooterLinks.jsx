@@ -19,7 +19,8 @@ const data = [
     title: 'Company',
     links: [
       { label: 'Our Story', link: '/about/our-story' },
-      { label: 'Teams', link: '/teams' }
+      { label: 'Teams', link: '/teams' },
+      {label: 'Careers', link: '/careers' }
     ],
   },
   {
