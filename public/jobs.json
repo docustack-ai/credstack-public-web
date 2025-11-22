@@ -1,0 +1,53 @@
+[
+  {
+    "id": "4",
+    "title": "AI Intern",
+    "location": "Remote",
+    "type": "Part-time",
+    "description": "Work across core application workflows, including non-AI features such as APIs, business logic, and integrations. Use your knowledge of AI models, prompt engineering, and agentic systems to embed intelligence and automation into these applications.",
+    "applyUrl": "https://forms.gle/U2ZwzB8hxdxRDUC56",
+    "status": "active",
+    "lastUpdated": "2025-11-22"
+  },
+  {
+    "id": "1",
+    "title": "Senior Frontend Engineer",
+    "location": "Remote",
+    "type": "Full-time",
+    "description": "Lead the development of high-quality, scalable user interfaces using React, Mantine, and modern frontend tooling. Collaborate closely with product and design teams to create seamless, high-performance user experiences.",
+    "applyUrl": "mailto:jobs@credstack.ai?subject=Senior%20Frontend%20Engineer%20Application",
+    "status": "closed",
+    "lastUpdated": "2025-05-17"
+  },
+  {
+    "id": "2",
+    "title": "Senior Backend Engineer",
+    "location": "Remote",
+    "type": "Full-time",
+    "description": "Architect and implement backend systems using Node.js, PostgreSQL, and distributed processing frameworks. Own system scalability, reliability, and performance. Work with cross-functional teams to deliver robust APIs and data workflows.",
+    "applyUrl": "mailto:jobs@credstack.ai?subject=Senior%20Backend%20Engineer%20Application",
+    "status": "closed",
+    "lastUpdated": "2025-01-22"
+  },
+  {
+    "id": "3",
+    "title": "AI/ML Engineer",
+    "location": "Remote",
+    "type": "Full-time",
+    "description": "Build, train, and deploy machine learning models for document understanding, OCR post-processing, credit risk scoring, and workflow automation. Collaborate with backend and data teams to productionize models at scale.",
+    "applyUrl": "mailto:jobs@credstack.ai?subject=AI%2FML%20Engineer%20Application",
+    "status": "closed",
+    "lastUpdated": "2025-01-22"
+  },
+  
+  {
+    "id": "5",
+    "title": "Full-Stack Engineer",
+    "location": "Remote",
+    "type": "Full-time",
+    "description": "Work across the stack to build high-performance applications. Implement APIs, integrate machine learning endpoints, and deliver optimized frontend experiences. Ensure end-to-end robustness and participate in architectural decisions.",
+    "applyUrl": "mailto:jobs@credstack.ai?subject=Full-Stack%20Engineer%20Application",
+    "status": "closed",
+    "lastUpdated": "2025-06-02"
+  }
+]

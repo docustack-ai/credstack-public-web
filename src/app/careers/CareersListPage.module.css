@@ -1,0 +1,18 @@
+.listContainer {
+  padding: 1rem;
+}
+
+.title {
+  color: #222;
+  font-size: 44px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit);
+  gap: 2rem;
+}
+.cardLink {
+  text-decoration: none;
+}
