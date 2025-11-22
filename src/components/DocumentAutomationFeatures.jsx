@@ -59,13 +59,13 @@ function DocumentAutomationFeatures() {
 
 // Unsplash image URLs for demo purposes (replace with your own assets as needed)
 const unsplashImages = [
-    "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=600&q=80",
-    "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80",
-    "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80",
-    "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80",
-    "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80",
-    "https://images.unsplash.com/photo-1748255882537-cbe88b145305?auto=format&fit=crop&w=600&q=80",
-    "https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=600&q=80",
+    "/assets/page_images/classify.png",
+    "/assets/page_images/extraction.png",
+    "/assets/page_images/validation.png",
+    "/assets/page_images/extraction.png",
+    "/assets/page_images/decisioning.png",
+    "/assets/page_images/validation.png",
+    "/assets/page_images/classification.png",
 ];
 
 return (
