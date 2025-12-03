@@ -1,14 +1,25 @@
 [
   {
+    "id": "0",
+    "title": "Founder's Office Intern",
+    "location": "Remote",
+    "type": "Part-time",
+    "description": "A hands-on, generalist role that sits at the center of a fast-moving startup. This is a part-time internship designed for someone who wants to experience the full founder journey — from operations to customer success to product execution to social media and everything in between.",
+    "applyUrl": "https://forms.gle/s6sHfQVwEtrXMmqBA",
+    "status": "active",
+    "lastUpdated": "2025-11-22"
+  },
+  {
     "id": "4",
     "title": "AI Intern",
     "location": "Remote",
     "type": "Part-time",
     "description": "Work across core application workflows, including non-AI features such as APIs, business logic, and integrations. Use your knowledge of AI models, prompt engineering, and agentic systems to embed intelligence and automation into these applications.",
     "applyUrl": "https://forms.gle/U2ZwzB8hxdxRDUC56",
-    "status": "active",
-    "lastUpdated": "2025-11-22"
+    "status": "closed",
+    "lastUpdated": "2025-12-03"
   },
+  
   {
     "id": "1",
     "title": "Senior Frontend Engineer",
