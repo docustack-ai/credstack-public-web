@@ -256,7 +256,7 @@ return (
                 const solutionsData = {
                   banking: [
                     { icon: IconChartPie3, title: 'Co-Lending', description: 'AI-driven co-lending platform for banks and NBFCs', url: '/use_cases/co_lending' },
-                    { icon: IconNotification, title: 'Onboarding', description: 'Streamline customer onboarding and KYC for banks.', url: '/solutions/banking-onboarding' },
+                    { icon: IconNotification, title: 'Onboarding', description: 'Streamline customer onboarding and KYC for banks.', url: '/use_cases/banking_onboarding' },
                     { icon: IconCode, title: 'Securitization', description: 'Digitize and manage asset-backed securities.', url: '/use_cases/securitization' },
                   ],
                   insurance: [

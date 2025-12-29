@@ -7,5 +7,23 @@
     "image": "https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg",
     "slug": "the-future-of-securitization",
     "markdown": "content/the-future-of-securitization.md"
+  },
+  {
+    "title": "5 Key Benefits of AI-Powered Loan Underwriting for Financial Institutions",
+    "author": "Suman Saurabh",
+    "date": "2024-11-15",
+    "excerpt": "5 Key Benefits of AI-Powered Loan Underwriting for Financial Institutions",
+    "image": "https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg",
+    "slug": "benefits-of-ai-powered-loan-underwriting",
+    "markdown": "content/benefits-of-ai-powered-loan-underwriting.md"
+  },
+  {
+    "title": "RBI's New Guidelines on AI in Co-lending: What Financial Institutions Need to Know",
+    "author": "Suman Saurabh",
+    "date": "2024-09-10",
+    "excerpt": "RBI's New Guidelines on AI in Co-lending: What Financial Institutions Need to Know",
+    "image": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg",
+    "slug": "rbi-new-guidelines-ai-co-lending",
+    "markdown": "content/public/content/rbi-colending-implications.md"
   }
 ]
