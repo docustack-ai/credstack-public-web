@@ -1,5 +1,7 @@
 .listContainer {
   padding: 1rem;
+  max-width: 100vw;
+  box-sizing: border-box;
 }
 
 .title{
@@ -14,6 +16,10 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
+  max-width: 100vw;
+  box-sizing: border-box;
+  margin: 0 auto;
+  justify-content: center;
 }
 .cardLink {
   text-decoration: none;
