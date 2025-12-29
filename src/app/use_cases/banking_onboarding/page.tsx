@@ -148,7 +148,7 @@ export default function BankingOnboardingUseCase() {
             'Automated omnichannel communications and audit trails',
             'API-first integration with LOS, CRM, and collections systems',
         ],
-        image: '/assets/page_images/onboarding_hero.png',
+        image: '/assets/page_images/banking_onboarding_hero.png',
         buttonLabel: 'Request a Demo',
         onButtonClick: () => {
             window.location.href = '/demo';

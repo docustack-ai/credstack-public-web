@@ -83,13 +83,13 @@ const solutions_list = [
     icon: IconChartPie3,
     title: 'Insurance Underwriting',
     description: 'AI-powered underwriting for insurance risk analysis.',
-    url: '/solutions/insurance-underwriting',
+    url: '/use_cases/insurance_underwriting',
   },
   {
     icon: IconNotification,
     title: 'Insurance Onboarding',
     description: 'Automate policyholder onboarding and verification.',
-    url: '/solutions/insurance-onboarding',
+    url: '/use_cases/insurance_onboarding',
   },
   {
     icon: IconBook,
@@ -260,8 +260,8 @@ return (
                     { icon: IconCode, title: 'Securitization', description: 'Digitize and manage asset-backed securities.', url: '/use_cases/securitization' },
                   ],
                   insurance: [
-                    { icon: IconChartPie3, title: 'Underwriting', description: 'AI-powered underwriting for insurance risk analysis.', url: '/solutions/insurance-underwriting' },
-                    { icon: IconNotification, title: 'Onboarding', description: 'Automate policyholder onboarding and verification.', url: '' },
+                    { icon: IconChartPie3, title: 'Underwriting', description: 'AI-powered underwriting for insurance risk analysis.', url: '/use_cases/insurance_underwriting' },
+                    { icon: IconNotification, title: 'Onboarding', description: 'Automate policyholder onboarding and verification.', url: '/use_cases/insurance_onboarding' },
                   ],
                   // legal: [
                   //   { icon: IconBook, title: 'Drafting', description: 'Generate legal documents and contracts efficiently.', url: '/solutions/legal-drafting' },
