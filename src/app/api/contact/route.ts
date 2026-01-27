@@ -18,7 +18,7 @@ export async function POST(request: NextRequest) {
       body: JSON.stringify({
         from: 'onboarding@resend.dev',
         to: 'ssaurabh@docustack.ai',
-        subject: `CredStack Website - Contact Us`,
+        subject: `CredStack Website - ${from_page}`,
         html: `<p><strong>From Page:</strong> ${from_page}<br/><p><strong>Name:</strong> ${name}<br/><strong>Email:</strong> ${email}<br/><strong>Subject:</strong> ${subject}<br/><strong>Message:</strong> ${message}</p>`
       }),
     });
