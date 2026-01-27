@@ -48,8 +48,29 @@ export const Feature01 = ({
     radius = 'lg',
 }: FeatureProps) => {
     const [selectedValue, setSelectedValue] = useState<string>(items[0].value);
+    // Helper to check if image src is valid (non-empty, non-whitespace, not a placeholder, and has a valid extension)
+    const validImageExtensions = ['.png', '.jpg', '.jpeg', '.gif', '.webp', '.avif', '.svg'];
+    const hasValidImage = (img?: Item['image']) => {
+        if (!img || typeof img.src !== 'string') return false;
+        const src = img.src.trim();
+        if (!src) return false;
+        // Exclude common placeholders
+        if (src === '#' || src === 'about:blank' || src.startsWith('data:') || src.startsWith('javascript:')) return false;
+        // Check for valid image extension
+        if (!validImageExtensions.some(ext => src.toLowerCase().endsWith(ext))) return false;
+        return true;
+    };
+
+    // Track which images failed to load
+    const [brokenImages, setBrokenImages] = useState<Record<string, boolean>>({});
+    const handleImageError = (value: string) => {
+        setBrokenImages(prev => ({ ...prev, [value]: true }));
+    };
+
     const maxImageHeight = items.reduce<number>((max: number, item: Item) => {
-        if (typeof item.image.h === 'number') return Math.max(max, item.image.h);
+        if (hasValidImage(item.image) && typeof item.image.h === 'number') {
+            return Math.max(max, item.image.h);
+        }
         return max;
     }, 0);
 
@@ -132,15 +153,18 @@ export const Feature01 = ({
                                             >
                                                 {item.description}
                                             </Text>
-                                            <Image
-                                                my="xl"
-                                                w="100%"
-                                                h={item.image.h === 'auto' ? undefined : item.image.h}
-                                                style={item.image.h === 'auto' ? { height: 'auto' } : undefined}
-                                                hiddenFrom={collapseBreakpoint}
-                                                alt={item.image.alt}
-                                                src={item.image.src}
-                                            />
+                                            {hasValidImage(item.image) && !brokenImages[item.value] ? (
+                                                <Image
+                                                    my="xl"
+                                                    w="100%"
+                                                    h={item.image.h === 'auto' ? undefined : item.image.h}
+                                                    style={item.image.h === 'auto' ? { height: 'auto' } : undefined}
+                                                    hiddenFrom={collapseBreakpoint}
+                                                    alt={item.image.alt && item.image.alt.trim() ? item.image.alt : 'Feature image'}
+                                                    src={item.image.src}
+                                                    onError={() => handleImageError(item.value)}
+                                                />
+                                            ) : null}
                                         </Accordion.Panel>
                                     </Accordion.Item>
                                 ))}
@@ -154,29 +178,32 @@ export const Feature01 = ({
                             h={maxImageHeight}
                         >
                             {items.map((item) => (
-                                <Flex
-                                    key={item.value}
-                                    visibleFrom={collapseBreakpoint}
-                                    justify="center"
-                                    align="center"
-                                    style={{
-                                        width: "100%",
-                                        height: "100%",
-                                        display: selectedValue === item.value ? "flex" : "none",
-                                    }}
-                                >
-                                    <Image
-                                        src={item.image.src}
-                                        alt={item.image.alt}
-                                        fit="contain" // 👈 Prevents cropping
-                                        w="100%"
-                                        h="100%"
+                                hasValidImage(item.image) && !brokenImages[item.value] ? (
+                                    <Flex
+                                        key={item.value}
+                                        visibleFrom={collapseBreakpoint}
+                                        justify="center"
+                                        align="center"
                                         style={{
-                                            objectFit: "contain",
-                                            borderRadius: 12, // optional
+                                            width: "100%",
+                                            height: "100%",
+                                            display: selectedValue === item.value ? "flex" : "none",
                                         }}
-                                    />
-                                </Flex>
+                                    >
+                                        <Image
+                                            src={item.image.src}
+                                            alt={item.image.alt && item.image.alt.trim() ? item.image.alt : 'Feature image'}
+                                            fit="contain"
+                                            w="100%"
+                                            h="100%"
+                                            style={{
+                                                objectFit: "contain",
+                                                borderRadius: 12,
+                                            }}
+                                            onError={() => handleImageError(item.value)}
+                                        />
+                                    </Flex>
+                                ) : null
                             ))}
                         </Flex>
 
