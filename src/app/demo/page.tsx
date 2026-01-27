@@ -10,9 +10,9 @@ export default function ContactUs() {
   // USPs for the left side
   const usps = [
     'Instant access to a demo with an expert',
-    'No credit card required',
+    'Implementation tailored to your needs',
     'See real document automation in action',
-    'Ask questions and get expert support',
+    'Free consultation and Q&A session',
   ];
 
   const form = useForm({
@@ -21,6 +21,7 @@ export default function ContactUs() {
       email: '',
       subject: '',
       message: '',
+      from_page: 'Demo Request Page',
     },
     validate: {
       name: (value) => value.trim().length < 2,
@@ -42,7 +43,7 @@ export default function ContactUs() {
         body: JSON.stringify(values),
       });
       if (res.ok) {
-        setStatus('Message sent successfully!');
+        setStatus('Your demo request has been submitted successfully. Our expert will get back to you shortly.');
         form.reset();
       } else {
         setStatus('Failed to send message. Please try again.');

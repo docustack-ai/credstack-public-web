@@ -18,7 +18,7 @@ import { shadcnCssVariableResolver } from "../cssVariableResolver.ts";
 
 export const metadata = {
   title: "CredStack.ai",
-  description: "CredStack - AI Agents for due diligencem, underwriting and document automation.",
+  description: "CredStack - AI Agents for due diligence, underwriting and document automation.",
 };
 
 export default function RootLayout({ children }: { children: any }) {

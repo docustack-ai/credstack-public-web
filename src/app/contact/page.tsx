@@ -12,6 +12,7 @@ export default function ContactUs() {
       email: '',
       subject: '',
       message: '',
+      from_page: 'Contact Us Page',
     },
     validate: {
       name: (value) => value.trim().length < 2,
@@ -33,7 +34,7 @@ export default function ContactUs() {
         body: JSON.stringify(values),
       });
       if (res.ok) {
-        setStatus('Message sent successfully!');
+        setStatus('We have received your message and will get back to you shortly.');
         form.reset();
       } else {
         setStatus('Failed to send message. Please try again.');

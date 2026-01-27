@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 
 export async function POST(request: NextRequest) {
   try {
-    const { name, email, subject, message } = await request.json();
+    const { name, email, subject, message, from_page = 'default' } = await request.json();
     const apiKey = process.env.RESEND_API_KEY;
 
     if (!apiKey) {
@@ -19,7 +19,7 @@ export async function POST(request: NextRequest) {
         from: 'onboarding@resend.dev',
         to: 'ssaurabh@docustack.ai',
         subject: `CredStack Website - Contact Us`,
-        html: `<p><strong>Name:</strong> ${name}<br/><strong>Email:</strong> ${email}<br/><strong>Subject:</strong> ${subject}<br/><strong>Message:</strong> ${message}</p>`
+        html: `<p><strong>From Page:</strong> ${from_page}<br/><p><strong>Name:</strong> ${name}<br/><strong>Email:</strong> ${email}<br/><strong>Subject:</strong> ${subject}<br/><strong>Message:</strong> ${message}</p>`
       }),
     });
 
