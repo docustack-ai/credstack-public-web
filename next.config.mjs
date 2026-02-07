@@ -2,6 +2,9 @@
 
 const nextConfig = {
   reactStrictMode: true,
+  outputFileTracingIncludes: {
+    "/*": ["./public/**/*"],
+  },
 
   experimental: {
     optimizePackageImports: ["@mantine/core", "@mantine/hooks"],
