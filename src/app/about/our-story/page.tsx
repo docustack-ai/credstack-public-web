@@ -1,4 +1,14 @@
+import type { Metadata } from "next";
 import { Container, Title, Text } from '@mantine/core';
+
+export const metadata: Metadata = {
+  title: "Our Story | CredStack.ai",
+  description:
+    "Learn how CredStack was built to solve document-heavy due diligence and underwriting workflows for financial institutions.",
+  alternates: {
+    canonical: "/about/our-story",
+  },
+};
 
 export default function OurStoryPage() {
     return (

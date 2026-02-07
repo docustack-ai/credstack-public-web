@@ -1,45 +1,45 @@
-'use client';
+import type { Metadata } from "next";
+import fs from "fs";
+import path from "path";
+import BlogPageClient from "./BlogPage.client";
 
-import { useParams } from 'next/navigation';
-import Link from 'next/link';
-import Image from 'next/image';
-import { useEffect, useState } from 'react';
-import ReactMarkdown from 'react-markdown';
-import classes from './BlogPage.module.css';
+type BlogEntry = {
+  slug: string;
+  title: string;
+  excerpt?: string;
+};
 
-export default function BlogPage() {
-  const params = useParams();
-  const slug = params.slug as string;
-  const [blog, setBlog] = useState<any>(null);
-  const [content, setContent] = useState('');
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const filePath = path.join(process.cwd(), "public/blogs.json");
+  const blogs = JSON.parse(fs.readFileSync(filePath, "utf8")) as BlogEntry[];
+  const blog = blogs.find((entry) => entry.slug === slug);
+  const title = blog?.title
+    ? `${blog.title} | CredStack.ai`
+    : "Blog | CredStack.ai";
+  const description =
+    blog?.excerpt ||
+    "Read CredStack insights on AI-powered due diligence, underwriting, and financial operations.";
 
-  useEffect(() => {
-    fetch('/blogs.json')
-      .then((res) => res.json())
-      .then((blogs) => {
-        const found = blogs.find((b: any) => b.slug === slug);
-        setBlog(found);
-        if (found) {
-          fetch(`/${found.markdown}`)
-            .then((res) => res.text())
-            .then(setContent);
-        }
-      });
-  }, [slug]);
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: `/blogs/${slug}`,
+    },
+  };
+}
 
-  if (!blog) return <div>Blog not found</div>;
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
 
-  return (
-    <div className={classes.pageContainer}>
-      <div className={classes.topBar}>
-        <Link href="/blogs" className={classes.backButton}>&larr; Back to all blogs</Link>
-      </div>
-      <h1 className={classes.title}>{blog.title}</h1>
-      <div className={classes.meta}>
-        <span>{blog.author}</span> | <span>{blog.date}</span>
-      </div>
-      <Image src={blog.image} alt={blog.title} className={classes.image} width={800} height={400} style={{ width: '100%', height: 'auto' }} />
-      <ReactMarkdown>{content}</ReactMarkdown>
-    </div>
-  );
+  return <BlogPageClient slug={slug} />;
 }

@@ -1,5 +1,5 @@
-import { IconBrandInstagram, IconBrandTwitter, IconBrandYoutube } from '@tabler/icons-react';
-import { ActionIcon, Container, Group, Text, Image, Flex, Stack } from '@mantine/core';
+import { IconBrandLinkedin, IconMapPin2 } from '@tabler/icons-react';
+import { ActionIcon, Container, Group, Text, Image } from '@mantine/core';
 // import { MantineLogo } from '@mantinex/mantine-logo';
 import classes from './FooterLinks.module.css';
 // import blackLogo from '/assets/black.svg';
@@ -67,18 +67,37 @@ function FooterLinks() {
       </Container>
       <Container className={classes.afterFooter}>
         <Text c="dimmed" size="sm">
-          © 2025 CredStack. All rights reserved.
+          © 2026 CredStack. All rights reserved. <br />
+            CredStack.ai is a product of October Technologies Private Limited.
         </Text>
 
         <Group gap={0} className={classes.social} justify="flex-end" wrap="nowrap">
-          <ActionIcon size="lg" color="gray" variant="subtle">
-            <IconBrandTwitter size={18} stroke={1.5} />
+          <ActionIcon
+            component="a"
+            href="https://www.linkedin.com/company/credstack-ai"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="CredStack LinkedIn"
+            size="lg"
+            color="gray"
+            variant="subtle"
+          >
+            <IconBrandLinkedin size={18} stroke={1.5} />
           </ActionIcon>
-          <ActionIcon size="lg" color="gray" variant="subtle">
+          {/* <ActionIcon size="lg" color="gray" variant="subtle">
             <IconBrandYoutube size={18} stroke={1.5} />
-          </ActionIcon>
-          <ActionIcon size="lg" color="gray" variant="subtle">
-            <IconBrandInstagram size={18} stroke={1.5} />
+          </ActionIcon> */}
+          <ActionIcon
+            component="a"
+            href="https://share.google/Oul0XAdF8hpaZx4jn"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="CredStack location"
+            size="lg"
+            color="gray"
+            variant="subtle"
+          >
+            <IconMapPin2 size={18} stroke={1.5} />
           </ActionIcon>
         </Group>
       </Container>

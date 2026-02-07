@@ -1,5 +1,5 @@
 # Terms and Conditions
-#### Last Updated: 2025-09-26
+#### Last Updated: 2026-02-07
 
 These terms and conditions outline the rules and regulations for the use of October Technologies Private Limited's Website, and all websites operated by credstack including www.credstack.ai and credstack.xyz, hereafter referred as credstack websites.
 
@@ -130,4 +130,4 @@ For your convenience, your monthly and yearly subscriptions will auto-renew unti
 There will be strictly no refund (FULL OR PRO-RATED) in cases where your account is terminated or suspended or blocked by credstack for activities that are in violation of our Terms of Service including, but not limited to phishing, impersonation, fraud, and violation of any applicable laws.
 
 ## Contact Us
-If you have any questions, please contact us at [contact@docustack.ai](mailto:contact@docustack.ai)
+If you have any questions, please contact us at [contact@credstack.ai](mailto:contact@credstack.ai)

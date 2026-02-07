@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import ReactMarkdown from "react-markdown";
-import { Container } from "@mantine/core";
+import { Container, px } from "@mantine/core";
 
 interface TermsMarkdownProps {
     markdown: string;
@@ -9,7 +9,7 @@ interface TermsMarkdownProps {
 
 export default function TermsMarkdown({ markdown }: TermsMarkdownProps) {
     return (
-        <Container size="md" py="xl">
+        <Container size={px(750)} p="xl">
             <ReactMarkdown>{markdown}</ReactMarkdown>
         </Container>
     );

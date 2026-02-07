@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import ReactMarkdown from "react-markdown";
-import { Container } from "@mantine/core";
+import { Container, px } from "@mantine/core";
 
 interface PrivacyMarkdownProps {
     markdown: string;
@@ -9,7 +9,7 @@ interface PrivacyMarkdownProps {
 
 export default function PrivacyMarkdown({ markdown }: PrivacyMarkdownProps) {
     return (
-        <Container size="md" py="xl">
+        <Container size={px(750)} py="xl">
             <ReactMarkdown>{markdown}</ReactMarkdown>
         </Container>
     );

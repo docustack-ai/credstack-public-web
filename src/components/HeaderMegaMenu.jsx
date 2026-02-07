@@ -245,10 +245,10 @@ return (
                       Get started
                     </Text>
                     <Text size="xs" c="dimmed">
-                      Their food sources have decreased, and their numbers
+                      See our features in action with a personalized demo
                     </Text>
                   </div>
-                  <Button size="sm" variant="default">Get started</Button>
+                  <Button size="sm" variant="default" href="/demo">Get a Demo</Button>
                 </Group>
               </div>
             </HoverCard.Dropdown>
@@ -346,16 +346,16 @@ return (
                     Get started
                   </Text>
                   <Text size="xs" c="dimmed">
-                    Their food sources have decreased, and their numbers
+                    Check out our solutions and use cases
                   </Text>
                   </div>
                   <Button
                   variant="default"
-                  size="md"
+                  size="sm"
                   component={Link}
-                  href="/contact"
+                  href="/demo"
                   >
-                  Contact us
+                  Talk to Us
                   </Button>
                 </Group>
                 </div>

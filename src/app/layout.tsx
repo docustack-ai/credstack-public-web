@@ -8,9 +8,8 @@ import {
   Box,
 } from "@mantine/core";
 import { shadcnTheme } from "../theme.ts";
-import "../style.css"
-import { GeistSans } from 'geist/font/sans';
-
+import "../style.css";
+import { GeistSans } from "geist/font/sans";
 
 import HeaderMegaMenu from "../components/HeaderMegaMenu";
 import FooterLinks from "../components/FooterLinks";
@@ -18,31 +17,41 @@ import { shadcnCssVariableResolver } from "../cssVariableResolver.ts";
 
 export const metadata = {
   metadataBase: new URL("https://credstack.ai"),
-
-  alternates: {
-    canonical: "/",
-  },
-
   title: "CredStack.ai",
-  description: "CredStack - AI Agents for due diligence, underwriting and document automation.",
+  description:
+    "CredStack - AI Agents for due diligence, underwriting and document automation.",
 };
-
-
 
 export default function RootLayout({ children }: { children: any }) {
   return (
     <html lang="en" {...mantineHtmlProps} className={GeistSans.className}>
       <head>
         <ColorSchemeScript />
-        <link rel="icon" type="image/png" href="/favicon-light.png" media="(prefers-color-scheme: light)" />
-        <link rel="icon" type="image/png" href="/favicon-dark.png" media="(prefers-color-scheme: dark)" />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/favicon-light.png"
+          media="(prefers-color-scheme: light)"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/favicon-dark.png"
+          media="(prefers-color-scheme: dark)"
+        />
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
         />
-        <script src="https://analytics.ahrefs.com/analytics.js" data-key="uWSS76umRTWKCgLt1/MqEw" async></script>
-        <meta name="ahrefs-site-verification" content="c14bef5b050086b669872690b1c89dc32433c4ff02246c80ce3e01cd2bdd42a9" />
-
+        <script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="uWSS76umRTWKCgLt1/MqEw"
+          async
+        ></script>
+        <meta
+          name="ahrefs-site-verification"
+          content="c14bef5b050086b669872690b1c89dc32433c4ff02246c80ce3e01cd2bdd42a9"
+        />
       </head>
       <body className={styles["body-margin"]}>
         <MantineProvider
@@ -51,9 +60,7 @@ export default function RootLayout({ children }: { children: any }) {
         >
           <Box className={styles["layout-root"]}>
             <HeaderMegaMenu />
-            <Box className={styles["layout-content"]}>
-              {children}
-            </Box>
+            <Box className={styles["layout-content"]}>{children}</Box>
             <FooterLinks />
           </Box>
         </MantineProvider>

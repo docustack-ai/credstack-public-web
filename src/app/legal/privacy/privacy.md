@@ -1,6 +1,6 @@
 
 # Privacy Policy
-#### Last Updated: 2025-09-26
+#### Last Updated: 2026-02-07
 
 Learn how we handle your personal information and ensure your privacy and data security on our platform.
 
@@ -22,7 +22,7 @@ If you contact us directly, we may receive additional information about you such
 When you register for an Account, we may ask for your contact information, including items such as name, company name, address, email address, and telephone number.
 
 ## Log Files
-credstack follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information.
+Credstack follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information.
 
 ## Cookies and Web Beacon
 Like any other website, credstack uses "cookies". These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information.
@@ -42,24 +42,24 @@ Our website may use cookies to enhance your browsing experience and collect info
 
 2. **Sharing with our product team**
 
-The members of our product team will have access to the anonymized metrics above. Specific credstack team members who are corresponding with a user after receiving user feedback will have access to name and email so they can follow up appropriately.
+   The members of our product team will have access to the anonymized metrics above. Specific credstack team members who are corresponding with a user after receiving user feedback will have access to name and email so they can follow up appropriately.
 
 3. **Sharing with third parties**
-We do not sell any information to third parties. We share information with certain third parties that help us operate and improve our service (please review the Storage and security section below).
+   We do not sell any information to third parties. We share information with certain third parties that help us operate and improve our service (please review the Storage and security section below).
 
 ## How we store and secure the information we collect
 1. **Storage and security**
 
-We store the usage data inside of an encrypted database, inaccessible from the internet. Additionally, we use third-party analytics services to store certain non-sensitive usage metrics.
+   We store the usage data inside of an encrypted database, inaccessible from the internet. Additionally, we use third-party analytics services to store certain non-sensitive usage metrics.
 
 2. **Storage location**
 
-The usage data is stored in a Azure Servers in the United States.
+   The usage data is stored in a Azure Servers in the United States.
 
 ## Third Party Privacy Policies
-credstack's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options.
+   Credstack's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options.
 
-You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers' respective websites.
+   You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers' respective websites.
 
 ## Advertising Partners Privacy Policies
 You may consult this list to find the Privacy Policy for each of the advertising partners of credstack.
@@ -96,4 +96,4 @@ credstack does not knowingly collect any Personal Identifiable Information from 
 We may update our Privacy Policy from time to time. Thus, we advise you to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately, after they are posted on this page.
 
 ## Contact Us
-If you have any questions or concerns about our Privacy Policy or the handling of your personal information, please contact us at [contact@docustack.ai](mailto:contact@docustack.ai)
+If you have any questions or concerns about our Privacy Policy or the handling of your personal information, please contact us at [contact@credstack.ai](mailto:contact@credstack.ai)
