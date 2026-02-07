@@ -21,7 +21,7 @@ export default function InsuranceUnderwritingUseCase() {
             description:
                 'Ingest proposal documents, photo ID, live/selfie images, signatures, medical reports, lab results, and inspection reports through uploads or integrations.',
             image: {
-                src: '/assets/page_images/insurance_underwriting_evidence.png',
+                src: '/assets/page_images/classification.png',
                 alt: 'Underwriting evidence collection',
                 w: 400,
                 h: 300,
@@ -33,7 +33,7 @@ export default function InsuranceUnderwritingUseCase() {
             description:
                 'Validate photo match, signature consistency, document authenticity, medical disclosures, and cross-checks against proposal data.',
             image: {
-                src: '/assets/page_images/insurance_underwriting_verification.png',
+                src: '/assets/page_images/validation.png',
                 alt: 'Automated verification',
                 w: 400,
                 h: 300,
@@ -45,7 +45,7 @@ export default function InsuranceUnderwritingUseCase() {
             description:
                 'Parse medical reports, prescriptions, diagnostics, and lab values using AI to identify risk signals, exclusions, and underwriting flags.',
             image: {
-                src: '/assets/page_images/insurance_underwriting_medical.png',
+                src: '/assets/page_images/extraction.png',
                 alt: 'Medical analysis',
                 w: 400,
                 h: 300,
@@ -57,7 +57,7 @@ export default function InsuranceUnderwritingUseCase() {
             description:
                 'Apply configurable underwriting rules and AI risk models to generate explainable accept, load, defer, or decline decisions.',
             image: {
-                src: '/assets/page_images/insurance_underwriting_risk.png',
+                src: '/assets/page_images/decisioning.png',
                 alt: 'Risk scoring',
                 w: 400,
                 h: 300,
@@ -69,7 +69,7 @@ export default function InsuranceUnderwritingUseCase() {
             description:
                 'Maintain a complete underwriting trail with evidence, rules triggered, medical reasoning, and final decisions for audits and disputes.',
             image: {
-                src: '/assets/page_images/insurance_underwriting_audit.png',
+                src: '/assets/page_images/human_loop.png',
                 alt: 'Audit trail',
                 w: 400,
                 h: 300,
@@ -234,7 +234,7 @@ export default function InsuranceUnderwritingUseCase() {
             <DownloadCTA
                 title="Download credstack Insurance Underwriting Brief"
                 description="Learn how credstack automates photo, signature, and medical validation to deliver faster, explainable underwriting decisions."
-                fileUrl="/assets/docs/credstack_InsuranceUnderwriting_Brief.pdf"
+                fileUrl="/assets/docs/CredStack Securitization Brochure.pdf"
                 buttonLabel="Download Brief"
             />
         </Box>

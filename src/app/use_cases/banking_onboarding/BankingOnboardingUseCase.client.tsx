@@ -21,7 +21,7 @@ export default function BankingOnboardingUseCase() {
             description:
                 'Capture borrower and partner information at the point-of-sale through conversational UI, document upload, or channel ingestion — no manual form filling required.',
             image: {
-                src: '/assets/page_images/onboarding_capture.png',
+                src: '/assets/page_images/classification.png',
                 alt: 'Capture without forms',
                 w: 400,
                 h: 300,
@@ -33,7 +33,7 @@ export default function BankingOnboardingUseCase() {
             description:
                 'Instant background checks, KYC/KYB verification, and document extraction run as soon as sales data is captured so deals are validated before underwriting.',
             image: {
-                src: '/assets/page_images/onboarding_auto_dd.png',
+                src: '/assets/page_images/extraction.png',
                 alt: 'Automated Due Diligence',
                 w: 400,
                 h: 300,
@@ -45,7 +45,7 @@ export default function BankingOnboardingUseCase() {
             description:
                 'Pre-populate credit files with extracted data, run rule-based and ML scoring, and surface explainable risk signals for rapid underwriting decisions.',
             image: {
-                src: '/assets/page_images/onboarding_underwriting.png',
+                src: '/assets/page_images/decisioning.png',
                 alt: 'Underwriting Automation',
                 w: 400,
                 h: 300,
@@ -57,7 +57,7 @@ export default function BankingOnboardingUseCase() {
             description:
                 'Seamless handoff from sales to collections with the full document trail, scoring history, and automated triggers for repayment reminders or collection workflows.',
             image: {
-                src: '/assets/page_images/onboarding_collections.png',
+                src: '/assets/page_images/validation.png',
                 alt: 'Collections Handoff',
                 w: 400,
                 h: 300,
@@ -69,7 +69,7 @@ export default function BankingOnboardingUseCase() {
             description:
                 'Automated customer communications (SMS, email, WhatsApp, voice) for onboarding confirmations, KYC requests, and status updates — all logged and auditable.',
             image: {
-                src: '/assets/page_images/onboarding_communication.png',
+                src: '/assets/page_images/human_loop.png',
                 alt: 'Automated Communication',
                 w: 400,
                 h: 300,
@@ -224,7 +224,7 @@ export default function BankingOnboardingUseCase() {
             <DownloadCTA
                 title="Download credstack Banking Onboarding Brief"
                 description="See how credstack enables zero-form onboarding, instant due diligence at sales, underwriting acceleration, and automated communications across the customer lifecycle."
-                fileUrl="/assets/docs/credstack_BankingOnboarding_Brief.pdf"
+                fileUrl="/assets/docs/CredStack Securitization Brochure.pdf"
                 buttonLabel="Download Brief"
             />
         </Box>

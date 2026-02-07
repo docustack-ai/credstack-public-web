@@ -22,7 +22,7 @@ export default function InsuranceOnboardingUseCase() {
             description:
                 'Capture proposer, insured, nominee, and risk information at the point-of-sale through conversational UI, document upload, or channel ingestion — without manual proposal forms.',
             image: {
-                src: '/assets/page_images/insurance_capture.png',
+                src: '/assets/page_images/classification.png',
                 alt: 'Insurance data capture',
                 w: 400,
                 h: 300,
@@ -34,7 +34,7 @@ export default function InsuranceOnboardingUseCase() {
             description:
                 'Run instant KYC/KYB, medical disclosures parsing, prior policy checks, and document extraction as soon as sales data is captured.',
             image: {
-                src: '/assets/page_images/insurance_auto_dd.png',
+                src: '/assets/page_images/extraction.png',
                 alt: 'Insurance due diligence',
                 w: 400,
                 h: 300,
@@ -46,7 +46,7 @@ export default function InsuranceOnboardingUseCase() {
             description:
                 'Pre-fill underwriting cases with extracted data, apply rule engines and AI risk models, and surface explainable underwriting decisions.',
             image: {
-                src: '/assets/page_images/insurance_underwriting.png',
+                src: '/assets/page_images/decisioning.png',
                 alt: 'Insurance underwriting',
                 w: 400,
                 h: 300,
@@ -58,7 +58,7 @@ export default function InsuranceOnboardingUseCase() {
             description:
                 'Seamless transition from underwriting to policy issuance with a complete audit trail, endorsements readiness, and servicing triggers.',
             image: {
-                src: '/assets/page_images/insurance_issuance.png',
+                src: '/assets/page_images/validation.png',
                 alt: 'Policy issuance',
                 w: 400,
                 h: 300,
@@ -70,7 +70,7 @@ export default function InsuranceOnboardingUseCase() {
             description:
                 'Automated communications across SMS, email, WhatsApp, and voice for proposals, medical requests, policy issuance, and renewals — fully logged and auditable.',
             image: {
-                src: '/assets/page_images/insurance_communication.png',
+                src: '/assets/page_images/human_loop.png',
                 alt: 'Insurance communication',
                 w: 400,
                 h: 300,
@@ -231,7 +231,7 @@ export default function InsuranceOnboardingUseCase() {
             <DownloadCTA
                 title="Download credstack Insurance Onboarding Brief"
                 description="See how credstack enables zero-form insurance onboarding, automated risk checks, underwriting acceleration, and compliant customer communications."
-                fileUrl="/assets/docs/credstack_InsuranceOnboarding_Brief.pdf"
+                fileUrl="/assets/docs/CredStack Securitization Brochure.pdf"
                 buttonLabel="Download Brief"
             />
         </Box>

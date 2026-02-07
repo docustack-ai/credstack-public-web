@@ -21,7 +21,7 @@ export default function CoLendingUseCase() {
             description:
                 'Streamlined onboarding for originators and lenders — capture KYC/KYB, contracts, and role-based access in a single flow.',
             image: {
-                src: '/assets/page_images/colending_onboarding.png',
+                src: '/assets/page_images/colending_1.png',
                 alt: 'Onboarding',
                 w: 400,
                 h: 300,
@@ -33,7 +33,7 @@ export default function CoLendingUseCase() {
             description:
                 'Configure RBI-compliant split structures (80:20, 70:30, 90:10, etc.) per transaction. Splits are auditable and applied automatically during deal ingestion.',
             image: {
-                src: '/assets/page_images/colending_allocation.png',
+                src: '/assets/page_images/colending_2.png',
                 alt: 'Allocation & Split Rules',
                 w: 400,
                 h: 300,
@@ -45,7 +45,7 @@ export default function CoLendingUseCase() {
             description:
                 'High-accuracy document classification and data extraction from loan agreements, sanction letters, and KYC documents to populate deal records automatically.',
             image: {
-                src: '/assets/page_images/colending_extraction.png',
+                src: '/assets/page_images/extraction.png',
                 alt: 'Document Capture',
                 w: 400,
                 h: 300,
@@ -57,7 +57,7 @@ export default function CoLendingUseCase() {
             description:
                 'Automated business-rule validation (eligibility, co-lending compliance) and support for recancellation workflows with full audit trails.',
             image: {
-                src: '/assets/page_images/colending_validation.png',
+                src: '/assets/page_images/validation.png',
                 alt: 'Validation & Recancellation',
                 w: 400,
                 h: 300,
@@ -69,7 +69,7 @@ export default function CoLendingUseCase() {
             description:
                 'Unified portfolio view for originators and lenders with explainable risk scoring, continuous monitoring, duplicate detection, and early-warning signals.',
             image: {
-                src: '/assets/page_images/colending_portfolio.png',
+                src: '/assets/page_images/decisioning.png',
                 alt: 'Portfolio Management',
                 w: 400,
                 h: 300,
@@ -224,7 +224,7 @@ export default function CoLendingUseCase() {
             <DownloadCTA
                 title="Download credstack Co-Lending Brief"
                 description="Learn how credstack helps originators and lenders operationalize compliant co-lending programs with automation and audit-ready workflows."
-                fileUrl="/assets/docs/credstack_CoLending_Brochure.pdf"
+                fileUrl="/assets/docs/CredStack Securitization Brochure.pdf"
                 buttonLabel="Download Brief"
             />
         </Box>
