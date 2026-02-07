@@ -14,7 +14,7 @@ const teamMembers = [
     {
         name: 'Chaitanya',
         role: 'Co-Founder & CTO',
-        image: '/assets/team/chaitanya.png',
+        image: '/assets/team/chaitanya.jpeg',
         bio: 'Technology leader with deep expertise in AI/ML, product engineering, and building scalable enterprise-grade platforms.',
         innuendo: 'Rumor has it, he codes faster than AI itself.',
         linkedin: 'https://www.linkedin.com/in/chaitanyabhagavan/'

@@ -18,9 +18,15 @@ import { shadcnCssVariableResolver } from "../cssVariableResolver.ts";
 
 export const metadata = {
   metadataBase: new URL("https://credstack.ai"),
+
+  alternates: {
+    canonical: "/",
+  },
+
   title: "CredStack.ai",
   description: "CredStack - AI Agents for due diligence, underwriting and document automation.",
 };
+
 
 
 export default function RootLayout({ children }: { children: any }) {
