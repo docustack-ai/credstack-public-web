@@ -48,7 +48,7 @@ export default function ContactUs() {
   return (
     <form onSubmit={form.onSubmit(handleSubmit)} className={classes.form}>
       <Title
-        order={4}
+        order={1}
         size="h2"
         className={classes.title}
         fw={600}

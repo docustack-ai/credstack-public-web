@@ -6,14 +6,14 @@ import TermsMarkdown from './TermsMarkdown.client';
 export const metadata: Metadata = {
   title: "Terms of Use | CredStack.ai",
   description:
-    "Review the terms of use for accessing and using CredStack's website and services.",
+    "Review CredStack’s Terms of Use to understand your rights, responsibilities, and conditions for accessing and using our AI-powered platform.",
   alternates: {
     canonical: "/legal/terms",
   },
 };
 
 export default function TermsPage() {
-    const filePath = path.join(process.cwd(), 'src/app/legal/terms/terms.md');
-    const markdown = fs.readFileSync(filePath, 'utf8');
-    return <TermsMarkdown markdown={markdown} />;
+  const filePath = path.join(process.cwd(), 'src/app/legal/terms/terms.md');
+  const markdown = fs.readFileSync(filePath, 'utf8');
+  return <TermsMarkdown markdown={markdown} />;
 }

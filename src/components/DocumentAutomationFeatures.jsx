@@ -78,7 +78,7 @@ return (
                     Key Features
                 </Button>
             </div>
-            <Title order={1} className={classes.title} mt={20} mb={10}>
+            <Title order={2} className={classes.title} mt={20} mb={10}>
                 Real AI powered Document Automation
             </Title>
             <Text size="lg" color="dimmed" className={classes.subtitle} mb={30}>
