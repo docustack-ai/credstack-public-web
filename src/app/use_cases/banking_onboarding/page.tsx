@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import BankingOnboardingUseCaseClient from "./BankingOnboardingUseCase.client";
 
 export const metadata: Metadata = {
-  title: "Banking Onboarding Use Case | CredStack.ai",
+  title: "AI Onboarding for Banking | CredStack.ai",
   description:
     "See how CredStack automates banking onboarding with zero-form capture, instant due diligence, and faster underwriting handoff.",
   alternates: {

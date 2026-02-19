@@ -14,10 +14,18 @@
 }
 
 
+.leftColumn {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--mantine-spacing-xl) * 1);
+  min-width: 0;
+}
+
 .logo {
+  display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 10px; /* Space between image and text */
+  gap: 12px;
 }
 
 .logo img {
@@ -27,29 +35,124 @@
 }
 
 .description {
-  margin-top: 5px;
-font-size: larger;
+  margin-top: 0;
+  font-size: 1rem;
 }
+
+.leftSections {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--mantine-spacing-lg) * 1);
+}
+
+.leftSection {
+  width: 100%;
+}
+
+.leftHeading {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.badgeGrid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1px;
+}
+
+.badgeCard {
+  border-radius: 10px;
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  gap: 2px;
+}
+
+.badgeImage {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.badgeText {
+  font-size: 0.78rem;
+  line-height: 1.15;
+  text-align: center;
+  color: #495057;
+  font-weight: 600;
+}
+
+.recognitionGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.recognitionItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.recognitionImage {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
+.recognitionTextWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  vertical-align: middle;
+  gap: 1px;
+}
+
+.recognitionText {
+  font-size: 1rem;
+  color: #495057;
+  font-weight: 600;
+}
+
+.recognitionLink {
+  font-size: 0.78rem;
+  color: #4c6ef5;
+  text-decoration: none;
+}
+
+.recognitionLink:hover {
+  text-decoration: underline;
+}
+
 .inner {
   width: 100%;
   max-width: 90%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  align-items: start;
   margin: 0 auto;
-  flex-grow: 1;
   gap: calc(var(--mantine-spacing-xl) * 1);
   align-self: stretch;
 }
 
 .groups {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-content: start;
+  min-width: 0;
   gap: calc(var(--mantine-spacing-xl) * 1);
 }
 
 .wrapper {
-  width: 160px;
+  width: 100%;
 }
 
 .link {
@@ -88,3 +191,19 @@ font-size: larger;
   display: flex;
   gap: 8px;
 }
+
+@media (max-width: 900px) {
+  .inner {
+    grid-template-columns: 1fr;
+  }
+
+  .badgeGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .groups {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+
