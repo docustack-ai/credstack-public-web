@@ -46,21 +46,21 @@ const feature_list = [
     features: [
       {
         icon: IconChartPie3,
-        title: 'Classification',
-        description: 'AI-powered document classification for due diligence.',
-        url: '#',
+        title: 'Bank Statement Analyzer',
+        description: 'AI-based bank statement analysis for automated credit risk decisions.',
+        url: '/features/bank-statement-analyzer',
       },
       {
         icon: IconNotification,
-        title: 'Extraction',
-        description: 'Extract key data points from documents with high accuracy.',
-        url: '#',
+        title: 'All Features',
+        description: 'Browse all Credstack product features.',
+        url: '/features',
       },
       {
         icon: IconCode,
-        title: 'Decisioning',
-        description: 'Automate decision-making with custom rules and LLMs.',
-        url: '#',
+        title: 'Risk Decisioning',
+        description: 'Configurable credit policy and risk decision orchestration.',
+        url: '/features',
       },
     ],
   },
@@ -70,21 +70,21 @@ const feature_list = [
     features: [
       {
         icon: IconChartPie3,
-        title: 'Agents.ai',
-        description: 'Intelligent agents for workflow automation.',
-        url: '#',
+        title: 'AI Agents',
+        description: 'Workflow assistants for lending and underwriting operations.',
+        url: '/features',
       },
       {
         icon: IconNotification,
         title: 'Assist.ai',
-        description: 'AI-powered assistance for users and teams.',
-        url: '#',
+        description: 'Context-aware assistance for analyst and operations teams.',
+        url: '/features',
       },
       {
         icon: IconCode,
         title: 'Insights.ai',
         description: 'Actionable insights from your data and processes.',
-        url: '#',
+        url: '/features',
       },
     ],
   },
@@ -183,14 +183,14 @@ return (
                 { title: 'CredExperience.ai', key: 'credexp', icon: IconMessageUser },
                 ];
                 const credlensFeatures = [
-                { icon: IconChartPie3, title: 'Classification', description: 'AI-powered document classification for due diligence.' },
-                { icon: IconNotification, title: 'Extraction', description: 'Extract key data points from documents with high accuracy.' },
-                { icon: IconCode, title: 'Decisioning', description: 'Automate decision-making with custom rules and LLMs.' },
+                { icon: IconChartPie3, title: 'Bank Statement Analyzer', description: 'AI-based bank statement analysis for automated credit risk decisions.', url: '/features/bank-statement-analyzer' },
+                { icon: IconNotification, title: 'All Features', description: 'Browse all Credstack product features.', url: '/features' },
+                { icon: IconCode, title: 'Risk Decisioning', description: 'Configurable credit policy and risk decision orchestration.', url: '/features' },
                 ];
                 const credexpFeatures = [
-                { icon: IconChartPie3, title: 'Agents.ai', description: 'Intelligent agents for workflow automation.' },
-                { icon: IconNotification, title: 'Assist.ai', description: 'AI-powered assistance for users and teams.' },
-                { icon: IconCode, title: 'Insights.ai', description: 'Actionable insights from your data and processes.' },
+                { icon: IconChartPie3, title: 'AI Agents', description: 'Workflow assistants for lending and underwriting operations.', url: '/features' },
+                { icon: IconNotification, title: 'Assist.ai', description: 'Context-aware assistance for analyst and operations teams.', url: '/features' },
+                { icon: IconCode, title: 'Insights.ai', description: 'Actionable insights from your data and processes.', url: '/features' },
                 ];
                 return (
                 <Tabs variant="outline" orientation="vertical" defaultValue="credlens" value={selectedFeaturesTab} onChange={setSelectedFeaturesTab} style={{ display: 'flex' }}>
@@ -204,7 +204,7 @@ return (
                   <Tabs.Panel value="credlens" style={{ flex: 1, paddingLeft: 24 }}>
                   <SimpleGrid cols={2} spacing={0}>
                     {credlensFeatures.map(item => (
-                    <UnstyledButton className={classes.subLink} key={item.title}>
+                    <UnstyledButton component={Link} href={item.url} className={classes.subLink} key={item.title}>
                       <Group wrap="nowrap" align="flex-start">
                       <ThemeIcon size={34} variant="default" radius="md">
                         <item.icon size={22} color={theme.colors.blue[6]} />
@@ -221,7 +221,7 @@ return (
                   <Tabs.Panel value="credexp" style={{ flex: 1, paddingLeft: 24 }}>
                   <SimpleGrid cols={2} spacing={0}>
                     {credexpFeatures.map(item => (
-                    <UnstyledButton className={classes.subLink} key={item.title}>
+                    <UnstyledButton component={Link} href={item.url} className={classes.subLink} key={item.title}>
                       <Group wrap="nowrap" align="flex-start">
                       <ThemeIcon size={34} variant="default" radius="md">
                         <item.icon size={22} color={theme.colors.blue[6]} />
@@ -248,7 +248,7 @@ return (
                       See our features in action with a personalized demo
                     </Text>
                   </div>
-                  <Button size="sm" variant="default" href="/demo">Get a Demo</Button>
+                  <Button size="sm" variant="default" component={Link} href="/demo">Get a Demo</Button>
                 </Group>
               </div>
             </HoverCard.Dropdown>

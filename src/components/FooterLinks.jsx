@@ -10,7 +10,7 @@ const data = [
     title: 'Pages',
     links: [
       { label: 'Home', link: '/' },
-      // { label: 'Features', link: '/features' },
+      { label: 'Features', link: '/features' },
       { label: 'Blog', link: '/blogs' },
       { label: 'Contact', link: '/contact' },
     ],
