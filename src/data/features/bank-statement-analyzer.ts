@@ -9,7 +9,7 @@ export const bankStatementAnalyzerFeature: FeaturePageData = {
     canonical: '/features/bank-statement-analyzer',
   },
   hero: {
-    h1: 'AI Bank Statement Analyzer for Automated Credit Risk Assessment',
+    h1: 'AI Powered Bank Statement Analyzer',
     intro:
       'The Credstack Bank Statement Analyzer is software that automates statement extraction, transaction intelligence, and credit risk analysis for faster and more consistent underwriting decisions.',
     ctaLabel: 'Request a Demo',

@@ -1,0 +1,26 @@
+.bankStatementPage :global(h1) {
+  color: #222;
+  font-size: 50px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.bankStatementPage :global(h2) {
+  font-weight: 500;
+  line-height: calc(2.25rem * var(--mantine-scale));
+  font-size: var(--mantine-font-size-sm);
+  display: inline-block;
+  height: calc(2.25rem * var(--mantine-scale));
+  padding-inline: var(--mantine-spacing-md);
+  border-radius: var(--mantine-radius-xl);
+  background: var(--mantine-color-blue-light);
+  color: var(--mantine-color-blue-light-color);
+  border: 0;
+  margin-inline: auto;
+}
+
+@media (max-width: 600px) {
+  .bankStatementPage :global(h1) {
+    font-size: 40px;
+  }
+}

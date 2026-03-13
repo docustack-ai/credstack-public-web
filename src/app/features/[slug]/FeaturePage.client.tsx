@@ -14,14 +14,18 @@ import { FaqAccordion } from '../../../components/features/FaqAccordion';
 import { DemoCta } from '../../../components/features/DemoCta';
 import { RelatedBlogs } from '../../../components/features/RelatedBlogs';
 import SpaceComponent from '../../../components/SpaceComponent';
+import classes from './FeaturePage.client.module.css';
 
 type FeaturePageClientProps = {
   feature: FeaturePageData;
 };
 
 export default function FeaturePageClient({ feature }: FeaturePageClientProps) {
+  const pageClassName =
+    feature.slug === 'bank-statement-analyzer' ? classes.bankStatementPage : undefined;
+
   return (
-    <>
+    <div className={pageClassName}>
       <FeatureHero
         h1={feature.hero.h1}
         intro={feature.hero.intro}
@@ -128,6 +132,6 @@ export default function FeaturePageClient({ feature }: FeaturePageClientProps) {
           {feature.complianceNote}
         </Text>
       ) : null}
-    </>
+    </div>
   );
 }
