@@ -17,6 +17,7 @@ export default function ArticleCard({
   author = 'Bill Wormeater',
   excerpt = '',
   image = 'https://i.imgur.com/Cij5vdL.png',
+  badge = 'outstanding',
 }) {
   const theme = useMantineTheme();
 
@@ -28,7 +29,7 @@ export default function ArticleCard({
     
 
       <Badge className={classes.rating} variant="gradient" gradient={{ from: 'yellow', to: 'red' }}>
-        outstanding
+        {badge}
       </Badge>
       <div style={{ padding: '1rem' }}>
         <Text className={classes.title} fw={500}>

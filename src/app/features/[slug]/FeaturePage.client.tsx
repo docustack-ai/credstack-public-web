@@ -76,7 +76,11 @@ export default function FeaturePageClient({ feature }: FeaturePageClientProps) {
 
       {feature.differentiators?.items?.length ? (
         <>
-          <UseCaseGrid title={feature.differentiators.title} items={feature.differentiators.items} />
+          <UseCaseGrid
+            title={feature.differentiators.title}
+            items={feature.differentiators.items}
+            layout="split"
+          />
           <SpaceComponent />
         </>
       ) : null}

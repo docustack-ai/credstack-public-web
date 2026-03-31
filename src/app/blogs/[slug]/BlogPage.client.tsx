@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import classes from './BlogPage.module.css';
 
 type BlogPageClientProps = {
@@ -40,7 +41,7 @@ export default function BlogPageClient({ slug }: BlogPageClientProps) {
         <span>{blog.author}</span> | <span>{blog.date}</span>
       </div>
       <Image src={blog.image} alt={blog.title} className={classes.image} width={800} height={400} style={{ width: '100%', height: 'auto' }} />
-      <ReactMarkdown>{content}</ReactMarkdown>
+      <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
     </div>
   );
 }
