@@ -13,17 +13,18 @@ export type FeatureStep = {
 export type FeatureUseCase = {
   title: string;
   description: string;
+  image?: string;
 };
 
 export type FeatureDifferentiator = {
   title: string;
   description: string;
+  image?: string;
 };
 
 export type FeatureComparisonRow = {
   feature: string;
-  traditional: string;
-  credstack: string;
+  values: [string, string, string];
 };
 
 export type FeatureFaq = {
@@ -76,7 +77,8 @@ export type FeaturePageData = {
     items: FeatureDifferentiator[];
   };
   comparison: {
-    columns: [string, string, string];
+    title?: string;
+    columns: [string, string, string, string];
     rows: FeatureComparisonRow[];
   };
   architecture: {

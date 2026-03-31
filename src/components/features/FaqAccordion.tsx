@@ -24,9 +24,11 @@ export function FaqAccordion({ items }: FaqAccordionProps) {
         <Accordion variant="separated" radius="md">
           {items.map((item) => (
             <Accordion.Item key={item.q} value={item.q}>
-              <Accordion.Control>{item.q}</Accordion.Control>
+              <Accordion.Control>
+                <Text fw={500}>{item.q}</Text>
+              </Accordion.Control>
               <Accordion.Panel>
-                <Text c="dimmed">{item.a}</Text>
+                <Text>{item.a}</Text>
               </Accordion.Panel>
             </Accordion.Item>
           ))}

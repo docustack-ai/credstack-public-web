@@ -51,16 +51,16 @@ const feature_list = [
         url: '/features/bank-statement-analyzer',
       },
       {
-        icon: IconNotification,
-        title: 'All Features',
-        description: 'Browse all Credstack product features.',
-        url: '/features',
+        icon: IconMessageUser,
+        title: 'Email Lead Management',
+        description: 'AI email ingestion and partner lead orchestration for co-lending teams.',
+        url: '/features/email-lead-management-partner-crm',
       },
       {
-        icon: IconCode,
-        title: 'Risk Decisioning',
-        description: 'Configurable credit policy and risk decision orchestration.',
-        url: '/features',
+        icon: IconFingerprint,
+        title: 'CAM Automation',
+        description: 'AI-powered credit appraisal memo automation for faster underwriting.',
+        url: '/features/cam-automation',
       },
     ],
   },
@@ -152,8 +152,9 @@ return (
     <header className={classes.header}>
       <Group justify="space-between" h="100%">
         <div className={classes.logo}>
-          {/* Logo added here */}
-          <Image src="/assets/black.svg" alt="CredStack" width={120} height={32} style={{ height: 32, width: 'auto' }} />
+          <Link href="/" aria-label="Go to home page">
+            <Image src="/assets/black.svg" alt="CredStack" width={120} height={32} style={{ height: 32, width: 'auto' }} />
+          </Link>
         </div>
 
         <Group h="100%" gap={0} visibleFrom="sm">
@@ -184,8 +185,8 @@ return (
                 ];
                 const credlensFeatures = [
                 { icon: IconChartPie3, title: 'Bank Statement Analyzer', description: 'AI-based bank statement analysis for automated credit risk decisions.', url: '/features/bank-statement-analyzer' },
-                { icon: IconNotification, title: 'All Features', description: 'Browse all Credstack product features.', url: '/features' },
-                { icon: IconCode, title: 'Risk Decisioning', description: 'Configurable credit policy and risk decision orchestration.', url: '/features' },
+                { icon: IconMessageUser, title: 'Email Lead Management', description: 'AI email ingestion and partner lead orchestration for co-lending teams.', url: '/features/email-lead-management-partner-crm' },
+                { icon: IconFingerprint, title: 'CAM Automation', description: 'AI-powered credit appraisal memo automation for faster underwriting.', url: '/features/cam-automation' },
                 ];
                 const credexpFeatures = [
                 { icon: IconChartPie3, title: 'AI Agents', description: 'Workflow assistants for lending and underwriting operations.', url: '/features' },
@@ -245,10 +246,13 @@ return (
                       Get started
                     </Text>
                     <Text size="xs" c="dimmed">
-                      See our features in action with a personalized demo
+                      See our features in action or browse the full feature catalog
                     </Text>
                   </div>
-                  <Button size="sm" variant="default" component={Link} href="/demo">Get a Demo</Button>
+                  <Group gap="xs">
+                    <Button size="sm" variant="default" component={Link} href="/features">All Features</Button>
+                    <Button size="sm" component={Link} href="/demo">Get a Demo</Button>
+                  </Group>
                 </Group>
               </div>
             </HoverCard.Dropdown>
@@ -430,6 +434,14 @@ return (
                 ))}
               </Box>
             ))}
+            <Group mt="xs" mb="sm" gap="xs">
+              <Button size="xs" variant="default" component={Link} href="/features" onClick={closeDrawer}>
+                All Features
+              </Button>
+              <Button size="xs" component={Link} href="/demo" onClick={closeDrawer}>
+                Get a Demo
+              </Button>
+            </Group>
           </Box>
         </Collapse>
         <UnstyledButton className={classes.link} onClick={toggleSolutions}>

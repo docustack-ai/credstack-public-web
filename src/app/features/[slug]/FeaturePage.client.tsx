@@ -7,7 +7,6 @@ import { ProblemInfographics } from '../../../components/features/ProblemInfogra
 import { DefinitionBlock } from '../../../components/features/DefinitionBlock';
 import { HowItWorksFlow } from '../../../components/features/HowItWorksFlow';
 import { UseCaseGrid } from '../../../components/features/UseCaseGrid';
-import { AudienceChips } from '../../../components/features/AudienceChips';
 import { ComparisonTable } from '../../../components/features/ComparisonTable';
 import { TechArchitecture } from '../../../components/features/TechArchitecture';
 import { FaqAccordion } from '../../../components/features/FaqAccordion';
@@ -34,6 +33,17 @@ export default function FeaturePageClient({ feature }: FeaturePageClientProps) {
         image={feature.hero.image}
       />
       <SpaceComponent />
+
+      {feature.differentiators?.items?.length ? (
+        <>
+          <UseCaseGrid
+            title={feature.differentiators.title}
+            items={feature.differentiators.items}
+            layout="split"
+          />
+          <SpaceComponent />
+        </>
+      ) : null}
 
       {feature.problem?.points?.length ? (
         <>
@@ -67,27 +77,13 @@ export default function FeaturePageClient({ feature }: FeaturePageClientProps) {
         </>
       ) : null}
 
-      {feature.audience?.items?.length ? (
-        <>
-          <AudienceChips title={feature.audience.title} items={feature.audience.items} />
-          <SpaceComponent />
-        </>
-      ) : null}
-
-      {feature.differentiators?.items?.length ? (
-        <>
-          <UseCaseGrid
-            title={feature.differentiators.title}
-            items={feature.differentiators.items}
-            layout="split"
-          />
-          <SpaceComponent />
-        </>
-      ) : null}
-
       {feature.comparison?.rows?.length ? (
         <>
-          <ComparisonTable columns={feature.comparison.columns} rows={feature.comparison.rows} />
+          <ComparisonTable
+            title={feature.comparison.title}
+            columns={feature.comparison.columns}
+            rows={feature.comparison.rows}
+          />
           <SpaceComponent />
         </>
       ) : null}

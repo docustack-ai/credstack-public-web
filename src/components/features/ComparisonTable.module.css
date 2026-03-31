@@ -1,0 +1,69 @@
+.section {
+  padding: 24px;
+}
+
+.title {
+  letter-spacing: -0.01em;
+}
+
+.tableWrap {
+  border: 1px solid #e6e7eb;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(16, 24, 40, 0.05);
+}
+
+.table {
+  min-width: 920px;
+}
+
+.table :global(th),
+.table :global(td) {
+  padding: 14px 16px;
+  vertical-align: top;
+}
+
+.headerCell {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.featureHeader {
+  background: #f8fafc;
+}
+
+.perfiosHeader {
+  background: #f5f8fb;
+}
+
+.accumnHeader {
+  background: #f6f6fb;
+}
+
+.credstackHeader {
+  background: #ecf7ea;
+  color: #1d6f34;
+}
+
+.featureCell {
+  font-weight: 600;
+  min-width: 190px;
+  background: #fbfcfd;
+}
+
+.credstackCell {
+  background: #f3fbef;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 16px;
+  }
+
+  .table :global(th),
+  .table :global(td) {
+    padding: 12px;
+    font-size: 14px;
+  }
+}

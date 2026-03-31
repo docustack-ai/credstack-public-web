@@ -1,7 +1,13 @@
 import { bankStatementAnalyzerFeature } from './bank-statement-analyzer';
+import { camAutomationFeature } from './dynamic-cam';
+import { emailLeadManagementFeature } from './email-lead-management';
 import { FeaturePageData } from './types';
 
-const features: FeaturePageData[] = [bankStatementAnalyzerFeature];
+const features: FeaturePageData[] = [
+  bankStatementAnalyzerFeature,
+  camAutomationFeature,
+  emailLeadManagementFeature,
+];
 
 export const featureBySlug: Record<string, FeaturePageData> = features.reduce(
   (acc, feature) => {

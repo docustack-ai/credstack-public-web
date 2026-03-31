@@ -1,10 +1,12 @@
-import { Card, SimpleGrid, Stack, Text, Title } from '@mantine/core';
+import { Card, Image, SimpleGrid, Text, ThemeIcon, Stack, Title } from '@mantine/core';
+import { IconSparkles } from '@tabler/icons-react';
 import StyledContainer from '../StyledContainer';
 import classes from './UseCaseGrid.module.css';
 
 type UseCaseItem = {
   title: string;
   description: string;
+  image?: string;
 };
 
 type UseCaseGridProps = {
@@ -22,7 +24,9 @@ export function UseCaseGrid({ title, items, layout = 'grid' }: UseCaseGridProps)
     return (
       <StyledContainer>
         <section className={classes.section}>
-          <Text className={classes.splitTitle}>{title}</Text>
+          <Title order={2} ta="center">
+            {title}
+          </Title>
 
           <Stack gap="xl" mt="xl">
             {items.map((item, index) => (
@@ -30,7 +34,17 @@ export function UseCaseGrid({ title, items, layout = 'grid' }: UseCaseGridProps)
                 key={item.title}
                 className={`${classes.altRow} ${index % 2 === 1 ? classes.altRowReverse : ''}`}
               >
-                <div className={classes.altMedia} aria-hidden="true" />
+                <div className={classes.altMedia}>
+                  {item.image ? (
+                    <Image
+                      src={item.image}
+                      alt={item.title}
+                      radius="md"
+                      fit="contain"
+                      className={classes.altImage}
+                    />
+                  ) : null}
+                </div>
 
                 <div className={classes.altCopyContent}>
                   <Text className={classes.altCardTitle}>{item.title}</Text>
@@ -49,13 +63,22 @@ export function UseCaseGrid({ title, items, layout = 'grid' }: UseCaseGridProps)
   return (
     <StyledContainer>
       <section className={classes.section}>
-        <Title order={2} ta="center">
+        <Title order={2} >
           {title}
         </Title>
         <SimpleGrid cols={{ base: 1, md: 2 }} spacing="lg" mt="xl">
           {items.map((item) => (
-            <Card key={item.title} radius="md" padding="lg">
-              <Text fw={600}>{item.title}</Text>
+            <Card key={item.title} radius="md" padding="lg" className={classes.useCaseCard}>
+              <ThemeIcon
+                size={34}
+                radius="md"
+                variant="light"
+                color="green"
+                className={classes.useCaseIcon}
+              >
+                <IconSparkles size={18} />
+              </ThemeIcon>
+              <Text fw={600} mt="sm" className={classes.useCaseCardTitle}>{item.title}</Text>
               <Text c="dimmed" mt="xs">
                 {item.description}
               </Text>

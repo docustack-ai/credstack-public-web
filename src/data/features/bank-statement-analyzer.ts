@@ -5,19 +5,19 @@ export const bankStatementAnalyzerFeature: FeaturePageData = {
   seo: {
     title: 'AI Bank Statement Analyzer for Automated Credit Risk Assessment | CredStack.ai',
     description:
-      'Credstack Bank Statement Analyzer uses AI-driven data extraction, transaction classification, and risk signal detection to automate underwriting for lenders.',
+      'Credstack Bank Statement Analyzer uses AI-driven bank statement validation, data extraction, transaction classification, and risk signal detection to automate underwriting for lenders.',
     canonical: '/features/bank-statement-analyzer',
   },
   hero: {
     h1: 'AI Powered Bank Statement Analyzer',
     intro:
-      'The Credstack Bank Statement Analyzer is software that automates statement extraction, transaction intelligence, and credit risk analysis for faster and more consistent underwriting decisions.',
+      'The Credstack Bank Statement Analyzer is software that automates statement validation, data extraction, transaction intelligence, and credit risk analysis for faster and more consistent underwriting decisions.',
     ctaLabel: 'Request a Demo',
     ctaHref: '/demo',
-    image: '/assets/page_images/extraction.png',
+    image: '/assets/page_images/bank_statement.png',
   },
   problem: {
-    title: 'What is the current underwriting problem?',
+    title: 'Current processes for bank statement analysis are slow, inconsistent, and risky',
     points: [
       {
         title: 'Manual statement review is slow',
@@ -41,10 +41,8 @@ export const bankStatementAnalyzerFeature: FeaturePageData = {
   },
   definition: {
     title: 'What is Bank Statement Analysis?',
-    whatIs:
-      'Bank statement analysis is the process of extracting transaction-level data from statements and converting it into structured insights about income, expenses, liabilities, liquidity, and borrower behavior.',
-    whyUse:
-      'Lenders use bank statement analysis to make faster and more defensible credit decisions by measuring repayment capacity, financial stability, and risk patterns from real cashflow behavior.',
+    whatIs: '',
+    whyUse: '',
   },
   howItWorks: {
     title: 'How Credstack Bank Statement Analyzer works',
@@ -82,12 +80,13 @@ export const bankStatementAnalyzerFeature: FeaturePageData = {
     ],
   },
   useCases: {
-    title: 'Use cases',
+    title: 'Where can you use the AI Agentic Bank Statement Analysis?',
     items: [
       {
         title: 'SME Lending Underwriting',
         description:
           'Evaluate business cashflow consistency and transaction behavior for better SME credit decisions.',
+        image: '/assets/page_images/human_loop.png',
       },
       {
         title: 'Personal Loan Approval',
@@ -117,92 +116,105 @@ export const bankStatementAnalyzerFeature: FeaturePageData = {
         title: 'Intelligent Transaction Categorization',
         description:
           'Automatically classifies transactions into standardized buckets for consistent analysis across varying bank formats.',
+        image: '/assets/page_images/intelligent_transaction.png',
       },
       {
         title: 'Cashflow and Income Intelligence',
         description:
           'Highlights income stability, spending trends, and liquidity movement with lender-friendly risk context.',
+        image: '/assets/page_images/cashflow_transaction.png',
       },
       {
         title: 'Automated Risk Signals',
         description:
           'Surfaces irregular behavior, abnormal spending, and financial stress indicators in a structured format.',
+        image: '/assets/page_images/risk_bankstatement.png',
       },
       {
         title: 'Multi-Statement and Cross-Transfer Detection',
         description:
           'Processes multiple statements per application and detects cross-account patterns linked to fraud risk.',
+        image: '/assets/page_images/multi_bankst.png',
       },
       {
         title: 'API-First Integration',
         description:
           'Embeds into LOS, underwriting pipelines, and lending platforms through secure APIs.',
+        image: '/assets/page_images/api_bankst.png',
       },
       {
         title: 'Custom Intelligence Models',
         description:
           'Supports lender-specific underwriting logic, risk policies, and decision frameworks at scale.',
+        image: '/assets/page_images/cashflow_bankst.png',
       },
     ],
   },
   comparison: {
-    columns: [
-      'Feature',
-      'Traditional Bank Statement Tools',
-      'Credstack Bank Statement Analyzer',
-    ],
+    title: 'CredStack offers a true AI Powered and Economic Solution',
+    columns: ['Feature', 'Perfios', 'Accumn', 'Credstack'],
     rows: [
       {
         feature: 'Data Extraction',
-        traditional: 'Basic transaction extraction',
-        credstack: 'Advanced extraction with intelligence layered on top',
+        values: [
+          'Standardized extraction with broad bank-format support',
+          'Template-driven extraction with configurable mappings',
+          'AI extraction plus context-aware intelligence on top',
+        ],
       },
       {
         feature: 'Intelligence & Risk Insights',
-        traditional: 'Limited analytics',
-        credstack: 'AI-driven insights and risk signals',
+        values: [
+          'Summary metrics with limited underwriting-specific signals',
+          'Rule-based indicators with moderate customization options',
+          'Explainable AI-driven risk signals tailored for decisioning',
+        ],
       },
       {
         feature: 'Custom Extraction',
-        traditional: 'Standard templates',
-        credstack: 'Custom extraction tailored to business requirements',
+        values: [
+          'Supported through scoped implementation changes',
+          'Supported through template and rule customization',
+          'Rapid custom extraction aligned to lender data needs',
+        ],
       },
       {
         feature: 'Configurable Logic',
-        traditional: 'Fixed workflows',
-        credstack: 'Configurable custom logic based on underwriting rules',
+        values: [
+          'Mostly predefined workflows with selective tuning',
+          'Configurable rules with policy-level flexibility',
+          'Fully configurable logic mapped to underwriting policies',
+        ],
       },
       {
         feature: 'Multi-Bank Statement Analysis',
-        traditional: 'Often single-statement focused',
-        credstack: 'Processes multiple statements with cross-account analysis',
+        values: [
+          'Supports multi-statement ingestion and aggregation',
+          'Supports multi-statement analysis with rule-based checks',
+          'Multi-statement analysis with cross-account pattern detection',
+        ],
       },
       {
         feature: 'Fraud Detection',
-        traditional: 'Basic anomaly checks',
-        credstack: 'Cross-transfer detection and deeper fraud indicators',
+        values: [
+          'Anomaly checks and consistency flags',
+          'Risk rules and suspicious transaction pattern flags',
+          'Cross-transfer detection and deeper fraud behavior signals',
+        ],
       },
     ],
   },
   architecture: {
     title: 'Technical architecture and API integration',
-    points: [
-      'Statement ingestion via upload APIs and secure banking connectors',
-      'Extraction and ML classification services expose normalized JSON outputs',
-      'Risk orchestration layer produces explainable risk indicators for decision engines',
-      'Integration-ready APIs feed LOS/LMS, underwriting dashboards, and decision workflows',
-    ],
-    apiNotes: [
-      'REST-based integration model with secure authentication controls',
-      'Supports synchronous or asynchronous processing patterns based on loan volume',
-      'Structured response payloads can map into existing credit policy engines',
-    ],
+    points: [],
+    apiNotes: [],
   },
   faqs: [
     {
-      q: 'Can this integrate with our existing LOS or underwriting system?',
-      a: 'Yes. The analyzer is API-first and designed to plug into existing LOS/LMS and underwriting workflows with structured outputs.',
+      q: 'What is bank statement analysis and why is it important for lenders?',
+      a: 'Bank statement analysis is the process of extracting transaction-level data from statements and converting it into structured insights about income, expenses, liabilities, liquidity, and borrower behavior.Lenders use bank statement analysis to make faster and more defensible credit decisions by measuring repayment capacity, financial stability, and risk patterns from real cashflow behavior.',
     },
+    
     {
       q: 'Does it support multiple statements for one borrower?',
       a: 'Yes. It can process multiple statements per application and build consolidated insights for decisioning.',
@@ -232,6 +244,4 @@ export const bankStatementAnalyzerFeature: FeaturePageData = {
     title: 'Related Blogs',
     items: [],
   },
-  complianceNote:
-    'External benchmark stats and comparative numeric claims are intentionally kept neutral until source references are finalized (TBD source).',
 };
