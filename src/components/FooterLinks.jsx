@@ -36,8 +36,11 @@ const data = [
     title: 'Features',
     links: [
       { label: 'Bank Statement Analyzer', link: '/features/bank-statement-analyzer' },
+      { label: 'Income Assessment AI', link: '/features/income-assessment-ai' },
       { label: 'Email Lead Management', link: '/features/email-lead-management-partner-crm' },
       { label: 'CAM Automation', link: '/features/cam-automation' },
+      { label: 'Agents.ai', link: '/features/agents-ai-autonomous-customer-relationship-engine' },
+      { label: 'Insights.ai', link: '/features/insights-ai-customer-operational-intelligence' },
     ],
   },
   {

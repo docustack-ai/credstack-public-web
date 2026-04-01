@@ -51,6 +51,12 @@ const feature_list = [
         url: '/features/bank-statement-analyzer',
       },
       {
+        icon: IconCoin,
+        title: 'Income Assessment AI',
+        description: 'AI-driven field income assessment and projection for on-ground underwriting.',
+        url: '/features/income-assessment-ai',
+      },
+      {
         icon: IconMessageUser,
         title: 'Email Lead Management',
         description: 'AI email ingestion and partner lead orchestration for co-lending teams.',
@@ -70,21 +76,15 @@ const feature_list = [
     features: [
       {
         icon: IconChartPie3,
-        title: 'AI Agents',
-        description: 'Workflow assistants for lending and underwriting operations.',
-        url: '/features',
-      },
-      {
-        icon: IconNotification,
-        title: 'Assist.ai',
-        description: 'Context-aware assistance for analyst and operations teams.',
-        url: '/features',
+        title: 'Agents.ai',
+        description: 'Autonomous customer relationship engine for multi-channel engagement.',
+        url: '/features/agents-ai-autonomous-customer-relationship-engine',
       },
       {
         icon: IconCode,
         title: 'Insights.ai',
-        description: 'Actionable insights from your data and processes.',
-        url: '/features',
+        description: 'Decision intelligence from conversations, workflows, and customer journeys.',
+        url: '/features/insights-ai-customer-operational-intelligence',
       },
     ],
   },
@@ -185,13 +185,13 @@ return (
                 ];
                 const credlensFeatures = [
                 { icon: IconChartPie3, title: 'Bank Statement Analyzer', description: 'AI-based bank statement analysis for automated credit risk decisions.', url: '/features/bank-statement-analyzer' },
+                { icon: IconCoin, title: 'Income Assessment AI', description: 'AI-driven field income assessment and projection for on-ground underwriting.', url: '/features/income-assessment-ai' },
                 { icon: IconMessageUser, title: 'Email Lead Management', description: 'AI email ingestion and partner lead orchestration for co-lending teams.', url: '/features/email-lead-management-partner-crm' },
                 { icon: IconFingerprint, title: 'CAM Automation', description: 'AI-powered credit appraisal memo automation for faster underwriting.', url: '/features/cam-automation' },
                 ];
                 const credexpFeatures = [
-                { icon: IconChartPie3, title: 'AI Agents', description: 'Workflow assistants for lending and underwriting operations.', url: '/features' },
-                { icon: IconNotification, title: 'Assist.ai', description: 'Context-aware assistance for analyst and operations teams.', url: '/features' },
-                { icon: IconCode, title: 'Insights.ai', description: 'Actionable insights from your data and processes.', url: '/features' },
+                { icon: IconChartPie3, title: 'Agents.ai', description: 'Autonomous customer relationship engine for multi-channel engagement.', url: '/features/agents-ai-autonomous-customer-relationship-engine' },
+                { icon: IconCode, title: 'Insights.ai', description: 'Decision intelligence from conversations, workflows, and customer journeys.', url: '/features/insights-ai-customer-operational-intelligence' },
                 ];
                 return (
                 <Tabs variant="outline" orientation="vertical" defaultValue="credlens" value={selectedFeaturesTab} onChange={setSelectedFeaturesTab} style={{ display: 'flex' }}>

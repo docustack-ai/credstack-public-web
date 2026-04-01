@@ -39,7 +39,9 @@ export function FeatureHero({
               {ctaLabel}
             </Button>
           </Stack>
-          {image ? <Image src={image} alt={h1} radius="md" maw={820} w="100%" /> : null}
+          <Paper withBorder radius="md" p="md" mt="xl">
+            {image ? <Image src={image} alt={h1} radius="md" maw={820} w="100%" /> : null}
+          </Paper>
         </Stack>
       </Paper>
     </StyledContainer>
