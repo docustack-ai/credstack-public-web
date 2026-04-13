@@ -1,4 +1,4 @@
-import { IconBookmark, IconHeart, IconShare } from '@tabler/icons-react';
+import { IconShare } from '@tabler/icons-react';
 import {
   ActionIcon,
   Avatar,
@@ -10,6 +10,7 @@ import {
   Text,
   useMantineTheme,
 } from '@mantine/core';
+import { useState } from 'react';
 import classes from './ArticleCard.module.css';
 
 export default function ArticleCard({
@@ -18,8 +19,42 @@ export default function ArticleCard({
   excerpt = '',
   image = 'https://i.imgur.com/Cij5vdL.png',
   badge = 'outstanding',
+  slug = '',
 }) {
   const theme = useMantineTheme();
+  const [shared, setShared] = useState(false);
+
+  const stopNavigation = (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+  };
+
+  const handleShare = async (event) => {
+    stopNavigation(event);
+
+    if (typeof window === 'undefined') return;
+
+    const shareUrl = slug
+      ? `${window.location.origin}/blogs/${slug}`
+      : window.location.href;
+
+    try {
+      if (navigator.share) {
+        await navigator.share({
+          title,
+          text: excerpt,
+          url: shareUrl,
+        });
+      } else if (navigator.clipboard?.writeText) {
+        await navigator.clipboard.writeText(shareUrl);
+      }
+
+      setShared(true);
+      window.setTimeout(() => setShared(false), 1600);
+    } catch {
+      // Sharing can be cancelled by users; keep it silent.
+    }
+  };
 
   return (
     <Card withBorder radius="md" className={classes.card} m={0} p={0}>
@@ -54,13 +89,11 @@ export default function ArticleCard({
         </Center>
 
         <Group gap={8} mr={0}>
-          <ActionIcon className={classes.action}>
-            <IconHeart size={16} color={theme.colors.red[6]} />
-          </ActionIcon>
-          <ActionIcon className={classes.action}>
-            <IconBookmark size={16} color={theme.colors.yellow[7]} />
-          </ActionIcon>
-          <ActionIcon className={classes.action}>
+          <ActionIcon
+            aria-label="Share article"
+            className={`${classes.action} ${shared ? classes.actionActive : ''}`}
+            onClick={handleShare}
+          >
             <IconShare size={16} color={theme.colors.blue[6]} />
           </ActionIcon>
         </Group>

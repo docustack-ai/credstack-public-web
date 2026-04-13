@@ -26,6 +26,10 @@
   background-color: light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-6));
 }
 
+.actionActive {
+  background-color: light-dark(var(--mantine-color-yellow-0), var(--mantine-color-dark-4));
+}
+
 .footer {
   margin-top: var(--mantine-spacing-md);
 }

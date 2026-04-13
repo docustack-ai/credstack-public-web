@@ -18,7 +18,7 @@ export default function ParallaxCardDemo() {
           <Card.Section>
             <Image
               src="/assets/fontpage_image.webp"
-              alt="CredSStack.ai Platform"
+              alt="CredStack.ai Platform"
               style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
             />
           </Card.Section>
