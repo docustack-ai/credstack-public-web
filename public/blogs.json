@@ -28,5 +28,15 @@
     "image": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg",
     "slug": "rbi-new-guidelines-ai-co-lending",
     "markdown": "content/rbi-colending-implications.md"
+  },
+  {
+    "title": "The Complete Guide to Co-Lending",
+    "author": "Suman Saurabh",
+    "date": "2024-07-05",
+    "badge": "Guide",
+    "excerpt": "How AI is reshaping the future of collaborative lending",
+    "image": "https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg",
+    "slug": "the-complete-guide-to-co-lending",
+    "markdown": "content/the-complete-guide-to-colending.md"
   }
 ]
