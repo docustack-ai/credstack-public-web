@@ -1,21 +1,26 @@
 'use client';
 
 import ArticleCard from '../../components/ArticleCard';
-import { useEffect, useState } from 'react';
-import { Container } from '@mantine/core';
 import Link from 'next/link';
 import classes from './BlogListPage.module.css';
 import StyledContainer from '../../components/StyledContainer';
 
+type BlogItem = {
+  title: string;
+  author: string;
+  date: string;
+  badge: string;
+  excerpt: string;
+  image: string;
+  slug: string;
+  markdown: string;
+};
 
-export default function BlogListPage() {
-  const [blogs, setBlogs] = useState([]);
+type BlogListPageProps = {
+  blogs: BlogItem[];
+};
 
-  useEffect(() => {
-    fetch('/blogs.json')
-      .then((res) => res.json())
-      .then(setBlogs);
-  }, []);
+export default function BlogListPage({ blogs }: BlogListPageProps) {
 
   return (
     <StyledContainer>
@@ -25,7 +30,7 @@ export default function BlogListPage() {
           Discover how AI is transforming financial due diligence and credit underwriting. Learn how platforms like CredStack automate document analysis, risk checks, and decision-making.
         </p>
         <div className={classes.grid}>
-          {blogs.map((blog: any) => (
+          {blogs.map((blog) => (
             <Link key={blog.slug} href={`/blogs/${blog.slug}`} className={classes.cardLink}>
               <ArticleCard {...blog} />
             </Link>
