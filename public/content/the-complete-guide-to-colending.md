@@ -274,7 +274,7 @@ While some fintech companies operate as NBFCs, others function as technology pla
 
 #### 4. Technology Providers (Infrastructure & Services)
 
-This category includes companies such as [credstack.ai](credstack.ai) that offer specialized technological solutions, infrastructure, and services that underpin the co-lending operations 
+This category includes companies such as [credstack.ai](https://credstack.ai/) that offer specialized technological solutions, infrastructure, and services that underpin the co-lending operations 
 
 *   **Roles and Responsibilities:**
     *   **Core Banking System (CBS) Enhancements:** Providing modules or APIs to enhance existing CBS for co-lending functionalities.
@@ -324,7 +324,7 @@ The advent of co-lending models has democratized access to credit, but it also i
 
 ### Sophisticated Data Analytics and AI/ML-Driven Underwriting
 
-In a co-lending paradigm, the quality and breadth of data available for underwriting are often enhanced by pooling information from various sources. Advanced techniques are crucial to harness this data effectively. Solutions such [AI powered Co-lending solutions offered by credstack](www.credstack.ai).ai provide robust credit scoring models based on transaction data, behavioural attributes to do underwriting effectively. At the same time, early warning systems and portfolio management solutions offered by credstack.ai help you to keep a tab on the onboarded loans effectively.
+In a co-lending paradigm, the quality and breadth of data available for underwriting are often enhanced by pooling information from various sources. Advanced techniques are crucial to harness this data effectively. Solutions such [AI powered Co-lending solutions offered by CredStack.ai](https://credstack.ai/use_cases/co_lending) provide robust credit scoring models based on transaction data, behavioural attributes to do underwriting effectively. At the same time, early warning systems and portfolio management solutions offered by credstack.ai help you to keep a tab on the onboarded loans effectively.
 
 #### 1. Enhanced Credit Scoring Models
 
