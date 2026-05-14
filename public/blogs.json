@@ -38,5 +38,15 @@
     "image": "https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg",
     "slug": "the-complete-guide-to-co-lending",
     "markdown": "content/the-complete-guide-to-colending.md"
+  },
+  {
+    "title": "How AI-Powered Bank Statement Analysis is Revolutionizing Financial Underwriting",
+    "author": "Suman Saurabh",
+    "date": "2024-05-01",
+    "badge": "AI in Finance",
+    "excerpt": "The integration of AI-powered bank statement analysis is revolutionizing financial underwriting by providing deeper insights",
+    "image": "https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg",
+    "slug": "ai-powered-bank-statement-analysis",
+    "markdown": "content/ai_powered_bank_statement_analysis.md"
   }
 ]

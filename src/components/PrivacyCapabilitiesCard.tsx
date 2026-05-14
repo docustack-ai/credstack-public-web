@@ -47,7 +47,7 @@ export function PrivacyCapabilitiesCard() {
                     </Group>
                     <Card.Section>
                         <Image
-                            src="/assets/page_images/server.webp"
+                            src="/assets/page_images/server.png"
                             height={160}
                             alt="On-Premise Server"
                             className={classes.certImage}

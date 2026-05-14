@@ -5,7 +5,7 @@ export const bankStatementAnalyzerFeature: FeaturePageData = {
   seo: {
     title: 'AI Bank Statement Analyzer for Automated Credit Risk Assessment | CredStack.ai',
     description:
-      'Credstack Bank Statement Analyzer uses AI-driven bank statement validation, data extraction, transaction classification, and risk signal detection to automate underwriting for lenders.',
+      'Credstack Bank Statement Analyzer uses AI-driven bank statement validation, transaction classification, and risk detection to automate underwriting for lenders.',
     canonical: '/features/bank-statement-analyzer',
   },
   hero: {
