@@ -58,7 +58,7 @@ return (
                     </Button> */}
                 </Group>
                 <Group mt={30} mb={10} gap={30} >
-                    <Image src="/assets/page_images/soc.jpg" alt="SOC 2 Certified" w={80}   />
+                    <Image src="/assets/page_images/soc.png" alt="SOC 2 Certified" w={80}   />
                     <Image src="/assets/page_images/iso.png" alt="ISO 27001 Certified" w={80}   />
                 </Group>
             </div>

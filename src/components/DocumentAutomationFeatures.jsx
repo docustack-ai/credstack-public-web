@@ -33,11 +33,6 @@ const features = [
     description: 'Automate decision-making with custom rules.'
   },
   {
-    icon: IconSparkles,
-    label: 'Validate',
-    description: 'Re-validate for compliance.'
-  },
-  {
     icon: IconEye,
     label: 'Visualize',
     description: 'Visualize results for deeper insights.'
@@ -64,7 +59,6 @@ const unsplashImages = [
     "/assets/page_images/validation.png",
     "/assets/page_images/extraction.png",
     "/assets/page_images/decisioning.png",
-    "/assets/page_images/validation.png",
     "/assets/page_images/classification.png",
 ];
 
@@ -131,9 +125,6 @@ return (
                             )}
                             {selected === 4 && (
                                 <>Mimics human decision-making with custom rules for complex scenarios. Reads and interprets complex, unstructured data types for deeper insights.</>
-                            )}
-                            {selected === 5 && (
-                                <>Re-validate for compliance and audit readiness.</>
                             )}
                             {selected === 6 && (
                                 <>Visualize results for deeper insights and reporting.</>

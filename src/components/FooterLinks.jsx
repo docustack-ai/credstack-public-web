@@ -56,7 +56,7 @@ const data = [
 ];
 
 const platformItems = [
-  { label: 'SOC 2', image: '/assets/page_images/soc.jpg' },
+  { label: 'SOC 2', image: '/assets/page_images/soc.png' },
   { label: 'ISO 27001', image: '/assets/page_images/iso.png' }
 ];
 
