@@ -14,7 +14,7 @@ export const camAutomationFeature: FeaturePageData = {
  'Automate CAM report generation with CredStack. Our AI agents analyse all borrower documents and instantly produce a structured credit appraisal memo, so you can accelerate underwriting with consistent, auditable insights.',
  ctaLabel: 'Request a Demo',
  ctaHref: '/demo',
- image: '/assets/page_images/cam_hero.png',
+ image: '/assets/page_images/cam_ai.png',
  },
  problem: {
  title: 'Current CAM processes are slow, inconsistent, and risky',
@@ -128,43 +128,43 @@ export const camAutomationFeature: FeaturePageData = {
  title: 'Multi-Source Financial Reconciliation',
  description:
  'Integrates all borrower data – bank, GST/ITR, financial statements, credit bureau – for a unified credit analysis.',
- image: '/assets/page_images/multi_bankst.png',
+ image: '/assets/page_images/cam_feature_2.png',
  },
  {
  title: 'Policy-Aligned Intelligence',
  description:
  'Customisable to your credit policies, so the CAM output and eligibility results align precisely with your rules.',
- image: '/assets/page_images/database.png',
+ image: '/assets/page_images/cam_policy.png',
  },
  {
  title: 'Auditable Decisioning',
  description:
  'Every CAM entry is traceable to source documents. The system provides explainable rationale for each flag or approval, satisfying audit requirements.',
- image: '/assets/page_images/intelligent_transaction.png',
+ image: '/assets/page_images/cam_auditable_decisions.png',
  },
  {
  title: 'Rapid CAM Drafting',
  description:
  'Automates report generation to cut CAM preparation time by up to ~80%, dramatically speeding up underwriting throughput.',
- image: '/assets/page_images/decisioning.png',
+ image: '/assets/page_images/cam_rapid_cam.png',
  },
  {
  title: 'Fraud & Anomaly Detection',
  description:
  'Built-in checks detect document tampering and suspicious transaction patterns across accounts.',
- image: '/assets/page_images/fraud_bankst.png',
+ image: '/assets/page_images/cam_fraud.png',
  },
  {
  title: 'API-First Integration',
  description:
  'Plug-and-play APIs let you embed CAM workflows into your LOS/CORE. CredStack’s platform integrates in days, not months.',
- image: '/assets/page_images/api_bankst.png',
+ image: '/assets/page_images/cam_api_first.png',
  },
  {
  title: 'Customisable AI Models',
  description:
  'LLM-powered pipelines allow rapid creation of custom analysis models, aligning CAM logic to your unique underwriting frameworks.',
- image: '/assets/page_images/cashflow_transaction.png',
+ image: '/assets/page_images/cam_customisable_ai_models.png',
  },
  ],
  },
@@ -269,6 +269,9 @@ export const camAutomationFeature: FeaturePageData = {
  },
  relatedBlogs: {
  title: 'Related Blogs',
- items: [],
+    items: [
+      'ai-powered-bank-statement-analysis',
+      'benefits-of-ai-powered-loan-underwriting'
+    ],
  },
 };

@@ -16,7 +16,7 @@ export const emailLeadManagementFeature: FeaturePageData = {
       'CredStack’s Email CRM transforms unstructured partner communication into structured, actionable workflows. It auto-ingests emails, updates leads, tracks conversations, assigns ownership, escalates delays, and autonomously follows up—ensuring zero lead leakage from sourcing to onboarding.',
     ctaLabel: 'Request a Demo',
     ctaHref: '/demo',
-    image: '/assets/page_images/email_crm.png',
+    image: '/assets/page_images/email_lead.png',
   },
 
   problem: {

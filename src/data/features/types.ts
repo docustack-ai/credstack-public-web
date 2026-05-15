@@ -32,10 +32,7 @@ export type FeatureFaq = {
   a: string;
 };
 
-export type FeatureBlog = {
-  title: string;
-  href: string;
-};
+export type FeatureBlog = string;
 
 export type FeaturePageData = {
   slug: string;
