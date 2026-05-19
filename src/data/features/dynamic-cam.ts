@@ -14,7 +14,7 @@ export const camAutomationFeature: FeaturePageData = {
  'Automate CAM report generation with CredStack. Our AI agents analyse all borrower documents and instantly produce a structured credit appraisal memo, so you can accelerate underwriting with consistent, auditable insights.',
  ctaLabel: 'Request a Demo',
  ctaHref: '/demo',
- image: '/assets/page_images/cam_ai.png',
+ image: '/assets/page_images/cam_ai.webp',
  },
  problem: {
  title: 'Current CAM processes are slow, inconsistent, and risky',
