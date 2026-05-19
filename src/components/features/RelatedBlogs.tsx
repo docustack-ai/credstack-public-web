@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useState } from 'react';
-import { Card, Group, Text, Title, Button } from '@mantine/core';
+import { Card, SimpleGrid, Text, Title, Button, Image } from '@mantine/core';
+import { useMediaQuery } from '@mantine/hooks';
 import StyledContainer from '../StyledContainer';
 
 type RelatedBlogsProps = {
@@ -11,6 +12,7 @@ type RelatedBlogsProps = {
 
 export function RelatedBlogs({ title, items }: RelatedBlogsProps) {
   const [blogsMap, setBlogsMap] = useState<Record<string, any>>({});
+  const isSmall = useMediaQuery('(max-width: 768px)');
 
   useEffect(() => {
     if (!items || items.length === 0) return;
@@ -31,30 +33,35 @@ export function RelatedBlogs({ title, items }: RelatedBlogsProps) {
           {title}
         </Title>
         {items.length ? (
-          <Group grow align="stretch">
+          <SimpleGrid cols={isSmall ? 1 : 2} spacing="md">
             {items.map((slug) => {
               const blog = blogsMap[slug];
               return (
-                <Card key={slug} withBorder radius="none" padding="lg" shadow="sm" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'left', backgroundColor: '#ffffff' }}>
+                <Card key={slug} withBorder radius="sm" padding="sm" shadow="sm" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'left', backgroundColor: '#ffffff' }}>
                   <Text fw={600}>{blog ? blog.title : slug}</Text>
                   <Text mt="sm" mb="md" c="dimmed">
                     {blog ? blog.excerpt : ''}
                   </Text>
-                  <img src={blog?.image} alt={blog?.title} style={{ width: '100%', height: 150, objectFit: 'cover', borderRadius: 4 }} />
+                  <Image
+                    src={blog?.image}
+                    alt={blog?.title}
+                    radius="sm"
+                    h={150}
+                  />
                   <Button
                     component="a"
-                    variant='outline'
-                    fullWidth={false}
+                    variant="outline"
                     href={blog ? `/blogs/${blog.slug}` : `/blogs/${slug}`}
                     size="sm"
-                    style={{ marginTop: 8 }}
+                    mt="md"
+                    style={{ alignSelf: 'flex-start', width: 'auto' }}
                   >
                     Read article
                   </Button>
                 </Card>
               );
             })}
-          </Group>
+          </SimpleGrid>
         ) : (
           <Text c="dimmed" ta="center">
             More resources coming soon.

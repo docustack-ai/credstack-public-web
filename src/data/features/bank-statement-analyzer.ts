@@ -242,6 +242,6 @@ export const bankStatementAnalyzerFeature: FeaturePageData = {
   },
   relatedBlogs: {
     title: 'Related Blogs',
-    items: [],
+    items: ['ai-powered-bank-statement-analysis'],
   },
 };
